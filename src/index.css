@@ -1,0 +1,33 @@
+/* Connecting fonts */
+@font-face {
+  font-family: 'CocoGothicAlternate';
+  src: local('CocoGothicAlternate'),
+    url('./fonts/CocoGothicAlternate.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'CocoGothicAlternate-Bold';
+  src: local('CocoGothicAlternate-Bold'),
+    url('./fonts/CocoGothicAlternate-Bold.ttf') format('truetype');
+}
+
+* {
+  width: 100%;
+  height: 100%;
+}
+
+/* Project Variables and Background Styles */
+body {
+  --purple-dark-color: #6F40B4;
+  --white-app-back-color: white;
+  background-image: url("../public/resources/background.png");
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+/* Background changes */
+@media screen and (max-width:360px) {
+  body {
+    background-image: url("../public/resources/background-phone.png");
+  }
+}

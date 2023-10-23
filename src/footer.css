@@ -1,0 +1,33 @@
+.footer {
+    border-radius: 45px;
+    background-color: var(--white-app-back-color);
+    width: 72%;
+    height: 85%;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .footer {
+        width: 78%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .footer {
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .footer {
+        width: 90%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .footer {
+        width: 90%;
+        height: 85%;
+    }
+}
