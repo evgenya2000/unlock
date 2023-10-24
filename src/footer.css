@@ -4,6 +4,11 @@
     width: 72%;
     height: 85%;
     margin: auto;
+    padding-top: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px){
