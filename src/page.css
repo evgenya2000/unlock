@@ -22,11 +22,11 @@
     border-radius: 10px;
 }
 
-#step1 {
+.step-active {
     background-color: var(--purple-light-color);
 }
 
-#step2, #step3 {
+.step {
     background-color: var(--gray-color);
 }
 
