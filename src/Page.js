@@ -4,20 +4,20 @@ class Page extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
-            step: "Q1"
+            step: "q1"
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     
     handleSubmit(event){
         event.preventDefault(); // Prevents form resubmission
-        if (this.state.step === "Q1") {
+        if (this.state.step === "q1") {
             this.setState({
-                step: "Q2"
+                step: "q2"
             });
         } else {
             this.setState({
-                step: "Chat"
+                step: "q1"
             });
         }
     }
@@ -26,8 +26,8 @@ class Page extends React.Component {
         return (
             <div className="steps">
                     <div className="step-active" id="step1"></div>
-                    <div className={`${this.state.step !== "Q1" ? "step-active" : "step"}`} id="step2"></div>
-                    <div className={`${this.state.step === "Chat" ? "step-active" : "step"}`} id="step3"></div>
+                    <div className={`${this.state.step !== "q1" ? "step-active" : "step"}`} id="step2"></div>
+                    <div className={`${this.state.step === "chat" ? "step-active" : "step"}`} id="step3"></div>
                 </div>
         );
     }
@@ -45,44 +45,74 @@ class Page extends React.Component {
         return (
             <form id="form1">
             {answers.map((answer) => (
-                <div key={answer.id}>
+                <div className="answer-wrapper" key={answer.id}>
                     <p className="answer">
-                    <input className="ball" id={answer.id} type="radio" name="level" value={answer.id} />
-                    <label htmlFor={answer.id}>{answer.str}</label>
+                        <input className="ball" id={answer.id} type="radio" name="level" value={answer.id} />
+                        <label htmlFor={answer.id}>{answer.str}</label>
                     </p>
                     <br />
                 </div> 
             ))}
-            <input className="btn" type="submit" onClick={this.handleSubmit} value="Следующий этап"></input>
+            </form>
+        );
+    }
+
+    renderForm2(){
+        const options = [
+            {id: "a", src: "/resources/photo.png", name_age: "Mark, 35 year", profession: "policemen", description: "I love football, I don't like sweets and red shades. What I like about my job is investigation."},
+            {id: "b", src: "/resources/photo.png", name_age: "Mark, 35 year", profession: "policemen", description: "I love football, I don't like sweets and red shades. What I like about my job is investigation."},
+            {id: "c", src: "/resources/photo.png", name_age: "Mark, 35 year", profession: "policemen", description: "I love football, I don't like sweets and red shades. What I like about my job is investigation."}
+        ];
+
+        return (
+            <form id="form2">
+            <div className="options">
+            {options.map((option) => (
+                <div className="option" key={option.id}>
+                        <div className="choice">
+                            <input className="ball" id={option.id} type="radio" name="human" value={option.id}></input>
+                            <img className="photo" src={option.src} alt="human"></img>
+                        </div>
+                        <div className="label-column">
+                            <label className="name-age" htmlFor={option.id}>{option.name_age}</label>
+                            <label className="profession" htmlFor={option.id}>{option.profession}</label>
+                            <label className="description" htmlFor={option.id}>{option.description}</label>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            
             </form>
         );
     }
 
     renderContent() {
         const question = {
-            "q1": "Выберете ваш уровень владения английским языком",
+            "q1": "Выберите ваш уровень владения английским языком",
             "q2": "Выберите с кем вам было бы интересно пообщаться",
             "chat": "Давайте попробуем пообщаться в формате переписки с другом",
         };
 
         switch (this.state.step) {
-            case "Q1":
+            case "q1":
                 return (
-                    <div className="content">
-                        <label className="question1">{question.q1}</label>
+                    <div className="content" id="content_q1">
+                        <label className="question" id="question_q1">{question.q1}</label>
                         <br></br>
                         {this.renderForm1()}
+                        <button className="btn" type="submit" onClick={this.handleSubmit} form="form1">Следующий этап</button>
                     </div>);
-            case "Q2":
+            case "q2":
                 return (
-                    <div className="content">
-                        <label className="question2">{question.q2}</label>
+                    <div className="content" id="content_q2">
+                        <label className="question" id="question_q2">{question.q2}</label>
                         <br></br>
                         {this.renderForm2()}
+                        <button className="btn" type="submit" onClick={this.handleSubmit} form="form2">Следующий этап</button>
                     </div>);
-            case "Chat":
+            case "chat":
                 return (
-                    <div className="content">
+                    <div className="content" id="content_chat">
                         <label className="chat">{question.chat}</label>
                         <br></br>
                     </div>);
@@ -92,7 +122,7 @@ class Page extends React.Component {
     
     render() {
         return (
-            <div className="page" id="{this.state.step}">
+            <div className="page" id={`page_${this.state.step}`}>
                 {this.renderSteps()}
                 {this.renderContent()}
             </div>

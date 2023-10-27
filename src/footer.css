@@ -25,6 +25,9 @@
 
 @media screen and (max-width: 500px){
     .footer {
+        padding-top: 4%;
+        padding-left: 5%;
+        padding-right: 5%;
         width: 90%;
         height: 75%;
     }
