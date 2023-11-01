@@ -19,6 +19,8 @@
 body {
   --purple-dark-color: #6F40B4;
   --white-app-back-color: white;
+  --purple-light-color: #CA3EF7;
+  --gray-color: #E7E7E7;
   background-image: url("../public/resources/background.png");
   background-size: 100% 100%; 
   background-repeat: no-repeat;
