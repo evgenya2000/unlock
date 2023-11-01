@@ -11,19 +11,19 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .footer {
         width: 78%;
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
     .footer {
         width: 84%;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .footer {
         padding-top: 4%;
         padding-left: 5%;
@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 376px) {
     .footer {
         width: 90%;
         height: 85%;
