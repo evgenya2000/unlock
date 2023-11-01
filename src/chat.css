@@ -1,0 +1,74 @@
+/* Styles for chat */
+#content_chat {
+    margin-top: 3%;
+}
+
+.chat {
+    height: calc(100% - 24px - 1%);
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 5% 2% 5% 2%;
+    border-radius: 45px;
+    border: 2px solid var(--gray-color);
+    overflow: auto;
+}
+
+.user-phrase, .script-phrase {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    height: auto;
+    width: auto;
+    max-width: 50%;
+    padding: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 2%;
+    border-radius: 30px;
+}
+
+.chat p {
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+
+.chat button {
+    font-family: "CocoGothicAlternate-Bold";
+    font-size: 24px;
+    color: var(--white-app-back-color);
+    text-align: center;
+    padding: 1% 8% 1% 8%;
+    height: auto;
+    width: auto;
+    margin-top: 1%;
+    border: 0;
+    border-radius: 30px;
+    background-color: var(--purple-light-color);
+}
+
+/* Styles for user*/
+
+.user-phrase {
+    align-items: flex-end;
+}
+
+.user-phrase .message {
+    text-align: end;
+    background-color: var(--gray-color);
+}
+
+/* Styles for script*/
+
+.script-phrase {
+    align-items: flex-start;
+}
+
+.script-phrase .message {
+    text-align: start;
+    background-color: var(--purple-pink-color);
+}
