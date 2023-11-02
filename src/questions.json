@@ -1,0 +1,50 @@
+{
+  "firstPhrase": [
+     {
+      "id":"0",
+      "phrase": "Hi! How are you?",
+      "answer": "Great, I slept well, how are you?",
+      "next": "secondPhrase"
+    },
+    {
+      "id":"1",
+      "phrase": "Hi! How are you?",
+      "answer": "Great, I slept well, how are you?",
+      "next": "secondPhrase"
+    },
+    {
+      "id":"2",
+      "phrase": "Hi! How are you?",
+      "answer": "Great, I slept well. Shall we go to the gym today?",
+      "next": "thirdPhrase"
+    }
+  ],
+  "secondPhrase": [
+    {
+      "id":"0",
+      "phrase": "I slept well too",
+      "answer": "I'm happy for you, let's go to the gym today",
+      "next": "thirdPhrase"
+    },
+    {
+      "id":"1",
+      "phrase": "And I didn't get enough sleep",
+      "answer": "I'm happy for you, let's go to the gym today",
+      "next": "thirdPhrase"
+    },
+    {
+      "id":"2",
+      "phrase": "Oh, I'm so sorry for you",
+      "answer": "I'm happy for you, let's go to the gym today",
+      "next": "thirdPhrase"
+    }
+  ],
+  "thirdPhrase": [
+    {
+      "id":"0",
+      "phrase": "Okay, let's go",
+      "answer": "Thanks, see you soon",
+      "next": "end"
+    }
+  ]
+}
