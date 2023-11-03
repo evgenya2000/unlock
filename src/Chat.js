@@ -28,18 +28,69 @@ class Chat extends React.Component {
         parentDiv.appendChild(newDiv);
     }
 
-    outputAnswerScript(answer) {
+    outputAnswerScript(id) {
         let newScriptDivParent = document.createElement("div");
         newScriptDivParent.className = "script-phrase";
-        let newScriptDivChilde = document.createElement("div");
-        newScriptDivChilde.className = "message";
-        let newScriptParagraph = document.createElement("p");
-        let paragraphScriptText = document.createTextNode(answer);
-        newScriptParagraph.appendChild(paragraphScriptText);
-        newScriptDivChilde.appendChild(newScriptParagraph);
-        newScriptDivParent.appendChild(newScriptDivChilde);
+
+        let newScriptDivChilde = null;
+        let newScriptParagraph = null;
+        let paragraphScriptText = null;
+
+        let newScriptImg = null;
+        let newScriptAudio = null;
+        let newScriptSelector = null;
+        let newOption = null;
+        for (let key in dataPhrases[this.currentUserPhrase][id].answer) {
+            console.log(key);
+            switch (key) {
+                case "message":
+                    for (let str in dataPhrases[this.currentUserPhrase][id].answer[key]) {
+                        newScriptDivChilde = document.createElement("div");
+                        newScriptDivChilde.className = "message";
+                        newScriptParagraph = document.createElement("p");
+                        paragraphScriptText = document.createTextNode(dataPhrases[this.currentUserPhrase][id].answer[key][str]);
+                        newScriptParagraph.appendChild(paragraphScriptText);
+                        newScriptDivChilde.appendChild(newScriptParagraph);
+                        newScriptDivParent.appendChild(newScriptDivChilde);
+                    }
+                    break;
+                case "img":
+                    newScriptImg = document.createElement("img");
+                    newScriptImg.className = "script-phrase-img";
+                    newScriptImg.src = dataPhrases[this.currentUserPhrase][id].answer[key];
+                    newScriptImg.alt = "image for you";
+                    newScriptDivParent.appendChild(newScriptImg);
+                    break;
+                case "audio":
+                    newScriptAudio = document.createElement("audio");
+                    newScriptAudio.className = "script-phrase-audio";
+                    newScriptAudio.src = dataPhrases[this.currentUserPhrase][id].answer[key];
+                    newScriptAudio.setAttribute('controls', 'controls');
+                    newScriptDivParent.appendChild(newScriptAudio);
+                    break;
+                case "options":
+                    newScriptDivChilde = document.createElement("div");
+                    newScriptDivChilde.className = "drop-down-list";
+                    newScriptSelector = document.createElement("select");
+                    for (let option in dataPhrases[this.currentUserPhrase][id].answer[key]){
+                        newOption = document.createElement("option");
+                        newOption.innerHTML = dataPhrases[this.currentUserPhrase][id].answer[key][option];
+                        newScriptSelector.appendChild(newOption);
+                    }
+
+                    newScriptDivChilde.appendChild(newScriptSelector);
+                    newScriptDivParent.appendChild(newScriptDivChilde);
+                    break;
+                default:
+                    break;
+
+            }
+        }
+
         let parentDiv = document.getElementById("chat");
         parentDiv.appendChild(newScriptDivParent);
+
+        parentDiv.scrollTop = parentDiv.scrollHeight;
     }
 
     updateUserOptions(next) {
@@ -88,7 +139,8 @@ class Chat extends React.Component {
         let parentDiv = document.getElementById("chat");
         parentDiv.appendChild(newUserDivParent);
 
-        parentDiv.scrollTop = parentDiv.scrollHeight; /* Scrolls down*/
+        /* parentDiv.scrollTop = parentDiv.scrollHeight; */ /* Scrolls down*/
+        newUserDivParent.scrollIntoView({ behavior: 'smooth' });
     }
 
     handleSubmit(event) {
@@ -99,7 +151,7 @@ class Chat extends React.Component {
         this.countScriptPhrase++;
         this.countUserPhrase++;
 
-        this.outputAnswerScript(dataPhrases[this.currentUserPhrase][selectedId].answer);
+        this.outputAnswerScript(selectedId);
         this.currentUserPhrase = selectedNext;
         if (this.currentUserPhrase !== "end") {
             this.updateUserOptions(selectedNext);

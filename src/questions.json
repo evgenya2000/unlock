@@ -1,49 +1,74 @@
 {
   "firstPhrase": [
-     {
-      "id":"0",
+    {
+      "id": "0",
       "phrase": "Hi! How are you?",
-      "answer": "Great, I slept well, how are you?",
+      "answer": {
+        "img": "/resources/sad-smiley.png",
+        "audio": "/resources/Musica Paradiso - Harry Potter Main Theme.mp3"
+      },
       "next": "secondPhrase"
     },
     {
-      "id":"1",
+      "id": "1",
       "phrase": "Hi! How are you?",
-      "answer": "Great, I slept well, how are you?",
+      "answer": {
+        "img": "/resources/photo.png",
+        "message": ["Great, I slept well, how are you?"],
+        "audio": "/resources/Musica Paradiso - Harry Potter Main Theme.mp3"
+      },
       "next": "secondPhrase"
     },
     {
-      "id":"2",
+      "id": "2",
       "phrase": "Hi! How are you?",
-      "answer": "Great, I slept well. Shall we go to the gym today?",
+      "answer": {
+        "message": ["Great, I slept well. Shall we go to the gym today?"],
+        "img": "/resources/photo.png"
+      },
       "next": "thirdPhrase"
     }
   ],
   "secondPhrase": [
     {
-      "id":"0",
-      "phrase": "I slept well too",
-      "answer": "I'm happy for you, let's go to the gym today",
+      "id": "0",
+      "phrase": "I'm so happy for you, when is your award ceremony?",
+      "answer": {
+        "message": [
+          "It will take place on October 29, at MSG Sphere. Afterwards there will be an incredible LED show with a secret guest band.",
+          "Sphere .......... be bizarre and sublime — or just an ad. That's what makes it so Vegas."
+        ],
+        "options": ["can", "can", "kuefhwuehfuwehfuih"]
+      },
       "next": "thirdPhrase"
     },
     {
-      "id":"1",
+      "id": "1",
       "phrase": "And I didn't get enough sleep",
-      "answer": "I'm happy for you, let's go to the gym today",
+      "answer": {
+        "message": ["I'm happy for you, let's go to the gym today"],
+        "img": "/resources/photo.png"
+      },
       "next": "thirdPhrase"
     },
     {
-      "id":"2",
+      "id": "2",
       "phrase": "Oh, I'm so sorry for you",
-      "answer": "I'm happy for you, let's go to the gym today",
+      "answer": {
+        "message": ["I'm happy for you, let's go to the gym today"],
+        "img": "/resources/photo.png"
+      },
       "next": "thirdPhrase"
     }
   ],
   "thirdPhrase": [
     {
-      "id":"0",
+      "id": "0",
       "phrase": "Okay, let's go",
-      "answer": "Thanks, see you soon",
+      "answer": {
+        "message": ["Thanks, see you soon"],
+        "img": "/resources/photo.png"
+      },
       "next": "end"
     }
   ]
