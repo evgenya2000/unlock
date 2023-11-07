@@ -7,8 +7,8 @@ import "./index.css";
 import './fonts/CocoGothicAlternate-Bold.ttf';
 import './fonts/CocoGothicAlternate.ttf';
 
-import Header from './Header';
-import Footer from './Footer';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 class App extends React.Component {
     render() {

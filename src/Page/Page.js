@@ -1,12 +1,12 @@
 import React from "react";
 
 import "./page.css";
-import Chat from "./Chat";
+import Chat from "../Chat/Chat";
 class Page extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            step: "q1"
+            step: "chat"
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }

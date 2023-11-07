@@ -1,7 +1,8 @@
 import React from "react";
 
 import "./chat.css";
-import dataPhrases from "./questions.json"
+import dataPhrases from "../questions.json"
+
 class Chat extends React.Component {
     constructor(props) {
         super(props);
@@ -9,6 +10,7 @@ class Chat extends React.Component {
         this.countUserPhrase = 0;
         /* this.dataPhrases = null; */
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleResult = this.handleResult.bind(this);
     }
 
     /* Deleting a form and committing a response */
@@ -43,7 +45,6 @@ class Chat extends React.Component {
         let newScriptSelector = null;
         let newOption = null;
         for (let key in dataPhrases[this.currentUserPhrase][id].answer) {
-            console.log(key);
             switch (key) {
                 case "message":
                     for (let str in dataPhrases[this.currentUserPhrase][id].answer[key]) {
@@ -142,7 +143,38 @@ class Chat extends React.Component {
         parentDiv.appendChild(newUserDivParent);
 
         /* parentDiv.scrollTop = parentDiv.scrollHeight; */ /* Scrolls down*/
-        newUserDivParent.scrollIntoView({ behavior: 'smooth' });
+        /* newUserDivParent.scrollIntoView({ behavior: 'smooth' }); */
+    }
+
+    handleResult() {
+        var newDiv = document.createElement("div");
+        newDiv.className = "overlay";
+        var newModal = document.createElement("div");
+        newModal.className = "modal";
+        let paragraphText = document.createTextNode("Ваш уровень владения английским языком:");
+        let lineBreak = document.createElement("br");
+        let a1Text = document.createTextNode("A1 (Beginner)");
+
+        let paragraph = document.createElement("p");
+        paragraph.appendChild(paragraphText);
+        paragraph.appendChild(lineBreak);
+        paragraph.appendChild(a1Text);
+        newModal.appendChild(paragraph);
+        
+        let parentDiv = document.getElementById("root");
+        parentDiv.appendChild(newDiv);
+        parentDiv.appendChild(newModal);
+    }
+
+    renderResultButton() {
+        let newButton = document.createElement("button");
+        newButton.className = "result";
+        newButton.addEventListener('click', this.handleResult);
+        newButton.textContent = "Show result";
+
+        let parentDiv = document.getElementById("chat");
+        parentDiv.appendChild(newButton);     
+        parentDiv.scrollTop = parentDiv.scrollHeight; /* Scrolls down*/   
     }
 
     handleSubmit(event) {
@@ -157,6 +189,8 @@ class Chat extends React.Component {
         this.currentUserPhrase = selectedNext;
         if (this.currentUserPhrase !== "end") {
             this.updateUserOptions(selectedNext);
+        } else {
+            this.renderResultButton();
         }
 
     }
@@ -168,7 +202,7 @@ class Chat extends React.Component {
                 <form className="form-user-phrase" id={`form-user-phrase-${this.countUserPhrase}`}>
                     {dataPhrases.firstPhrase.map((option) => (
                         <div className="option-user-phrase" key={option.id}>
-                            <input className="ball" type="radio" name={this.currentUserPhrase} id={option.id} value={option.next} />
+                            <input className="ball" type="radio" name={this.currentUserPhrase} id={option.id} value={option.next}/>
                             <div className="message"><p>{option.phrase}</p></div>
                         </div>
                     ))}
