@@ -1,4 +1,4 @@
-/* Styles for pages 1 and 2 */
+/* Styles for pages 1, 2 and 3 */
 .page {
     width: 100%;
     height: 100%;
@@ -13,7 +13,9 @@
     justify-content: space-between;
 }
 
-#step1, #step2, #step3 {
+#step1,
+#step2,
+#step3 {
     width: 30%;
     border-radius: 10px;
 }
@@ -35,10 +37,11 @@
     justify-content: center;
 }
 
-.question, .chat {
+.question {
     font-family: "CocoGothicAlternate-Bold";
-    height: 24px;
+    height: auto;
     width: auto;
+    text-align: center;
 }
 
 .btn {
@@ -58,7 +61,7 @@
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Styles for question1 */
+/* Styles for page1 */
 #content_q1 {
     margin-top: 3%;
 }
@@ -88,10 +91,10 @@
 
 .ball {
     height: 30px;
-    width: 30px;  
+    width: 30px;
 }
 
-/* Styles for question2 */
+/* Styles for page2 */
 #page_q2 {
     width: 100%;
     height: 100%;
@@ -150,40 +153,36 @@
     height: auto;
 }
 
-@media screen and (max-width: 1265px){
-    /* Styles for question1 */
+@media screen and (max-width: 1265px) {
+
+    /* Styles for pages 1, 2 and 3 */
     #form1 {
         width: 57%;
     }
 }
 
-@media screen and (max-width: 1110px){
-    /* Styles for question1 */
+@media screen and (max-width: 1110px) {
+
+    /* Styles for page1 */
     #form1 {
         width: 65%;
     }
 }
 
-@media screen and (max-width: 980px){
-    /* Styles for question1 and question2 */
-    #question_q1, #question_q2 {
-        width: 100%;
-        text-align: center;
-    }
+@media screen and (max-width: 980px) {
 
-    /* Styles for question1 */
-    #question_q1 {
-        height: 50px;
-    }
-
+    /* Styles for page1*/
     #form1 {
         width: 70%;
     }
 }
 
-@media screen and (max-width: 900px){
-    /* Styles for question1 and question2 */
-    #page_q1, #page_q2 {
+@media screen and (max-width: 900px) {
+
+    /* Styles for pages 1, 2 and 3 */
+    #page_q1,
+    #page_q2,
+    #page_chat {
         font-size: 20px;
     }
 
@@ -191,7 +190,7 @@
         font-size: 20px;
     }
 
-    /* Styles for question1 */
+    /* Styles for page1 */
     #question_q1 {
         margin-top: 1%;
         margin-bottom: -2%;
@@ -206,44 +205,45 @@
     }
 }
 
-@media screen and (max-width: 810px){
-    /* Styles for question2 */
-    #question_q2 {
-        text-align: center;
-    }
+@media screen and (max-width: 810px) {
 
+    /* Styles for page1 */
     .answer label {
         margin-top: 0%;
     }
 }
 
-@media screen and (max-width: 700px){
-    /* Styles for question1 and question2*/
+@media screen and (max-width: 700px) {
+
+    /* Styles for pages 1, 2 and 3*/
     .ball {
         height: 25px;
         width: 25px;
     }
 
-    /* Styles for question1 */
+    /* Styles for page1 */
     #form1 {
         width: 76%;
     }
 
-    /* Styles for question2 */
+    /* Styles for page2 */
     .choice {
         width: calc(150px + 25px + 8%);
         margin-right: 2%;
     }
-    
+
     .photo {
         width: 150px;
         height: 150px;
     }
 }
 
-@media screen and (max-width: 590px){
-    /* Styles for question1 and question2*/
-    #page_q1, #page_q2 {
+@media screen and (max-width: 590px) {
+
+    /* Styles for pages 1, 2 and 3*/
+    #page_q1,
+    #page_q2,
+    #page_chat {
         font-size: 18px;
     }
 
@@ -251,7 +251,7 @@
         font-size: 18px;
     }
 
-    /* Styles for question1*/
+    /* Styles for page1*/
     #form1 {
         width: 80%;
     }
@@ -261,39 +261,41 @@
     }
 }
 
-@media screen and (max-width: 510px){
-    /* Styles for question1 and question2*/
+@media screen and (max-width: 510px) {
+
+    /* Styles for pages 1, 2 and 3*/
     .ball {
         height: 20px;
         width: 20px;
     }
 
-    /* Styles for question1*/
+    /* Styles for page1*/
     #form1 {
         width: 90%;
     }
 
-    /* Styles for question2*/
+    /* Styles for page2*/
     .choice {
         width: calc(130px + 20px + 8%);
         margin-right: 2%;
     }
-    
+
     .photo {
         width: 130px;
         height: 130px;
     }
 }
 
-@media screen and (max-width: 450px){
-    /* Styles for question1 and question2*/
+@media screen and (max-width: 450px) {
+
+    /* Styles for pages 1, 2 and 3*/
     .ball {
         height: 30px;
         width: 30px;
         margin-right: auto;
     }
 
-    /* Styles for question1*/
+    /* Styles for page1*/
     #form1 {
         margin-top: -4%;
     }
@@ -302,18 +304,14 @@
         margin-top: -1%;
     }
 
-    /* Styles for question2*/
-    #question_q2 {
-        width: 100%;
-    }
-
+    /* Styles for page2*/
     #form2 {
         overflow: auto;
         margin-top: 2%;
         margin-bottom: 2%;
         padding: 1%;
     }
-    
+
     .options {
         width: 100%;
     }
@@ -333,7 +331,7 @@
         margin-right: 0%;
         margin-bottom: 5%;
     }
-    
+
     .photo {
         width: 150px;
         height: 150px;
@@ -347,7 +345,7 @@
         width: 70%;
         margin-bottom: 3%;
     }
-    
+
     .name-age,
     .profession,
     .description {
@@ -357,21 +355,25 @@
     }
 }
 
-@media screen and (max-width: 425px){
-    /* Styles for question1 and question2*/
+@media screen and (max-width: 425px) {
+
+    /* Styles for pages 1, 2 and 3*/
     .steps {
         margin-top: 1%;
     }
 
-    /* Styles for question1*/
+    /* Styles for page1*/
     #form1 {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 375px){
-    /* Styles for question1 and question2*/
-    #page_q1, #page_q2 {
+@media screen and (max-width: 375px) {
+
+    /* Styles for pages 1, 2 and 3*/
+    #page_q1,
+    #page_q2,
+    #page_chat {
         font-size: 16px;
     }
 
@@ -390,7 +392,7 @@
         margin-right: auto;
     }
 
-    /* Styles for question1*/
+    /* Styles for page1*/
     #form1 {
         margin-top: -8%;
     }
@@ -398,8 +400,8 @@
     .answer label {
         height: 16px;
     }
-    
-    /* Styles for question2*/
+
+    /* Styles for page2*/
     .label-column {
         width: 80%;
     }

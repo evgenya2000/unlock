@@ -1,0 +1,285 @@
+/* Styles for chat */
+#content_chat {
+    margin-top: 3%;
+}
+
+.chat {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 5% 2% 5% 2%;
+    border-radius: 45px;
+    border: 2px solid var(--gray-color);
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.chat::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.chat::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.user-phrase,
+.script-phrase {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+    padding: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 30px;
+}
+
+.user-phrase>.message,
+.script-phrase>.message {
+    margin-bottom: 2%;
+    max-width: 48%;
+}
+
+.chat p {
+    height: auto;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.chat button {
+    font-family: "CocoGothicAlternate-Bold";
+    font-size: 24px;
+    color: var(--white-app-back-color);
+    text-align: center;
+    padding: 1% 8% 1% 8%;
+    height: auto;
+    width: auto;
+    margin-top: 1%;
+    border: 0;
+    border-radius: 30px;
+    background-color: var(--purple-light-color);
+}
+
+/* Styles for user*/
+
+.user-phrase {
+    align-items: flex-end;
+    margin-bottom: 2%;
+}
+
+.option-user-phrase {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+}
+
+.option-user-phrase>.message {
+    max-width: 80%;
+}
+
+.user-phrase .message {
+    text-align: end;
+    background-color: var(--yellow-color);
+}
+
+#option-checked {
+    background-color: var(--gray-color);
+}
+
+/* Styles for script*/
+
+.script-phrase {
+    align-items: flex-start;
+    margin-bottom: 2%;
+}
+
+.script-phrase .message {
+    text-align: start;
+    background-color: var(--purple-pink-color);
+}
+
+.script-phrase .script-phrase-img {
+    max-width: 30%;
+    max-height: 30%;
+    margin-bottom: 2%;
+}
+
+.script-phrase .script-phrase-audio {
+    height: 50px;
+    max-width: 50%;
+    margin-bottom: 2%;
+}
+
+.script-phrase-audio::-webkit-media-controls-enclosure {
+    background-color: var(--purple-pink-color);
+    height: 70px;
+}
+
+.script-phrase-audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+.script-phrase-audio::-webkit-media-controls-volume-control-container {
+    display: none;
+}
+
+.script-phrase-audio::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+
+.script-phrase-audio::-webkit-media-controls-current-time-display {
+    font-family: 'CocoGothicAlternate';
+    font-size: 10px;
+    height: 8px;
+}
+
+.script-phrase .drop-down-list {
+    height: 30%;
+    max-width: 15%;
+    width: auto;
+    padding: 2% 4% 2% 4%;
+    border-radius: 30px;
+    background-color: var(--purple-pink-color);
+}
+
+select {
+    width: auto;
+    max-width: 100%;
+    height: 90%;
+    font-family: 'CocoGothicAlternate';
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+option {
+    font-family: 'CocoGothicAlternate';
+    font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    select {
+        font-size: 20px;
+    }
+
+    option {
+        font-size: 14px;
+    }
+
+    .chat button {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .chat {
+        padding-left: 3%;
+    }
+
+    .message {
+        padding: 5%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .script-phrase .drop-down-list {
+        padding: 3% 5% 3% 5%;
+        max-width: 20%;
+    }
+
+    .script-phrase .script-phrase-audio {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    select {
+        font-size: 18px;
+    }
+
+    option {
+        font-size: 12px;
+    }
+
+    .chat button {
+        font-size: 18px;
+    }
+
+    .user-phrase>.message,
+    .script-phrase>.message {
+        max-width: 55%;
+    }
+
+    .script-phrase .script-phrase-img {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .message {
+        padding: 6%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .user-phrase>.message,
+    .script-phrase>.message {
+        max-width: 70%;
+        margin-bottom: 4%;
+    }
+
+    .option-user-phrase>.ball {
+        margin-right: 8%;
+    }
+
+    .script-phrase .script-phrase-audio {
+        margin-bottom: 4%;
+    }
+
+    .script-phrase .script-phrase-img {
+        max-width: 40%;
+        max-height: 40%;
+        margin-bottom: 4%;
+    }
+
+    .script-phrase .drop-down-list {
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    select {
+        font-size: 16px;
+    }
+
+    option {
+        font-size: 10px;
+    }
+
+    .chat button {
+        font-size: 16px;
+    }
+
+    .script-phrase .script-phrase-audio {
+        max-width: 95%;
+    }
+
+    .script-phrase .drop-down-list {
+        padding: 4% 6% 4% 6%;
+        max-width: 25%;
+    }
+}

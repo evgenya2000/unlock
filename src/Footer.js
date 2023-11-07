@@ -1,11 +1,13 @@
 import React from "react";
+
+import "./footer.css";
 import Page from "./Page";
 
 class Footer extends React.Component {
     render() {
         return (
             <div className="footer">
-                <Page/>
+                <Page />
             </div>
         );
     }
