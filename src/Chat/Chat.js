@@ -8,13 +8,15 @@ class Chat extends React.Component {
         super(props);
         this.currentUserPhrase = "firstPhrase";
         this.countUserPhrase = 0;
-        /* this.dataPhrases = null; */
+        this.idOption = 0;
+        this.currentCountOption = 0;
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleResult = this.handleResult.bind(this);
     }
 
     /* Deleting a form and committing a response */
-    pinUserChoice(value) {
+    pinChoice(value) {
+        /* Pin User-phrase */
         const form = document.getElementById(`form-user-phrase-${this.countUserPhrase}`);
         form.remove();
         const button = document.getElementsByClassName('send')[0];
@@ -30,6 +32,12 @@ class Chat extends React.Component {
 
         let parentDiv = document.getElementById(`user-phrase-${this.countUserPhrase}`);
         parentDiv.appendChild(newDiv);
+
+        /* Pin Script-phrase */
+        let select = document.getElementById(`select-${this.idOption}`);
+        if (select !== null){
+            select.disabled = true;
+        }
     }
 
     outputAnswerScript(id) {
@@ -75,6 +83,9 @@ class Chat extends React.Component {
                     newScriptDivChilde = document.createElement("div");
                     newScriptDivChilde.className = "drop-down-list";
                     newScriptSelector = document.createElement("select");
+                    this.currentCountOption++;
+                    this.idOption++;
+                    newScriptSelector.id = `select-${this.idOption}`;
                     for (let option in dataPhrases[this.currentUserPhrase][id].answer[key]){
                         newOption = document.createElement("option");
                         newOption.innerHTML = dataPhrases[this.currentUserPhrase][id].answer[key][option];
@@ -181,7 +192,7 @@ class Chat extends React.Component {
         event.preventDefault(); // Prevents form resubmission
         const selectedId = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked').id;
         const selectedNext = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked').value;
-        this.pinUserChoice(dataPhrases[this.currentUserPhrase][selectedId].phrase);
+        this.pinChoice(dataPhrases[this.currentUserPhrase][selectedId].phrase);
         this.countScriptPhrase++;
         this.countUserPhrase++;
 

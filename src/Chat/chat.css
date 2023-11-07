@@ -198,6 +198,10 @@ option {
     text-align: center;
 }
 
+.modal>p {
+    line-height: 60px;
+}
+
 .overlay {
     position: fixed;
     top: 0;
