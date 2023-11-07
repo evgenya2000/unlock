@@ -86,9 +86,9 @@
     margin-bottom: 2%;
 }
 
-/* .option-user-phrase > .message {
-    width: 30%;
-} */
+.option-user-phrase>.message {
+    max-width: 80%;
+}
 
 .user-phrase .message {
     text-align: end;
@@ -128,15 +128,15 @@
     height: 70px;
 }
 
-.script-phrase-audio::-webkit-media-controls-time-remaining-display{
+.script-phrase-audio::-webkit-media-controls-time-remaining-display {
     display: none;
 }
 
-.script-phrase-audio::-webkit-media-controls-volume-control-container{
+.script-phrase-audio::-webkit-media-controls-volume-control-container {
     display: none;
 }
 
-.script-phrase-audio::-webkit-media-controls-fullscreen-button{
+.script-phrase-audio::-webkit-media-controls-fullscreen-button {
     display: none;
 }
 
@@ -153,7 +153,6 @@
     padding: 2% 4% 2% 4%;
     border-radius: 30px;
     background-color: var(--purple-pink-color);
-    /* box-sizing: border-box; */
 }
 
 select {
@@ -165,10 +164,122 @@ select {
     border: none;
     border-radius: 10px;
     padding: 5%;
-    /* box-sizing: border-box; */
 }
 
 option {
     font-family: 'CocoGothicAlternate';
     font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    select {
+        font-size: 20px;
+    }
+
+    option {
+        font-size: 14px;
+    }
+
+    .chat button {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .chat {
+        padding-left: 3%;
+    }
+
+    .message {
+        padding: 5%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .script-phrase .drop-down-list {
+        padding: 3% 5% 3% 5%;
+        max-width: 20%;
+    }
+
+    .script-phrase .script-phrase-audio {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    select {
+        font-size: 18px;
+    }
+
+    option {
+        font-size: 12px;
+    }
+
+    .chat button {
+        font-size: 18px;
+    }
+
+    .user-phrase>.message,
+    .script-phrase>.message {
+        max-width: 55%;
+    }
+
+    .script-phrase .script-phrase-img {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .message {
+        padding: 6%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .user-phrase>.message,
+    .script-phrase>.message {
+        max-width: 70%;
+        margin-bottom: 4%;
+    }
+
+    .option-user-phrase>.ball {
+        margin-right: 8%;
+    }
+
+    .script-phrase .script-phrase-audio {
+        margin-bottom: 4%;
+    }
+
+    .script-phrase .script-phrase-img {
+        max-width: 40%;
+        max-height: 40%;
+        margin-bottom: 4%;
+    }
+
+    .script-phrase .drop-down-list {
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    select {
+        font-size: 16px;
+    }
+
+    option {
+        font-size: 10px;
+    }
+
+    .chat button {
+        font-size: 16px;
+    }
+
+    .script-phrase .script-phrase-audio {
+        max-width: 95%;
+    }
+
+    .script-phrase .drop-down-list {
+        padding: 4% 6% 4% 6%;
+        max-width: 25%;
+    }
 }

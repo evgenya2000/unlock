@@ -1,4 +1,6 @@
 import React from "react";
+
+import "./chat.css";
 import dataPhrases from "./questions.json"
 class Chat extends React.Component {
     constructor(props) {

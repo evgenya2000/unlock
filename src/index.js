@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom/client';
 
 import "./resert.css";
 import "./index.css";
-import "./header.css";
-import "./footer.css";
-import "./page.css";
-import "./chat.css";
 
 import './fonts/CocoGothicAlternate-Bold.ttf';
 import './fonts/CocoGothicAlternate.ttf';
