@@ -6,12 +6,34 @@ import dataPhrases from "../questions.json"
 class Chat extends React.Component {
     constructor(props) {
         super(props);
+        this.pointsScored = 0;
+        this.preventUserPhrase = "...";
         this.currentUserPhrase = "firstPhrase";
         this.countUserPhrase = 0;
-        this.idOption = 0;
-        this.currentCountOption = 0;
+        this.countScriptPhrase = 0;
+        this.currentCountSelect = 0;
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleResult = this.handleResult.bind(this);
+    }
+
+    scoreRecord(id) {
+        this.pointsScored += dataPhrases[this.currentUserPhrase][id].wight;
+
+        let countSelect = this.currentCountSelect;
+        let selectElement = null;
+        let selectId, selectedIndex;
+        /* selectId = `${this.countScriptPhrase}-select-${dataPhrases[this.currentUserPhrase][id].answer[key][select].id}`
+            console.log(selectId); */
+        while (countSelect !== 0) {
+            selectId = `${this.countScriptPhrase}-select-${countSelect-1}`;
+            console.log(selectId);
+            selectElement = document.getElementById(selectId);
+
+            selectedIndex = selectElement.selectedIndex;
+            this.pointsScored += dataPhrases[this.preventUserPhrase][id].answer.selects[countSelect-1].options[selectedIndex].wight;
+            countSelect--;
+        }
+
     }
 
     /* Deleting a form and committing a response */
@@ -34,9 +56,11 @@ class Chat extends React.Component {
         parentDiv.appendChild(newDiv);
 
         /* Pin Script-phrase */
-        let select = document.getElementById(`select-${this.idOption}`);
-        if (select !== null){
+        let select = null;
+        while (this.currentCountSelect !== 0) {
+            select = document.getElementById(`${this.countScriptPhrase}-select-${this.currentCountSelect - 1}`);
             select.disabled = true;
+            this.currentCountSelect--;
         }
     }
 
@@ -52,6 +76,7 @@ class Chat extends React.Component {
         let newScriptAudio = null;
         let newScriptSelector = null;
         let newOption = null;
+        let selectId;
         for (let key in dataPhrases[this.currentUserPhrase][id].answer) {
             switch (key) {
                 case "message":
@@ -79,21 +104,25 @@ class Chat extends React.Component {
                     newScriptAudio.setAttribute('controls', 'controls');
                     newScriptDivParent.appendChild(newScriptAudio);
                     break;
-                case "options":
-                    newScriptDivChilde = document.createElement("div");
-                    newScriptDivChilde.className = "drop-down-list";
-                    newScriptSelector = document.createElement("select");
-                    this.currentCountOption++;
-                    this.idOption++;
-                    newScriptSelector.id = `select-${this.idOption}`;
-                    for (let option in dataPhrases[this.currentUserPhrase][id].answer[key]){
-                        newOption = document.createElement("option");
-                        newOption.innerHTML = dataPhrases[this.currentUserPhrase][id].answer[key][option];
-                        newScriptSelector.appendChild(newOption);
-                    }
+                case "selects":
+                    for (let select in dataPhrases[this.currentUserPhrase][id].answer[key]){
+                        newScriptDivChilde = document.createElement("div");
+                        newScriptDivChilde.className = "drop-down-list";
+                        newScriptSelector = document.createElement("select");
+                        selectId = `${this.countScriptPhrase}-select-${dataPhrases[this.currentUserPhrase][id].answer[key][select].id}`
+                        newScriptSelector.id = selectId;
+                        this.currentCountSelect++;
+                        
+                        for (let option_num in dataPhrases[this.currentUserPhrase][id].answer[key][select].options){
+                            newOption = document.createElement("option");
+                            newOption.innerHTML = dataPhrases[this.currentUserPhrase][id].answer[key][select].options[option_num].option;
+                            newOption.id = `${selectId}-option-${dataPhrases[this.currentUserPhrase][id].answer[key][select].options[option_num].id}`;
+                            newScriptSelector.appendChild(newOption);
+                        }
 
-                    newScriptDivChilde.appendChild(newScriptSelector);
-                    newScriptDivParent.appendChild(newScriptDivChilde);
+                        newScriptDivChilde.appendChild(newScriptSelector);
+                        newScriptDivParent.appendChild(newScriptDivChilde);
+                    }
                     break;
                 default:
                     break;
@@ -133,7 +162,8 @@ class Chat extends React.Component {
 
             newUserDivMessage = document.createElement("div");
             newUserDivMessage.className = "message";
-            newUserParagraph = document.createElement("p");
+            newUserParagraph = document.createElement("label");
+            newUserParagraph.htmlFor = dataPhrases[next][key].id;
             paragraphUserText = document.createTextNode(dataPhrases[next][key].phrase);
 
             newUserParagraph.appendChild(paragraphUserText);
@@ -164,7 +194,7 @@ class Chat extends React.Component {
         newModal.className = "modal";
         let paragraphText = document.createTextNode("Ваш уровень владения английским языком:");
         let lineBreak = document.createElement("br");
-        let a1Text = document.createTextNode("A1 (Beginner)");
+        let a1Text = document.createTextNode("A1 (Beginner)" + this.pointsScored);
 
         let paragraph = document.createElement("p");
         paragraph.appendChild(paragraphText);
@@ -192,18 +222,20 @@ class Chat extends React.Component {
         event.preventDefault(); // Prevents form resubmission
         const selectedId = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked').id;
         const selectedNext = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked').value;
-        this.pinChoice(dataPhrases[this.currentUserPhrase][selectedId].phrase);
-        this.countScriptPhrase++;
-        this.countUserPhrase++;
 
+        this.scoreRecord(selectedId);
+        this.pinChoice(dataPhrases[this.currentUserPhrase][selectedId].phrase);
+
+        this.countUserPhrase++;
+        this.countScriptPhrase++;
         this.outputAnswerScript(selectedId);
+        this.preventUserPhrase = this.currentUserPhrase;
         this.currentUserPhrase = selectedNext;
         if (this.currentUserPhrase !== "end") {
             this.updateUserOptions(selectedNext);
         } else {
             this.renderResultButton();
         }
-
     }
 
     firstPhrase() {
@@ -214,7 +246,7 @@ class Chat extends React.Component {
                     {dataPhrases.firstPhrase.map((option) => (
                         <div className="option-user-phrase" key={option.id}>
                             <input className="ball" type="radio" name={this.currentUserPhrase} id={option.id} value={option.next}/>
-                            <div className="message"><p>{option.phrase}</p></div>
+                            <div className="message"><label htmlFor={option.id}>{option.phrase}</label></div>
                         </div>
                     ))}
                 </form>

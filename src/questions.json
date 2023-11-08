@@ -5,9 +5,26 @@
       "phrase": "Hi! How are you?",
       "answer": {
         "img": "/resources/sad-smiley.png",
-        "audio": "/resources/Musica Paradiso - Harry Potter Main Theme.mp3"
+        "audio": "/resources/Musica Paradiso - Harry Potter Main Theme.mp3",
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "can", "wight": 1},
+              { "id": "1", "option": "not can", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "can", "wight": 1 },
+              { "id": "1", "option": "not can", "wight": 0 }
+            ]
+          }
+        ]
       },
-      "next": "secondPhrase"
+      "next": "secondPhrase",
+      "wight": 1
     },
     {
       "id": "1",
@@ -17,7 +34,8 @@
         "message": ["Great, I slept well, how are you?"],
         "audio": "/resources/Musica Paradiso - Harry Potter Main Theme.mp3"
       },
-      "next": "secondPhrase"
+      "next": "secondPhrase",
+      "wight": 1
     },
     {
       "id": "2",
@@ -26,7 +44,8 @@
         "message": ["Great, I slept well. Shall we go to the gym today?"],
         "img": "/resources/photo.png"
       },
-      "next": "thirdPhrase"
+      "next": "thirdPhrase",
+      "wight": 1
     }
   ],
   "secondPhrase": [
@@ -38,9 +57,25 @@
           "It will take place on October 29, at MSG Sphere. Afterwards there will be an incredible LED show with a secret guest band.",
           "Sphere .......... be bizarre and sublime — or just an ad. That's what makes it so Vegas."
         ],
-        "options": ["can", "can", "kuefhwuehfuwehfuih"]
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "can", "wight": 1 },
+              { "id": "1", "option": "not can", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "can", "wight": 1 },
+              { "id": "1", "option": "not can", "wight": 1 }
+            ]
+          }
+        ]
       },
-      "next": "thirdPhrase"
+      "next": "thirdPhrase",
+      "wight": 1
     },
     {
       "id": "1",
@@ -49,7 +84,8 @@
         "message": ["I'm happy for you, let's go to the gym today"],
         "img": "/resources/photo.png"
       },
-      "next": "thirdPhrase"
+      "next": "thirdPhrase",
+      "wight": 1
     },
     {
       "id": "2",
@@ -58,7 +94,8 @@
         "message": ["I'm happy for you, let's go to the gym today"],
         "img": "/resources/photo.png"
       },
-      "next": "thirdPhrase"
+      "next": "thirdPhrase",
+      "wight": 1
     }
   ],
   "thirdPhrase": [
@@ -69,7 +106,8 @@
         "message": ["Thanks, see you soon"],
         "img": "/resources/photo.png"
       },
-      "next": "end"
+      "next": "end",
+      "wight": 1
     }
   ]
 }
