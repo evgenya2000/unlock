@@ -1,0 +1,113 @@
+{
+  "firstPhrase": [
+    {
+      "id": "0",
+      "phrase": "Hi! How are you?",
+      "answer": {
+        "img": "/resources/sad-smiley.png",
+        "audio": "/resources/Musica Paradiso - Harry Potter Main Theme.mp3",
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "can", "wight": 1},
+              { "id": "1", "option": "not can", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "can", "wight": 1 },
+              { "id": "1", "option": "not can", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "secondPhrase",
+      "wight": 1
+    },
+    {
+      "id": "1",
+      "phrase": "Hi! How are you?",
+      "answer": {
+        "img": "/resources/photo.png",
+        "message": ["Great, I slept well, how are you?"],
+        "audio": "/resources/Musica Paradiso - Harry Potter Main Theme.mp3"
+      },
+      "next": "secondPhrase",
+      "wight": 1
+    },
+    {
+      "id": "2",
+      "phrase": "Hi! How are you?",
+      "answer": {
+        "message": ["Great, I slept well. Shall we go to the gym today?"],
+        "img": "/resources/photo.png"
+      },
+      "next": "thirdPhrase",
+      "wight": 1
+    }
+  ],
+  "secondPhrase": [
+    {
+      "id": "0",
+      "phrase": "I'm so happy for you, when is your award ceremony?",
+      "answer": {
+        "message": [
+          "It will take place on October 29, at MSG Sphere. Afterwards there will be an incredible LED show with a secret guest band.",
+          "Sphere .......... be bizarre and sublime — or just an ad. That's what makes it so Vegas."
+        ],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "can", "wight": 1 },
+              { "id": "1", "option": "not can", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "can", "wight": 1 },
+              { "id": "1", "option": "not can", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "thirdPhrase",
+      "wight": 1
+    },
+    {
+      "id": "1",
+      "phrase": "And I didn't get enough sleep",
+      "answer": {
+        "message": ["I'm happy for you, let's go to the gym today"],
+        "img": "/resources/photo.png"
+      },
+      "next": "thirdPhrase",
+      "wight": 1
+    },
+    {
+      "id": "2",
+      "phrase": "Oh, I'm so sorry for you",
+      "answer": {
+        "message": ["I'm happy for you, let's go to the gym today"],
+        "img": "/resources/photo.png"
+      },
+      "next": "thirdPhrase",
+      "wight": 1
+    }
+  ],
+  "thirdPhrase": [
+    {
+      "id": "0",
+      "phrase": "Okay, let's go",
+      "answer": {
+        "message": ["Thanks, see you soon"],
+        "img": "/resources/photo.png"
+      },
+      "next": "end",
+      "wight": 1
+    }
+  ]
+}

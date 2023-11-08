@@ -1,13 +1,15 @@
 import React from "react";
 
 import "./chat.css";
-import dataPhrases from "../questions.json"
+/* import dataPhrases from "../data/questions/questions-A-Mark.json"; */
 
 class Chat extends React.Component {
     constructor(props) {
         super(props);
+        this.dataPhrases = null;
         this.pointsScored = 0;
         this.preventUserPhrase = "...";
+        this.preventUserPhraseId = "0";
         this.currentUserPhrase = "firstPhrase";
         this.countUserPhrase = 0;
         this.countScriptPhrase = 0;
@@ -17,20 +19,17 @@ class Chat extends React.Component {
     }
 
     scoreRecord(id) {
-        this.pointsScored += dataPhrases[this.currentUserPhrase][id].wight;
+        this.pointsScored += this.dataPhrases[this.currentUserPhrase][id].wight;
 
         let countSelect = this.currentCountSelect;
         let selectElement = null;
         let selectId, selectedIndex;
-        /* selectId = `${this.countScriptPhrase}-select-${dataPhrases[this.currentUserPhrase][id].answer[key][select].id}`
-            console.log(selectId); */
         while (countSelect !== 0) {
-            selectId = `${this.countScriptPhrase}-select-${countSelect-1}`;
-            console.log(selectId);
+            selectId = `${this.countScriptPhrase}-select-${countSelect - 1}`;
             selectElement = document.getElementById(selectId);
 
             selectedIndex = selectElement.selectedIndex;
-            this.pointsScored += dataPhrases[this.preventUserPhrase][id].answer.selects[countSelect-1].options[selectedIndex].wight;
+            this.pointsScored += this.dataPhrases[this.preventUserPhrase][this.preventUserPhraseId].answer.selects[countSelect - 1].options[selectedIndex].wight;
             countSelect--;
         }
 
@@ -77,14 +76,14 @@ class Chat extends React.Component {
         let newScriptSelector = null;
         let newOption = null;
         let selectId;
-        for (let key in dataPhrases[this.currentUserPhrase][id].answer) {
+        for (let key in this.dataPhrases[this.currentUserPhrase][id].answer) {
             switch (key) {
                 case "message":
-                    for (let str in dataPhrases[this.currentUserPhrase][id].answer[key]) {
+                    for (let str in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
                         newScriptDivChilde = document.createElement("div");
                         newScriptDivChilde.className = "message";
                         newScriptParagraph = document.createElement("p");
-                        paragraphScriptText = document.createTextNode(dataPhrases[this.currentUserPhrase][id].answer[key][str]);
+                        paragraphScriptText = document.createTextNode(this.dataPhrases[this.currentUserPhrase][id].answer[key][str]);
                         newScriptParagraph.appendChild(paragraphScriptText);
                         newScriptDivChilde.appendChild(newScriptParagraph);
                         newScriptDivParent.appendChild(newScriptDivChilde);
@@ -93,30 +92,30 @@ class Chat extends React.Component {
                 case "img":
                     newScriptImg = document.createElement("img");
                     newScriptImg.className = "script-phrase-img";
-                    newScriptImg.src = dataPhrases[this.currentUserPhrase][id].answer[key];
+                    newScriptImg.src = this.dataPhrases[this.currentUserPhrase][id].answer[key];
                     newScriptImg.alt = "image for you";
                     newScriptDivParent.appendChild(newScriptImg);
                     break;
                 case "audio":
                     newScriptAudio = document.createElement("audio");
                     newScriptAudio.className = "script-phrase-audio";
-                    newScriptAudio.src = dataPhrases[this.currentUserPhrase][id].answer[key];
+                    newScriptAudio.src = this.dataPhrases[this.currentUserPhrase][id].answer[key];
                     newScriptAudio.setAttribute('controls', 'controls');
                     newScriptDivParent.appendChild(newScriptAudio);
                     break;
                 case "selects":
-                    for (let select in dataPhrases[this.currentUserPhrase][id].answer[key]){
+                    for (let select in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
                         newScriptDivChilde = document.createElement("div");
                         newScriptDivChilde.className = "drop-down-list";
                         newScriptSelector = document.createElement("select");
-                        selectId = `${this.countScriptPhrase}-select-${dataPhrases[this.currentUserPhrase][id].answer[key][select].id}`
+                        selectId = `${this.countScriptPhrase}-select-${this.dataPhrases[this.currentUserPhrase][id].answer[key][select].id}`
                         newScriptSelector.id = selectId;
                         this.currentCountSelect++;
-                        
-                        for (let option_num in dataPhrases[this.currentUserPhrase][id].answer[key][select].options){
+
+                        for (let option_num in this.dataPhrases[this.currentUserPhrase][id].answer[key][select].options) {
                             newOption = document.createElement("option");
-                            newOption.innerHTML = dataPhrases[this.currentUserPhrase][id].answer[key][select].options[option_num].option;
-                            newOption.id = `${selectId}-option-${dataPhrases[this.currentUserPhrase][id].answer[key][select].options[option_num].id}`;
+                            newOption.innerHTML = this.dataPhrases[this.currentUserPhrase][id].answer[key][select].options[option_num].option;
+                            newOption.id = `${selectId}-option-${this.dataPhrases[this.currentUserPhrase][id].answer[key][select].options[option_num].id}`;
                             newScriptSelector.appendChild(newOption);
                         }
 
@@ -149,7 +148,7 @@ class Chat extends React.Component {
         let paragraphUserText = null;
         let newUserDivMessage = null;
 
-        for (let key in dataPhrases[next]) {
+        for (let key in this.dataPhrases[next]) {
             newUserDivChilde = document.createElement("div");
             newUserDivChilde.className = "option-user-phrase";
 
@@ -157,14 +156,14 @@ class Chat extends React.Component {
             newInput.className = "ball";
             newInput.type = "radio";
             newInput.name = next;
-            newInput.id = dataPhrases[next][key].id;
-            newInput.value = dataPhrases[next][key].next;
+            newInput.id = this.dataPhrases[next][key].id;
+            newInput.value = this.dataPhrases[next][key].next;
 
             newUserDivMessage = document.createElement("div");
             newUserDivMessage.className = "message";
             newUserParagraph = document.createElement("label");
-            newUserParagraph.htmlFor = dataPhrases[next][key].id;
-            paragraphUserText = document.createTextNode(dataPhrases[next][key].phrase);
+            newUserParagraph.htmlFor = this.dataPhrases[next][key].id;
+            paragraphUserText = document.createTextNode(this.dataPhrases[next][key].phrase);
 
             newUserParagraph.appendChild(paragraphUserText);
             newUserDivMessage.appendChild(newUserParagraph);
@@ -201,7 +200,7 @@ class Chat extends React.Component {
         paragraph.appendChild(lineBreak);
         paragraph.appendChild(a1Text);
         newModal.appendChild(paragraph);
-        
+
         let parentDiv = document.getElementById("root");
         parentDiv.appendChild(newDiv);
         parentDiv.appendChild(newModal);
@@ -214,8 +213,8 @@ class Chat extends React.Component {
         newButton.textContent = "Show result";
 
         let parentDiv = document.getElementById("chat");
-        parentDiv.appendChild(newButton);     
-        parentDiv.scrollTop = parentDiv.scrollHeight; /* Scrolls down*/   
+        parentDiv.appendChild(newButton);
+        parentDiv.scrollTop = parentDiv.scrollHeight; /* Scrolls down*/
     }
 
     handleSubmit(event) {
@@ -224,12 +223,13 @@ class Chat extends React.Component {
         const selectedNext = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked').value;
 
         this.scoreRecord(selectedId);
-        this.pinChoice(dataPhrases[this.currentUserPhrase][selectedId].phrase);
+        this.pinChoice(this.dataPhrases[this.currentUserPhrase][selectedId].phrase);
 
         this.countUserPhrase++;
         this.countScriptPhrase++;
         this.outputAnswerScript(selectedId);
         this.preventUserPhrase = this.currentUserPhrase;
+        this.preventUserPhraseId = selectedId;
         this.currentUserPhrase = selectedNext;
         if (this.currentUserPhrase !== "end") {
             this.updateUserOptions(selectedNext);
@@ -239,13 +239,14 @@ class Chat extends React.Component {
     }
 
     firstPhrase() {
+        this.dataPhrases = require(`../data/questions/${this.props.file}`);
         this.countUserPhrase++;
         return (
             <div className="user-phrase" id={`user-phrase-${this.countUserPhrase}`}>
                 <form className="form-user-phrase" id={`form-user-phrase-${this.countUserPhrase}`}>
-                    {dataPhrases.firstPhrase.map((option) => (
+                    {this.dataPhrases.firstPhrase.map((option) => (
                         <div className="option-user-phrase" key={option.id}>
-                            <input className="ball" type="radio" name={this.currentUserPhrase} id={option.id} value={option.next}/>
+                            <input className="ball" type="radio" name={this.currentUserPhrase} id={option.id} value={option.next} />
                             <div className="message"><label htmlFor={option.id}>{option.phrase}</label></div>
                         </div>
                     ))}
