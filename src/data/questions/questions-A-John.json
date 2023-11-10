@@ -602,7 +602,7 @@
   "eleventhPhrase": [
     {
       "id": "0",
-      "phrase": "Nice! When have you visit them last time? What ..... you studying at your school?",
+      "phrase": "Nice! When have you visit them last time?",
       "answer": {
         "message": [
           "I ..... them in August.",
