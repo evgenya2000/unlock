@@ -604,7 +604,10 @@
       "id": "0",
       "phrase": "Nice! When have you visit them last time? What ..... you studying at your school?",
       "answer": {
-        "message": ["I ..... them in August.", "What ..... you studying at your school?"],
+        "message": [
+          "I ..... them in August.",
+          "What ..... you studying at your school?"
+        ],
         "selects": [
           {
             "id": "0",
@@ -631,7 +634,10 @@
       "id": "1",
       "phrase": "Nice! When did you visit them last time?",
       "answer": {
-        "message": ["I ..... them in August.", "What ..... you studying at your school?"],
+        "message": [
+          "I ..... them in August.",
+          "What ..... you studying at your school?"
+        ],
         "selects": [
           {
             "id": "0",
@@ -658,7 +664,10 @@
       "id": "2",
       "phrase": "Nice! When are you visit them last time?",
       "answer": {
-        "message": ["I ..... them in August.", "What ..... you studying at your school?"],
+        "message": [
+          "I ..... them in August.",
+          "What ..... you studying at your school?"
+        ],
         "selects": [
           {
             "id": "0",
@@ -746,7 +755,7 @@
       "id": "0",
       "phrase": "Mine, of course.",
       "answer": {
-        "audio":"/resources/haveyoueverbeentoaustralia.mp3"
+        "audio": "/resources/haveyoueverbeentoaustralia.mp3"
       },
       "next": "fourteenthPhrase",
       "wight": 1
@@ -755,7 +764,7 @@
       "id": "1",
       "phrase": "My, of course.",
       "answer": {
-        "audio":"/resources/haveyoueverbeentoaustralia.mp3"
+        "audio": "/resources/haveyoueverbeentoaustralia.mp3"
       },
       "next": "fourteenthPhrase",
       "wight": 0
@@ -764,7 +773,7 @@
       "id": "2",
       "phrase": "Our, for sure.",
       "answer": {
-        "audio":"/resources/haveyoueverbeentoaustralia.mp3"
+        "audio": "/resources/haveyoueverbeentoaustralia.mp3"
       },
       "next": "fourteenthPhrase",
       "wight": 0
@@ -775,8 +784,11 @@
       "id": "0",
       "phrase": " I don't know.",
       "answer": {
-        "message":["It's ..... country in the world!", "Sorry, I need to go now(( Have a nice day!"],
-        "selects":[
+        "message": [
+          "It's ..... country in the world!",
+          "Sorry, I need to go now(( Have a nice day!"
+        ],
+        "selects": [
           {
             "id": "0",
             "options": [
@@ -787,15 +799,18 @@
           }
         ]
       },
-      "next": "sixteenthPhrase",
+      "next": "fifteenthPhrase",
       "wight": 0
     },
     {
       "id": "1",
       "phrase": "It's great.",
       "answer": {
-        "message":["It's ..... country in the world!", "Sorry, I need to go now(( Have a nice day!"],
-        "selects":[
+        "message": [
+          "It's ..... country in the world!",
+          "Sorry, I need to go now(( Have a nice day!"
+        ],
+        "selects": [
           {
             "id": "0",
             "options": [
@@ -806,15 +821,18 @@
           }
         ]
       },
-      "next": "sixteenthPhrase",
+      "next": "fifteenthPhrase",
       "wight": 0
     },
     {
       "id": "2",
       "phrase": "No, I haven't",
       "answer": {
-        "message":["It's ..... country in the world!", "Sorry, I need to go now(( Have a nice day!"],
-        "selects":[
+        "message": [
+          "It's ..... country in the world!",
+          "Sorry, I need to go now(( Have a nice day!"
+        ],
+        "selects": [
           {
             "id": "0",
             "options": [
@@ -825,16 +843,16 @@
           }
         ]
       },
-      "next": "sixteenthPhrase",
+      "next": "fifteenthPhrase",
       "wight": 1
     }
   ],
-  "sixteenthPhrase": [
+  "fifteenthPhrase": [
     {
       "id": "0",
       "phrase": "See you soon!",
       "answer": {
-        "message":["Have a nice day!"]
+        "message": ["Have a nice day!"]
       },
       "next": "end",
       "wight": 1
@@ -843,7 +861,7 @@
       "id": "1",
       "phrase": "I'm too.",
       "answer": {
-        "message":["Have a nice day!"]
+        "message": ["Have a nice day!"]
       },
       "next": "end",
       "wight": 0
@@ -852,7 +870,7 @@
       "id": "2",
       "phrase": "Stop!",
       "answer": {
-        "message":["Have a nice day!"]
+        "message": ["Have a nice day!"]
       },
       "next": "end",
       "wight": 0
