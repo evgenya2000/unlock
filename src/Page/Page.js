@@ -1,7 +1,10 @@
 import React from "react";
 
 import "./page.css";
-import Chat from "./Chat";
+import Chat from "../Chat/Chat";
+import { levels } from "../data/Levels";
+import { personalities } from "../data/Personalities";
+import { question, warning } from "../data/HeaderPage";
 class Page extends React.Component {
     constructor(props) {
         super(props);
@@ -9,13 +12,39 @@ class Page extends React.Component {
             step: "q1"
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.name_test = "questions-";
     }
 
     handleSubmit(event) {
         event.preventDefault(); // Prevents form resubmission
-        this.setState({
-            step: this.state.step === "q1" ? "q2" : this.state.step === "q2" ? "chat" : "q1"
-        });
+        let input;
+        switch (this.state.step) {
+            case "q1":
+                input = document.querySelector('input[name=level]:checked');
+                if (input) {
+                    this.name_test += input.id[0] + "-";
+                    this.setState({
+                        step: "q2"
+                    });
+                }
+                else {
+                    alert(warning.q1);
+                }
+                break;
+            case "q2":
+                input = document.querySelector('input[name=human]:checked');
+                if (input) {
+                    this.name_test += input.id;
+                    this.setState({
+                        step: "chat"
+                    });
+                }
+                else {
+                    alert(warning.q2);
+                }
+                break;
+            default:
+        }
     }
 
     renderSteps() {
@@ -29,22 +58,13 @@ class Page extends React.Component {
     }
 
     renderForm1() {
-        const answers = [
-            { id: "A1", str: "A1 (Beginner)" },
-            { id: "A2", str: "A2 (Elementary English)" },
-            { id: "B1", str: "B1 (Intermediate English)" },
-            { id: "B2", str: "B2 (Upper-Intermediate English)" },
-            { id: "C1", str: "C1 (Advanced English)" },
-            { id: "C2", str: "C2 (Proficiency English)" },
-        ];
-
         return (
             <form id="form1">
-                {answers.map((answer) => (
-                    <div className="answer-wrapper" key={answer.id}>
+                {levels.map((level) => (
+                    <div className="answer-wrapper" key={level.id}>
                         <p className="answer">
-                            <input className="ball" id={answer.id} type="radio" name="level" value={answer.id} />
-                            <label htmlFor={answer.id}>{answer.str}</label>
+                            <input className="ball" id={level.id} type="radio" name="level" value={level.id} />
+                            <label htmlFor={level.id}>{level.str}</label>
                         </p>
                         <br />
                     </div>
@@ -54,25 +74,19 @@ class Page extends React.Component {
     }
 
     renderForm2() {
-        const options = [
-            { id: "a", src: "/resources/photo.png", name_age: "Mark, 35 year", profession: "policemen", description: "I love football, I don't like sweets and red shades. What I like about my job is investigation." },
-            { id: "b", src: "/resources/photo.png", name_age: "Mark, 35 year", profession: "policemen", description: "I love football, I don't like sweets and red shades. What I like about my job is investigation." },
-            { id: "c", src: "/resources/photo.png", name_age: "Mark, 35 year", profession: "policemen", description: "I love football, I don't like sweets and red shades. What I like about my job is investigation." }
-        ];
-
         return (
             <form id="form2">
                 <div className="options">
-                    {options.map((option) => (
-                        <div className="option" key={option.id}>
+                    {personalities.map((personality) => (
+                        <div className="option" key={personality.id}>
                             <div className="choice">
-                                <input className="ball" id={option.id} type="radio" name="human" value={option.id}></input>
-                                <img className="photo" src={option.src} alt="human"></img>
+                                <input className="ball" id={personality.id} type="radio" name="human" value={personality.id}></input>
+                                <img className="photo" src={personality.src} alt="human"></img>
                             </div>
                             <div className="label-column">
-                                <label className="name-age" htmlFor={option.id}>{option.name_age}</label>
-                                <label className="profession" htmlFor={option.id}>{option.profession}</label>
-                                <label className="description" htmlFor={option.id}>{option.description}</label>
+                                <label className="name-age" htmlFor={personality.id}>{personality.name_age}</label>
+                                <label className="profession" htmlFor={personality.id}>{personality.profession}</label>
+                                <label className="description" htmlFor={personality.id}>{personality.description}</label>
                             </div>
                         </div>
                     ))}
@@ -83,12 +97,6 @@ class Page extends React.Component {
     }
 
     renderContent() {
-        const question = {
-            "q1": "Выберите ваш уровень владения английским языком",
-            "q2": "Выберите с кем вам было бы интересно пообщаться",
-            "chat": "Давайте попробуем пообщаться в формате переписки с другом",
-        };
-
         switch (this.state.step) {
             case "q1":
                 return (
@@ -111,7 +119,7 @@ class Page extends React.Component {
                     <div className="content" id="content_chat">
                         <label className="question" id="question_chat">{question.chat}</label>
                         <br></br>
-                        <Chat/>
+                        <Chat file={this.name_test}/>
                     </div>);
             default: break;
         }

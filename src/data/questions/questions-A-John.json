@@ -1,0 +1,861 @@
+{
+  "...": [
+    {
+      "answer": {
+        "message": ["Hi! I'm John. How is life?"]
+      }
+    }
+  ],
+  "firstPhrase": [
+    {
+      "id": "0",
+      "phrase": "Hello! No, thank you.",
+      "answer": {
+        "message": ["Nice to ..... you."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "have", "wight": 0 },
+              { "id": "1", "option": "ask", "wight": 0 },
+              { "id": "2", "option": "meet", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "secondPhrase",
+      "wight": 0
+    },
+    {
+      "id": "1",
+      "phrase": "Hi! I'm at home.",
+      "answer": {
+        "message": ["Nice to ..... you."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "have", "wight": 0 },
+              { "id": "1", "option": "ask", "wight": 0 },
+              { "id": "2", "option": "meet", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "secondPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "Hi! Fine, thanks!",
+      "answer": {
+        "message": ["Nice to ..... you."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "have", "wight": 0 },
+              { "id": "1", "option": "ask", "wight": 0 },
+              { "id": "2", "option": "meet", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "secondPhrase",
+      "wight": 1
+    }
+  ],
+  "secondPhrase": [
+    {
+      "id": "0",
+      "phrase": "How are you?",
+      "answer": {
+        "message": ["I'm good! Where are you .....?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "on", "wight": 0 },
+              { "id": "1", "option": "with", "wight": 0 },
+              { "id": "2", "option": "from", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "thirdPhrase",
+      "wight": 1
+    },
+    {
+      "id": "1",
+      "phrase": "What is your name?",
+      "answer": {
+        "message": ["I'm good! Where are you .....?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "on", "wight": 0 },
+              { "id": "1", "option": "with", "wight": 0 },
+              { "id": "2", "option": "from", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "thirdPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "Who is it?",
+      "answer": {
+        "message": ["I'm good! Where are you .....?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "on", "wight": 0 },
+              { "id": "1", "option": "with", "wight": 0 },
+              { "id": "2", "option": "from", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "thirdPhrase",
+      "wight": 0
+    }
+  ],
+  "thirdPhrase": [
+    {
+      "id": "0",
+      "phrase": "I'am from Russia.",
+      "answer": {
+        "message": ["Cool! I'm from Australia.", "What do you do?"]
+      },
+      "next": "fourthPhrase",
+      "wight": 1
+    }
+  ],
+  "fourthPhrase": [
+    {
+      "id": "0",
+      "phrase": "I'm a student at an English school.",
+      "answer": {
+        "message": ["Great! I'm a student at university of Sydney)"]
+      },
+      "next": "fifthPhrase",
+      "wight": 1
+    },
+    {
+      "id": "1",
+      "phrase": "You're welcome.",
+      "answer": {
+        "message": ["Great! I'm a student at university of Sydney)"]
+      },
+      "next": "fifthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "I like pizza.",
+      "answer": {
+        "message": ["Great! I'm a student at university of Sydney)"]
+      },
+      "next": "fifthPhrase",
+      "wight": 0
+    }
+  ],
+  "fifthPhrase": [
+    {
+      "id": "0",
+      "phrase": "John is a manager.",
+      "answer": {
+        "message": ["What is your hobby?"]
+      },
+      "next": "sixthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "1",
+      "phrase": "John is a little boy.",
+      "answer": {
+        "message": ["What is your hobby?"]
+      },
+      "next": "sixthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "John isn't a doctor.",
+      "answer": {
+        "message": ["What is your hobby?"]
+      },
+      "next": "sixthPhrase",
+      "wight": 1
+    }
+  ],
+  "sixthPhrase": [
+    {
+      "id": "0",
+      "phrase": "I start music.",
+      "answer": {
+        "message": ["Really?? Look at my photo, haha"],
+        "img": "/resources/sad-smiley.png"
+      },
+      "next": "seventhPhrase",
+      "wight": 0
+    },
+    {
+      "id": "1",
+      "phrase": "I like music.",
+      "answer": {
+        "message": ["Really?? Look at my photo, haha"],
+        "img": "/resources/sad-smiley.png"
+      },
+      "next": "seventhPhrase",
+      "wight": 1
+    },
+    {
+      "id": "2",
+      "phrase": "I hate music.",
+      "answer": {
+        "message": ["Really?? Look at my photo, haha"],
+        "img": "/resources/sad-smiley.png"
+      },
+      "next": "seventhPhrase",
+      "wight": 0
+    }
+  ],
+  "seventhPhrase": [
+    {
+      "id": "0",
+      "phrase": "He playes the guitar.",
+      "answer": {
+        "message": ["..... you play the guitar?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "What", "wight": 0 },
+              { "id": "1", "option": "Can", "wight": 1 },
+              { "id": "2", "option": "Who", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "eighthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "1",
+      "phrase": "He plays the guitar.",
+      "answer": {
+        "message": ["..... you play the guitar?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "What", "wight": 0 },
+              { "id": "1", "option": "Can", "wight": 1 },
+              { "id": "2", "option": "Who", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "eighthPhrase",
+      "wight": 1
+    },
+    {
+      "id": "2",
+      "phrase": "He plais the guitar.",
+      "answer": {
+        "message": ["..... you play the guitar?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "What", "wight": 0 },
+              { "id": "1", "option": "Can", "wight": 1 },
+              { "id": "2", "option": "Who", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "eighthPhrase",
+      "wight": 0
+    }
+  ],
+  "eighthPhrase": [
+    {
+      "id": "0",
+      "phrase": "Yes, I am.",
+      "answer": {
+        "message": ["Awesome!"]
+      },
+      "next": "ninthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "1",
+      "phrase": "Yes, I do.",
+      "answer": {
+        "message": ["Awesome!"]
+      },
+      "next": "ninthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "Yes, I can.",
+      "answer": {
+        "message": ["Awesome!"]
+      },
+      "next": "ninthPhrase",
+      "wight": 1
+    }
+  ],
+  "ninthPhrase": [
+    {
+      "id": "0",
+      "phrase": "Do you like sports?",
+      "answer": {
+        "message": ["Yes! I like .....", "I ski ..... winter"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "skieng", "wight": 0 },
+              { "id": "1", "option": "skying", "wight": 0 },
+              { "id": "2", "option": "skiing", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "in", "wight": 1 },
+              { "id": "1", "option": "on", "wight": 0 },
+              { "id": "2", "option": "at", "wight": 0 }
+            ]
+          }
+        ],
+        "audio": "/resources/doyouskiinwinter.mp3"
+      },
+      "next": "tenthPhrase",
+      "wight": 1
+    },
+    {
+      "id": "1",
+      "phrase": "Is you like sports?",
+      "answer": {
+        "message": ["Yes! I like .....", "I ski ..... winter"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "skieng", "wight": 0 },
+              { "id": "1", "option": "skying", "wight": 0 },
+              { "id": "2", "option": "skiing", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "in", "wight": 1 },
+              { "id": "1", "option": "on", "wight": 0 },
+              { "id": "2", "option": "at", "wight": 0 }
+            ]
+          }
+        ],
+        "audio": "/resources/doyouskiinwinter.mp3"
+      },
+      "next": "tenthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "When you like sports?",
+      "answer": {
+        "message": ["Yes! I like .....", "I ski ..... winter"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "skieng", "wight": 0 },
+              { "id": "1", "option": "skying", "wight": 0 },
+              { "id": "2", "option": "skiing", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "in", "wight": 1 },
+              { "id": "1", "option": "on", "wight": 0 },
+              { "id": "2", "option": "at", "wight": 0 }
+            ]
+          }
+        ],
+        "audio": "/resources/doyouskiinwinter.mp3"
+      },
+      "next": "tenthPhrase",
+      "wight": 0
+    }
+  ],
+  "tenthPhrase": [
+    {
+      "id": "0",
+      "phrase": "No, I do.",
+      "answer": {
+        "img": "/resources/sad-smiley.png",
+        "message": [
+          "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often."
+        ],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "it", "wight": 0 },
+              { "id": "1", "option": "this", "wight": 1 },
+              { "id": "2", "option": "why", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "his", "wight": 0 },
+              { "id": "1", "option": "my", "wight": 1 },
+              { "id": "2", "option": "our", "wight": 0 }
+            ]
+          },
+          {
+            "id": "2",
+            "options": [
+              { "id": "0", "option": "father's", "wight": 1 },
+              { "id": "1", "option": "fathers", "wight": 0 },
+              { "id": "2", "option": "father'", "wight": 0 }
+            ]
+          },
+          {
+            "id": "3",
+            "options": [
+              { "id": "0", "option": "your", "wight": 0 },
+              { "id": "1", "option": "mine", "wight": 0 },
+              { "id": "2", "option": "her", "wight": 1 }
+            ]
+          },
+          {
+            "id": "4",
+            "options": [
+              {
+                "id": "0",
+                "option": "There is a table in the room.",
+                "wight": 1
+              },
+              {
+                "id": "1",
+                "option": "There isn't a dog in the photo.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "There are 5 people in the photo.",
+                "wight": 0
+              }
+            ]
+          }
+        ]
+      },
+      "next": "eleventhPhrase",
+      "wight": 1
+    },
+    {
+      "id": "1",
+      "phrase": "Who?",
+      "answer": {
+        "img": "/resources/sad-smiley.png",
+        "message": [
+          "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often."
+        ],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "it", "wight": 0 },
+              { "id": "1", "option": "this", "wight": 1 },
+              { "id": "2", "option": "why", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "his", "wight": 0 },
+              { "id": "1", "option": "my", "wight": 1 },
+              { "id": "2", "option": "our", "wight": 0 }
+            ]
+          },
+          {
+            "id": "2",
+            "options": [
+              { "id": "0", "option": "father's", "wight": 1 },
+              { "id": "1", "option": "fathers", "wight": 0 },
+              { "id": "2", "option": "father'", "wight": 0 }
+            ]
+          },
+          {
+            "id": "3",
+            "options": [
+              { "id": "0", "option": "your", "wight": 0 },
+              { "id": "1", "option": "mine", "wight": 0 },
+              { "id": "2", "option": "her", "wight": 1 }
+            ]
+          },
+          {
+            "id": "4",
+            "options": [
+              {
+                "id": "0",
+                "option": "There is a table in the room.",
+                "wight": 1
+              },
+              {
+                "id": "1",
+                "option": "There isn't a dog in the photo.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "There are 5 people in the photo.",
+                "wight": 0
+              }
+            ]
+          }
+        ]
+      },
+      "next": "eleventhPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "Sometimes",
+      "answer": {
+        "img": "/resources/sad-smiley.png",
+        "message": [
+          "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often."
+        ],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "it", "wight": 0 },
+              { "id": "1", "option": "this", "wight": 1 },
+              { "id": "2", "option": "why", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "his", "wight": 0 },
+              { "id": "1", "option": "my", "wight": 1 },
+              { "id": "2", "option": "our", "wight": 0 }
+            ]
+          },
+          {
+            "id": "2",
+            "options": [
+              { "id": "0", "option": "father's", "wight": 1 },
+              { "id": "1", "option": "fathers", "wight": 0 },
+              { "id": "2", "option": "father'", "wight": 0 }
+            ]
+          },
+          {
+            "id": "3",
+            "options": [
+              { "id": "0", "option": "your", "wight": 0 },
+              { "id": "1", "option": "mine", "wight": 0 },
+              { "id": "2", "option": "her", "wight": 1 }
+            ]
+          },
+          {
+            "id": "4",
+            "options": [
+              {
+                "id": "0",
+                "option": "There is a table in the room.",
+                "wight": 1
+              },
+              {
+                "id": "1",
+                "option": "There isn't a dog in the photo.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "There are 5 people in the photo.",
+                "wight": 0
+              }
+            ]
+          }
+        ]
+      },
+      "next": "eleventhPhrase",
+      "wight": 1
+    }
+  ],
+  "eleventhPhrase": [
+    {
+      "id": "0",
+      "phrase": "Nice! When have you visit them last time? What ..... you studying at your school?",
+      "answer": {
+        "message": ["I ..... them in August."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "visited", "wight": 1 },
+              { "id": "1", "option": "visitied", "wight": 0 },
+              { "id": "2", "option": "visityd", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "are", "wight": 1 },
+              { "id": "1", "option": "do", "wight": 0 },
+              { "id": "2", "option": "can", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "twelfthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "1",
+      "phrase": "Nice! When did you visit them last time?",
+      "answer": {
+        "message": ["I ..... them in August."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "visited", "wight": 1 },
+              { "id": "1", "option": "visitied", "wight": 0 },
+              { "id": "2", "option": "visityd", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "are", "wight": 1 },
+              { "id": "1", "option": "do", "wight": 0 },
+              { "id": "2", "option": "can", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "twelfthPhrase",
+      "wight": 1
+    },
+    {
+      "id": "2",
+      "phrase": "Nice! When are you visit them last time?",
+      "answer": {
+        "message": ["I ..... them in August."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "visited", "wight": 1 },
+              { "id": "1", "option": "visitied", "wight": 0 },
+              { "id": "2", "option": "visityd", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "are", "wight": 1 },
+              { "id": "1", "option": "do", "wight": 0 },
+              { "id": "2", "option": "can", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "twelfthPhrase",
+      "wight": 0
+    }
+  ],
+  "twelfthPhrase": [
+    {
+      "id": "0",
+      "phrase": "I do nothing",
+      "answer": {
+        "message": ["What is ..... - English or your language?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "easer", "wight": 0 },
+              { "id": "1", "option": "easyer", "wight": 0 },
+              { "id": "2", "option": "easier", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "thirteenthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "1",
+      "phrase": "I'm studying English words.",
+      "answer": {
+        "message": ["What is ..... - English or your language?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "easer", "wight": 0 },
+              { "id": "1", "option": "easyer", "wight": 0 },
+              { "id": "2", "option": "easier", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "thirteenthPhrase",
+      "wight": 1
+    },
+    {
+      "id": "2",
+      "phrase": "I'm having a shower.",
+      "answer": {
+        "message": ["What is ..... - English or your language?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "easer", "wight": 0 },
+              { "id": "1", "option": "easyer", "wight": 0 },
+              { "id": "2", "option": "easier", "wight": 1 }
+            ]
+          }
+        ]
+      },
+      "next": "thirteenthPhrase",
+      "wight": 0
+    }
+  ],
+  "thirteenthPhrase": [
+    {
+      "id": "0",
+      "phrase": "Mine, of course.",
+      "answer": {
+        "audio":"/resources/haveyoueverbeentoaustralia.mp3"
+      },
+      "next": "fourteenthPhrase",
+      "wight": 1
+    },
+    {
+      "id": "1",
+      "phrase": "My, of course.",
+      "answer": {
+        "audio":"/resources/haveyoueverbeentoaustralia.mp3"
+      },
+      "next": "fourteenthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "Our, for sure.",
+      "answer": {
+        "audio":"/resources/haveyoueverbeentoaustralia.mp3"
+      },
+      "next": "fourteenthPhrase",
+      "wight": 0
+    }
+  ],
+  "fourteenthPhrase": [
+    {
+      "id": "0",
+      "phrase": " I don't know.",
+      "answer": {
+        "message":["It's ..... country in the world!", "Sorry, I need to go now(( Have a nice day!"],
+        "selects":[
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "the best", "wight": 1 },
+              { "id": "1", "option": "best", "wight": 0 },
+              { "id": "2", "option": "the better", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "sixteenthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "1",
+      "phrase": "It's great.",
+      "answer": {
+        "message":["It's ..... country in the world!", "Sorry, I need to go now(( Have a nice day!"],
+        "selects":[
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "the best", "wight": 1 },
+              { "id": "1", "option": "best", "wight": 0 },
+              { "id": "2", "option": "the better", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "sixteenthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "No, I haven't",
+      "answer": {
+        "message":["It's ..... country in the world!", "Sorry, I need to go now(( Have a nice day!"],
+        "selects":[
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "the best", "wight": 1 },
+              { "id": "1", "option": "best", "wight": 0 },
+              { "id": "2", "option": "the better", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "sixteenthPhrase",
+      "wight": 1
+    }
+  ],
+  "sixteenthPhrase": [
+    {
+      "id": "0",
+      "phrase": "See you soon!",
+      "answer": {
+        "message":["Have a nice day!"]
+      },
+      "next": "end",
+      "wight": 1
+    },
+    {
+      "id": "1",
+      "phrase": "I'm too.",
+      "answer": {
+        "message":["Have a nice day!"]
+      },
+      "next": "end",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "Stop!",
+      "answer": {
+        "message":["Have a nice day!"]
+      },
+      "next": "end",
+      "wight": 0
+    }
+  ]
+}

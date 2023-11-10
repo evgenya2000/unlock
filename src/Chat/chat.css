@@ -12,6 +12,7 @@
     border: 2px solid var(--gray-color);
     overflow: auto;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .chat::-webkit-scrollbar {
@@ -68,6 +69,16 @@
     border: 0;
     border-radius: 30px;
     background-color: var(--purple-light-color);
+}
+
+.chat button:hover {
+    background-color: var(--purple-color);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.chat .result {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Styles for user*/
@@ -153,6 +164,7 @@
     padding: 2% 4% 2% 4%;
     border-radius: 30px;
     background-color: var(--purple-pink-color);
+    margin-bottom: 2%;
 }
 
 select {
@@ -171,17 +183,64 @@ option {
     font-size: 18px;
 }
 
+.modal {
+    font-family: 'CocoGothicAlternate-Bold';
+    font-size: 24px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    background-color: white;
+    z-index: 999;
+    border-radius: 30px;
+    padding: 4%;
+    text-align: center;
+}
+
+.modal>p {
+    line-height: 60px;
+}
+
+.modal>button {
+    font-family: "CocoGothicAlternate-Bold";
+    font-size: 24px;
+    color: var(--white-app-back-color);
+    text-align: center;
+    padding: 1% 8% 1% 8%;
+    height: auto;
+    width: auto;
+    margin-top: 4%;
+    border: 0;
+    border-radius: 30px;
+    background-color: var(--purple-light-color);
+}
+
+.modal>button:hover {
+    background-color: var(--purple-color);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+  
 @media screen and (max-width: 900px) {
-    select {
+    select, .chat button, .modal {
         font-size: 20px;
     }
 
     option {
         font-size: 14px;
-    }
-
-    .chat button {
-        font-size: 20px;
     }
 }
 
@@ -207,16 +266,12 @@ option {
 }
 
 @media screen and (max-width: 590px) {
-    select {
+    select, .chat button, .modal {
         font-size: 18px;
     }
 
     option {
         font-size: 12px;
-    }
-
-    .chat button {
-        font-size: 18px;
     }
 
     .user-phrase>.message,
@@ -262,16 +317,12 @@ option {
 }
 
 @media screen and (max-width: 375px) {
-    select {
+    select, .chat button, .modal {
         font-size: 16px;
     }
 
     option {
         font-size: 10px;
-    }
-
-    .chat button {
-        font-size: 16px;
     }
 
     .script-phrase .script-phrase-audio {
