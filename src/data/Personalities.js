@@ -1,5 +1,5 @@
 export const personalities = [
-    { id: "Mark", src: "/resources/photo.png", name_age: "Mark, 35 year", profession: "policemen", description: "I love football, I don't like sweets and red shades. What I like about my job is investigation." },
-    { id: "Fedya", src: "/resources/photo.png", name_age: "Fedya, 35 year", profession: "policemen", description: "I love football, I don't like sweets and red shades. What I like about my job is investigation." },
-    { id: "Senya", src: "/resources/photo.png", name_age: "Senya, 35 year", profession: "policemen", description: "I love football, I don't like sweets and red shades. What I like about my job is investigation." }
+    { id: "John", src: "/resources/photo.png", name_age: "John, 19 лет", profession: "учащийся 2 курса технологического университета", description: "Живет в общежитии в Австралии." },
+    { id: "Lisa", src: "/resources/photo.png", name_age: "Lisa, 24 года", profession: "выпускница медицинского университета", description: "Работает семейным врачом. Живет в США." },
+    { id: "Stewart", src: "/resources/photo.png", name_age: "Stewart, 35 лет", profession: "журналист", description: "Холост. Живет в Англии." }
 ];

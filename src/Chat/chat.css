@@ -195,13 +195,33 @@ option {
     background-color: white;
     z-index: 999;
     border-radius: 30px;
-    padding: 6%;
+    padding: 4%;
     text-align: center;
 }
 
 .modal>p {
     line-height: 60px;
 }
+
+.modal>button {
+    font-family: "CocoGothicAlternate-Bold";
+    font-size: 24px;
+    color: var(--white-app-back-color);
+    text-align: center;
+    padding: 1% 8% 1% 8%;
+    height: auto;
+    width: auto;
+    margin-top: 4%;
+    border: 0;
+    border-radius: 30px;
+    background-color: var(--purple-light-color);
+}
+
+.modal>button:hover {
+    background-color: var(--purple-color);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 .overlay {
     position: fixed;
@@ -211,7 +231,7 @@ option {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 998;
-  }
+}
 
   
 @media screen and (max-width: 900px) {

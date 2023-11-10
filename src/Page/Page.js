@@ -4,6 +4,7 @@ import "./page.css";
 import Chat from "../Chat/Chat";
 import { levels } from "../data/Levels";
 import { personalities } from "../data/Personalities";
+import { question, warning } from "../data/HeaderPage";
 class Page extends React.Component {
     constructor(props) {
         super(props);
@@ -27,7 +28,7 @@ class Page extends React.Component {
                     });
                 }
                 else {
-                    alert('Перед тем, как перейти к следующему этапу, выберите свой уровень английского языка');
+                    alert(warning.q1);
                 }
                 break;
             case "q2":
@@ -39,7 +40,7 @@ class Page extends React.Component {
                     });
                 }
                 else {
-                    alert('Перед тем, как перейти к следующему этапу, выберите человека, с которым вы хотели бы пообщаться');
+                    alert(warning.q2);
                 }
                 break;
             default:
@@ -96,12 +97,6 @@ class Page extends React.Component {
     }
 
     renderContent() {
-        const question = {
-            "q1": "Выберите ваш уровень владения английским языком",
-            "q2": "Выберите с кем вам было бы интересно пообщаться",
-            "chat": "Давайте попробуем пообщаться в формате переписки с другом",
-        };
-
         switch (this.state.step) {
             case "q1":
                 return (

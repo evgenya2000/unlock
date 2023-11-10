@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./chat.css";
-/* import dataPhrases from "../data/questions/questions-A-Mark.json"; */
+import { result } from "../data/Result";
 
 class Chat extends React.Component {
     constructor(props) {
@@ -16,6 +16,7 @@ class Chat extends React.Component {
         this.currentCountSelect = 0;
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleResult = this.handleResult.bind(this);
+        this.handleWebsite = this.handleWebsite.bind(this);
     }
 
     scoreRecord(id) {
@@ -186,20 +187,34 @@ class Chat extends React.Component {
         /* newUserDivParent.scrollIntoView({ behavior: 'smooth' }); */
     }
 
+    handleWebsite() {
+        window.open("https://vk.com/club219990486", "_blank");
+    }
+    
     handleResult() {
-        var newDiv = document.createElement("div");
+        let newDiv = document.createElement("div");
         newDiv.className = "overlay";
-        var newModal = document.createElement("div");
+        let newModal = document.createElement("div");
         newModal.className = "modal";
-        let paragraphText = document.createTextNode("Ваш уровень владения английским языком:");
+        let answer = "";
+        if (this.pointsScored >= 0) {
+            answer = result.A1;
+        }
+        let paragraphText = document.createTextNode(answer);
         let lineBreak = document.createElement("br");
-        let a1Text = document.createTextNode("A1 (Beginner)" + this.pointsScored);
+        let a1Text = document.createTextNode(result.defoult + this.pointsScored);
 
         let paragraph = document.createElement("p");
         paragraph.appendChild(paragraphText);
         paragraph.appendChild(lineBreak);
         paragraph.appendChild(a1Text);
         newModal.appendChild(paragraph);
+
+        let button = document.createElement("button");
+        button.className = "transition";
+        button.addEventListener('click', this.handleWebsite);
+        button.textContent = "Записаться на вводный урок";
+        newModal.appendChild(button);
 
         let parentDiv = document.getElementById("root");
         parentDiv.appendChild(newDiv);
@@ -238,8 +253,17 @@ class Chat extends React.Component {
         }
     }
 
-    firstPhrase() {
+    firstScriptPhrase() {
         this.dataPhrases = require(`../data/questions/${this.props.file}`);
+        return(<div className="script-phrase">
+                    <div className="message">
+                        <p>{this.dataPhrases["..."][0].answer.message[0]}</p>
+                    </div>
+                </div>
+        );
+    }
+
+    firstUserPhrase() {
         this.countUserPhrase++;
         return (
             <div className="user-phrase" id={`user-phrase-${this.countUserPhrase}`}>
@@ -260,7 +284,8 @@ class Chat extends React.Component {
     render() {
         return (
             <div className="chat" id="chat">
-                {this.firstPhrase()}
+                {this.firstScriptPhrase()}
+                {this.firstUserPhrase()}
             </div>
         );
     }

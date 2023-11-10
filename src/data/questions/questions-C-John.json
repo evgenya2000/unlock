@@ -1,4 +1,11 @@
 {
+  "...": [
+    {
+      "answer": {
+        "message": ["Hi! I’m John. Wanna chat?"]
+      }
+    }
+  ],
   "firstPhrase": [
     {
       "id": "0",
