@@ -61,12 +61,12 @@ class Page extends React.Component {
         return (
             <form id="form1">
                 {levels.map((level) => (
-                    <div className="answer-wrapper" key={level.id}>
-                        <p className="answer">
-                            <input className="ball" id={level.id} type="radio" name="level" value={level.id} />
-                            <label htmlFor={level.id}>{level.str}</label>
-                        </p>
-                        <br />
+                    <div className="answer">
+                        <input className="ball" id={level.id} type="radio" name="level" value={level.id} />
+                        <div className="label-levels">
+                            <label className="level" htmlFor={level.id}>{level.level}</label>
+                            <label className="str" htmlFor={level.id}>{level.str}</label>
+                        </div>
                     </div>
                 ))}
             </form>
@@ -119,7 +119,7 @@ class Page extends React.Component {
                     <div className="content" id="content_chat">
                         <label className="question" id="question_chat">{question.chat}</label>
                         <br></br>
-                        <Chat file={this.name_test}/>
+                        <Chat file={this.name_test} />
                     </div>);
             default: break;
         }
