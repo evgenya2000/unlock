@@ -604,7 +604,7 @@
       "id": "0",
       "phrase": "Nice! When have you visit them last time? What ..... you studying at your school?",
       "answer": {
-        "message": ["I ..... them in August."],
+        "message": ["I ..... them in August.", "What ..... you studying at your school?"],
         "selects": [
           {
             "id": "0",
@@ -631,7 +631,7 @@
       "id": "1",
       "phrase": "Nice! When did you visit them last time?",
       "answer": {
-        "message": ["I ..... them in August."],
+        "message": ["I ..... them in August.", "What ..... you studying at your school?"],
         "selects": [
           {
             "id": "0",
@@ -658,7 +658,7 @@
       "id": "2",
       "phrase": "Nice! When are you visit them last time?",
       "answer": {
-        "message": ["I ..... them in August."],
+        "message": ["I ..... them in August.", "What ..... you studying at your school?"],
         "selects": [
           {
             "id": "0",

@@ -133,7 +133,8 @@ class Chat extends React.Component {
         let parentDiv = document.getElementById("chat");
         parentDiv.appendChild(newScriptDivParent);
 
-        parentDiv.scrollTop = parentDiv.scrollHeight;
+        /* parentDiv.scrollTop = parentDiv.scrollHeight; */
+        newScriptDivParent.scrollIntoView({ behavior: 'smooth' });
     }
 
     updateUserOptions(next) {
