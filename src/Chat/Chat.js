@@ -37,20 +37,43 @@ class Chat extends React.Component {
     }
 
     /* Deleting a form and committing a response */
-    pinChoice(value) {
+    pinChoice(checkedId) {
         /* Pin User-phrase */
         const form = document.getElementById(`form-user-phrase-${this.countUserPhrase}`);
         form.remove();
         const button = document.getElementsByClassName('send')[0];
         button.remove();
 
+        let checkedPhrase = this.dataPhrases[this.currentUserPhrase][checkedId].phrase;
         var newDiv = document.createElement("div");
         newDiv.className = "message";
-        newDiv.id = "option-checked";
-        let newParagraph = document.createElement("p");
-        let paragraphText = document.createTextNode(value);
-        newParagraph.appendChild(paragraphText);
-        newDiv.appendChild(newParagraph);
+        let newParagraph = null;
+        let paragraphText =null;
+        if (this.dataPhrases[this.currentUserPhrase][checkedId].wight === 1) {
+            newDiv.id = "option-checked-true";
+            newParagraph = document.createElement("p");
+            paragraphText = document.createTextNode(checkedPhrase);
+            newParagraph.appendChild(paragraphText);
+            newDiv.appendChild(newParagraph);
+        } else {
+            newDiv.id = "option-checked-false";
+            let newParagraphFalse = document.createElement("p");
+            let paragraphFalseText = document.createTextNode(checkedPhrase);
+            newParagraphFalse.id = 'false-text';
+            newParagraphFalse.appendChild(paragraphFalseText);
+            newDiv.appendChild(newParagraphFalse);
+            let newParagraphTrue = document.createElement("p");
+            let truePhrase = "";
+            for (let id in this.dataPhrases[this.currentUserPhrase]) {
+                if (this.dataPhrases[this.currentUserPhrase][id].wight === 1){
+                    truePhrase = this.dataPhrases[this.currentUserPhrase][id].phrase;
+                    break;
+                }
+            }
+            let paragraphTrueText = document.createTextNode(truePhrase);
+            newParagraphTrue.appendChild(paragraphTrueText);
+            newDiv.appendChild(newParagraphTrue);
+        }
 
         let parentDiv = document.getElementById(`user-phrase-${this.countUserPhrase}`);
         parentDiv.appendChild(newDiv);
@@ -191,7 +214,7 @@ class Chat extends React.Component {
     handleWebsite() {
         window.open("https://vk.com/club219990486", "_blank");
     }
-    
+
     handleResult() {
         let newDiv = document.createElement("div");
         newDiv.className = "overlay";
@@ -241,7 +264,7 @@ class Chat extends React.Component {
             const selectedNext = selected.value;
 
             this.scoreRecord(selectedId);
-            this.pinChoice(this.dataPhrases[this.currentUserPhrase][selectedId].phrase);
+            this.pinChoice(selectedId);
 
             this.countUserPhrase++;
             this.countScriptPhrase++;
@@ -257,16 +280,16 @@ class Chat extends React.Component {
         } else {
             alert(warning.chat);
         }
-        
+
     }
 
     firstScriptPhrase() {
         this.dataPhrases = require(`../data/questions/${this.props.file}`);
-        return(<div className="script-phrase">
-                    <div className="message">
-                        <p>{this.dataPhrases["..."][0].answer.message[0]}</p>
-                    </div>
-                </div>
+        return (<div className="script-phrase">
+            <div className="message">
+                <p>{this.dataPhrases["..."][0].answer.message[0]}</p>
+            </div>
+        </div>
         );
     }
 

@@ -53,6 +53,7 @@
 
 .chat p {
     height: auto;
+    width: auto;
     word-wrap: break-word;
     display: inline-block;
 }
@@ -106,8 +107,18 @@
     background-color: var(--yellow-color);
 }
 
-#option-checked {
-    background-color: var(--gray-color);
+#option-checked-true {
+    background-color: var(--green-color);
+}
+
+#option-checked-false {
+    background-color: var(--red-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#false-text {
+    text-decoration-line: line-through;
 }
 
 /* Styles for script*/
