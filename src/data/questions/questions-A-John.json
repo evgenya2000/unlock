@@ -337,7 +337,7 @@
             ]
           }
         ],
-        "audio": "/resources/doyouskiinwinter.mp3"
+        "audio": "/resources/audio/doyouskiinwinter.mp3"
       },
       "next": "tenthPhrase",
       "wight": 1
@@ -365,7 +365,7 @@
             ]
           }
         ],
-        "audio": "/resources/doyouskiinwinter.mp3"
+        "audio": "/resources/audio/doyouskiinwinter.mp3"
       },
       "next": "tenthPhrase",
       "wight": 0
@@ -393,7 +393,7 @@
             ]
           }
         ],
-        "audio": "/resources/doyouskiinwinter.mp3"
+        "audio": "/resources/audio/doyouskiinwinter.mp3"
       },
       "next": "tenthPhrase",
       "wight": 0
@@ -755,7 +755,7 @@
       "id": "0",
       "phrase": "Mine, of course.",
       "answer": {
-        "audio": "/resources/haveyoueverbeentoaustralia.mp3"
+        "audio": "/resources/audio/haveyoueverbeentoaustralia.mp3"
       },
       "next": "fourteenthPhrase",
       "wight": 1
@@ -764,7 +764,7 @@
       "id": "1",
       "phrase": "My, of course.",
       "answer": {
-        "audio": "/resources/haveyoueverbeentoaustralia.mp3"
+        "audio": "/resources/audio/haveyoueverbeentoaustralia.mp3"
       },
       "next": "fourteenthPhrase",
       "wight": 0
@@ -773,7 +773,7 @@
       "id": "2",
       "phrase": "Our, for sure.",
       "answer": {
-        "audio": "/resources/haveyoueverbeentoaustralia.mp3"
+        "audio": "/resources/audio/haveyoueverbeentoaustralia.mp3"
       },
       "next": "fourteenthPhrase",
       "wight": 0

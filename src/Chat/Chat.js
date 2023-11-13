@@ -2,7 +2,7 @@ import React from "react";
 
 import "./chat.css";
 import { result } from "../data/Result";
-
+import { warning } from "../data/HeaderPage";
 class Chat extends React.Component {
     constructor(props) {
         super(props);
@@ -235,23 +235,29 @@ class Chat extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault(); // Prevents form resubmission
-        const selectedId = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked').id;
-        const selectedNext = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked').value;
+        const selected = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked');
+        if (selected) {
+            const selectedId = selected.id;
+            const selectedNext = selected.value;
 
-        this.scoreRecord(selectedId);
-        this.pinChoice(this.dataPhrases[this.currentUserPhrase][selectedId].phrase);
+            this.scoreRecord(selectedId);
+            this.pinChoice(this.dataPhrases[this.currentUserPhrase][selectedId].phrase);
 
-        this.countUserPhrase++;
-        this.countScriptPhrase++;
-        this.outputAnswerScript(selectedId);
-        this.preventUserPhrase = this.currentUserPhrase;
-        this.preventUserPhraseId = selectedId;
-        this.currentUserPhrase = selectedNext;
-        if (this.currentUserPhrase !== "end") {
-            this.updateUserOptions(selectedNext);
+            this.countUserPhrase++;
+            this.countScriptPhrase++;
+            this.outputAnswerScript(selectedId);
+            this.preventUserPhrase = this.currentUserPhrase;
+            this.preventUserPhraseId = selectedId;
+            this.currentUserPhrase = selectedNext;
+            if (this.currentUserPhrase !== "end") {
+                this.updateUserOptions(selectedNext);
+            } else {
+                this.renderResultButton();
+            }
         } else {
-            this.renderResultButton();
+            alert(warning.chat);
         }
+        
     }
 
     firstScriptPhrase() {
