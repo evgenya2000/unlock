@@ -199,7 +199,7 @@
       "phrase": "I start music.",
       "answer": {
         "message": ["Really?? Look at my photo, haha"],
-        "img": "/resources/sad-smiley.png"
+        "img": "/resources/img-tasks/guitar-player.jpg"
       },
       "next": "seventhPhrase",
       "wight": 0
@@ -209,7 +209,7 @@
       "phrase": "I like music.",
       "answer": {
         "message": ["Really?? Look at my photo, haha"],
-        "img": "/resources/sad-smiley.png"
+        "img": "/resources/img-tasks/guitar-player.jpg"
       },
       "next": "seventhPhrase",
       "wight": 1
@@ -219,7 +219,7 @@
       "phrase": "I hate music.",
       "answer": {
         "message": ["Really?? Look at my photo, haha"],
-        "img": "/resources/sad-smiley.png"
+        "img": "/resources/img-tasks/guitar-player.jpg"
       },
       "next": "seventhPhrase",
       "wight": 0
@@ -404,7 +404,7 @@
       "id": "0",
       "phrase": "No, I do.",
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-john.jpg",
         "message": [
           "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often."
         ],
@@ -470,7 +470,7 @@
       "id": "1",
       "phrase": "Who?",
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-john.jpg",
         "message": [
           "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often."
         ],
@@ -536,7 +536,7 @@
       "id": "2",
       "phrase": "Sometimes",
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-john.jpg",
         "message": [
           "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often."
         ],

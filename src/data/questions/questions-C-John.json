@@ -210,7 +210,7 @@
             ]
           }
         ],
-        "img":"/resources/img-tasks/family.jpg"
+        "img":"/resources/img-tasks/family-john.jpg"
       },
       "next": "sixthPhrase"
     },
@@ -238,7 +238,7 @@
             ]
           }
         ],
-        "img":"/resources/img-tasks/family.jpg"
+        "img":"/resources/img-tasks/family-john.jpg"
       },
       "next": "sixthPhrase"
     },
@@ -266,7 +266,7 @@
             ]
           }
         ],
-        "img":"/resources/img-tasks/family.jpg"
+        "img":"/resources/img-tasks/family-john.jpg"
       },
       "next": "sixthPhrase"
     }

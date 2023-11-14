@@ -382,7 +382,7 @@
       "phrase": "In the mountains.",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-john.jpg",
         "message": [
           "I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them",
           "I've been living in a hostel for a couple months now. Last time I saw my family was in September. .......... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"
@@ -465,7 +465,7 @@
       "phrase": "Yup, a lot of them)",
       "wight": 1,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-john.jpg",
         "message": [
           "I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them",
           "I've been living in a hostel for a couple months now. Last time I saw my family was in September. .......... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"
@@ -548,7 +548,7 @@
       "phrase": "Sure, in winter)",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-john.jpg",
         "message": [
           "I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them",
           "I've been living in a hostel for a couple months now. Last time I saw my family was in September. .......... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"
@@ -869,7 +869,7 @@
       "phrase": "Oh, could I see it?",
       "wight": 1,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/sad-smiley.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "fifteenthPhrase"
@@ -879,7 +879,7 @@
       "phrase": "Where?",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/sad-smiley.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "fifteenthPhrase"
@@ -889,7 +889,7 @@
       "phrase": "I don't think it's a nice idea.",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/sad-smiley.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "fifteenthPhrase"
