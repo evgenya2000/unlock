@@ -97,26 +97,8 @@
   "thirdPhrase": [
     {
       "id": "0",
-      "wight": 0,
+      "wight": null,
       "phrase": "I'm a Russian.",
-      "answer": {
-        "message": ["Cool! I'm from Australia)", "What do you do?"]
-      },
-      "next": "fourthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "I'm Russian.",
-      "wight": 1,
-      "answer": {
-        "message": ["Cool! I'm from Australia)", "What do you do?"]
-      },
-      "next": "fourthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "I'm from Russian.",
-      "wight": 0,
       "answer": {
         "message": ["Cool! I'm from Australia)", "What do you do?"]
       },
@@ -1050,7 +1032,7 @@
     {
       "id": "0",
       "phrase": "See you soon!",
-      "wight": 0,
+      "wight": 1,
       "answer": {
         "message": ["Have a nice day!"]
       },
@@ -1068,7 +1050,7 @@
     {
       "id": "2",
       "phrase": "Stop!",
-      "wight": 1,
+      "wight": 0,
       "answer": {
         "message": ["Have a nice day!"]
       },

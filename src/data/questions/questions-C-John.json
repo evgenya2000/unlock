@@ -2,119 +2,868 @@
   "...": [
     {
       "answer": {
-        "message": ["Hi! I’m John. Wanna chat?"]
+        "message": ["Hi! I'm John. Wanna chat?"]
       }
     }
   ],
   "firstPhrase": [
     {
       "id": "0",
-      "phrase": "Hi! How are you?",
+      "phrase": "What's cooking, good-looking?",
+      "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
-        "audio": "/resources/Musica Paradiso - Harry Potter Main Theme.mp3",
+        "message": ["Sweet! What do you do .....?"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "can", "wight": 1},
-              { "id": "1", "option": "not can", "wight": 0 }
-            ]
-          },
-          {
-            "id": "1",
-            "options": [
-              { "id": "0", "option": "can", "wight": 1 },
-              { "id": "1", "option": "not can", "wight": 0 }
+              { "id": "0", "option": "for a living", "wight": 1 },
+              { "id": "1", "option": "to live", "wight": 0 },
+              { "id": "2", "option": "to survive", "wight": 0 }
             ]
           }
         ]
       },
-      "next": "secondPhrase",
-      "wight": 1
+      "next": "secondPhrase"
     },
     {
       "id": "1",
-      "phrase": "Hi! How are you?",
+      "phrase": "Hi! It's been ages!",
+      "wight": 0,
       "answer": {
-        "img": "/resources/photo.png",
-        "message": ["Great, I slept well, how are you?"],
-        "audio": "/resources/Musica Paradiso - Harry Potter Main Theme.mp3"
+        "message": ["Sweet! What do you do .....?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "for a living", "wight": 1 },
+              { "id": "1", "option": "to live", "wight": 0 },
+              { "id": "2", "option": "to survive", "wight": 0 }
+            ]
+          }
+        ]
       },
-      "next": "secondPhrase",
-      "wight": 1
+      "next": "secondPhrase"
     },
     {
       "id": "2",
-      "phrase": "Hi! How are you?",
+      "phrase": "Hi! Would love to!",
+      "wight": 1,
       "answer": {
-        "message": ["Great, I slept well. Shall we go to the gym today?"],
-        "img": "/resources/photo.png"
+        "message": ["Sweet! What do you do .....?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "for a living", "wight": 1 },
+              { "id": "1", "option": "to live", "wight": 0 },
+              { "id": "2", "option": "to survive", "wight": 0 }
+            ]
+          }
+        ]
       },
-      "next": "thirdPhrase",
-      "wight": 1
+      "next": "secondPhrase"
     }
   ],
   "secondPhrase": [
     {
       "id": "0",
-      "phrase": "I'm so happy for you, when is your award ceremony?",
+      "phrase": "I'm a Jack of all trades.",
+      "wight": 1,
       "answer": {
-        "message": [
-          "It will take place on October 29, at MSG Sphere. Afterwards there will be an incredible LED show with a secret guest band.",
-          "Sphere .......... be bizarre and sublime — or just an ad. That's what makes it so Vegas."
-        ],
+        "message": ["Alright then, keep your secrets) Would you ..... if I send voice messages?"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "can", "wight": 1 },
-              { "id": "1", "option": "not can", "wight": 1 }
-            ]
-          },
-          {
-            "id": "1",
-            "options": [
-              { "id": "0", "option": "can", "wight": 1 },
-              { "id": "1", "option": "not can", "wight": 1 }
+              { "id": "0", "option": "like", "wight": 0 },
+              { "id": "1", "option": "agree", "wight": 0 },
+              { "id": "2", "option": "mind", "wight": 1 }
             ]
           }
-        ]
+        ],
+        "audio":"/resources/audio/john/I'minmysecondyearofSydneyuniversity,studyingtobecomeanITguy.mp3"
       },
-      "next": "thirdPhrase",
-      "wight": 1
+      "next": "thirdPhrase"
     },
     {
       "id": "1",
-      "phrase": "And I didn't get enough sleep",
+      "phrase": "I'm a bread-maker.",
+      "wight": 0,
       "answer": {
-        "message": ["I'm happy for you, let's go to the gym today"],
-        "img": "/resources/photo.png"
+        "message": ["Alright then, keep your secrets) Would you ..... if I send voice messages?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "like", "wight": 0 },
+              { "id": "1", "option": "agree", "wight": 0 },
+              { "id": "2", "option": "mind", "wight": 1 }
+            ]
+          }
+        ],
+        "audio":"/resources/audio/john/I'minmysecondyearofSydneyuniversity,studyingtobecomeanITguy.mp3"
       },
-      "next": "thirdPhrase",
-      "wight": 1
+      "next": "thirdPhrase"
     },
     {
       "id": "2",
-      "phrase": "Oh, I'm so sorry for you",
+      "phrase": "I'm a die hard.",
+      "wight": 0,
       "answer": {
-        "message": ["I'm happy for you, let's go to the gym today"],
-        "img": "/resources/photo.png"
+        "message": ["Alright then, keep your secrets) Would you ..... if I send voice messages?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "like", "wight": 0 },
+              { "id": "1", "option": "agree", "wight": 0 },
+              { "id": "2", "option": "mind", "wight": 1 }
+            ]
+          }
+        ],
+        "audio":"/resources/audio/john/I'minmysecondyearofSydneyuniversity,studyingtobecomeanITguy.mp3"
       },
-      "next": "thirdPhrase",
-      "wight": 1
+      "next": "thirdPhrase"
     }
   ],
   "thirdPhrase": [
     {
       "id": "0",
-      "phrase": "Okay, let's go",
+      "wight": 0,
+      "phrase": "Are you taking the course again?",
       "answer": {
-        "message": ["Thanks, see you soon"],
-        "img": "/resources/photo.png"
+        "audio":"/resources/audio/john/Haha,whoknowsImreallyintomystudies,butIstilltrynafindtimeforthefunstuff.mp3"
       },
-      "next": "end",
-      "wight": 1
+      "next": "fourthPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "Are you going to be the next Bill Gates?",
+      "wight": 1,
+      "answer": {
+        "audio":"/resources/audio/john/Haha,whoknowsImreallyintomystudies,butIstilltrynafindtimeforthefunstuff.mp3"
+      },
+      "next": "fourthPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "Oh, I can't believe you're there!",
+      "wight": 0,
+      "answer": {
+        "audio":"/resources/audio/john/Haha,whoknowsImreallyintomystudies,butIstilltrynafindtimeforthefunstuff.mp3"
+      },
+      "next": "fourthPhrase"
+    }
+  ],
+  "fourthPhrase": [
+    {
+      "id": "0",
+      "phrase": "Oh, and who is your staff?",
+      "wight": 0,
+      "answer": {
+        "audio":"/resources/audio/john/Ivebeentakingguitarlessons.Thathelpstochilloutalot.mp3"
+      },
+      "next": "fifthPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "Oh, and what have you been up to?",
+      "wight": 1,
+      "answer": {
+        "audio":"/resources/audio/john/Ivebeentakingguitarlessons.Thathelpstochilloutalot.mp3"
+      },
+      "next": "fifthPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "I see, and how can you fix that?",
+      "wight": 0,
+      "answer": {
+        "audio":"/resources/audio/john/Ivebeentakingguitarlessons.Thathelpstochilloutalot.mp3"
+      },
+      "next": "fifthPhrase"
+    }
+  ],
+  "fifthPhrase": [
+    {
+      "id": "0",
+      "phrase": "That must be tough to learn, right?",
+      "wight": 1,
+      "answer": {
+        "message": ["No, it's a piece of cake! I wish I ..... earlier. And I'm really thankful to my dad for ..... me"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "start", "wight": 0 },
+              { "id": "1", "option": "had started", "wight": 0 },
+              { "id": "2", "option": "started", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "help", "wight": 0 },
+              { "id": "1", "option": "guiding", "wight": 0 },
+              { "id": "2", "option": "having helped", "wight": 1 }
+            ]
+          }
+        ],
+        "img":"/resources/img-tasks/family.jpg"
+      },
+      "next": "sixthPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "Oh, I'm not a fan of music",
+      "wight": 0,
+      "answer": {
+        "message": ["No, it's a piece of cake! I wish I ..... earlier. And I'm really thankful to my dad for ..... me"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "start", "wight": 0 },
+              { "id": "1", "option": "had started", "wight": 0 },
+              { "id": "2", "option": "started", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "help", "wight": 0 },
+              { "id": "1", "option": "guiding", "wight": 0 },
+              { "id": "2", "option": "having helped", "wight": 1 }
+            ]
+          }
+        ],
+        "img":"/resources/img-tasks/family.jpg"
+      },
+      "next": "sixthPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "That's music for my ears!",
+      "wight": 0,
+      "answer": {
+        "message": ["No, it's a piece of cake! I wish I ..... earlier. And I'm really thankful to my dad for ..... me"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "start", "wight": 0 },
+              { "id": "1", "option": "had started", "wight": 0 },
+              { "id": "2", "option": "started", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "help", "wight": 0 },
+              { "id": "1", "option": "guiding", "wight": 0 },
+              { "id": "2", "option": "having helped", "wight": 1 }
+            ]
+          }
+        ],
+        "img":"/resources/img-tasks/family.jpg"
+      },
+      "next": "sixthPhrase"
+    }
+  ],
+  "sixthPhrase": [
+    {
+      "id": "0",
+      "phrase": "I'd like you to meet my family.",
+      "wight": 1,
+      "answer": {
+        "message": ["I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them", "I've been living in a hostel for a couple months now. Last time I saw my family was in September. .......... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "live", "wight": 0 },
+              { "id": "1", "option": "have been living", "wight": 1 },
+              { "id": "2", "option": "was living", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "seen", "wight": 0 },
+              { "id": "1", "option": "seed", "wight": 0 },
+              { "id": "2", "option": "saw", "wight": 1 }
+            ]
+          },
+          {
+            "id": "2",
+            "options": [
+              { "id": "0", "option": "reached", "wight": 1 },
+              { "id": "1", "option": "left", "wight": 0 },
+              { "id": "2", "option": "achieved", "wight": 0 }
+            ]
+          },
+          {
+            "id": "3",
+            "options": [
+              { "id": "0", "option": "went", "wight": 0 },
+              { "id": "1", "option": "had gone", "wight": 1 },
+              { "id": "2", "option": "had been going", "wight": 0 }
+            ]
+          },
+          {
+            "id": "4",
+            "options": [
+              { "id": "0", "option": "had been waiting", "wight": 1 },
+              { "id": "1", "option": "waited", "wight": 0 },
+              { "id": "2", "option": "had waited", "wight": 0 }
+            ]
+          },
+          {
+            "id": "5",
+            "options": [
+              { "id": "0", "option": "reasonably", "wight": 0 },
+              { "id": "1", "option": "eventually", "wight": 1 },
+              { "id": "2", "option": "happily", "wight": 0 }
+            ]
+          },
+          {
+            "id": "6",
+            "options": [
+              {
+                "id": "0",
+                "option": "I didn't wanna bother anybody, so I came on my own",
+                "wight": 0
+              },
+              {
+                "id": "1",
+                "option": "It was intended to be a surprise, so I didn't tell anybody a word about my visit",
+                "wight": 1
+              },
+              {
+                "id": "2",
+                "option": "I don't believe they'd brung me down",
+                "wight": 0
+              }
+            ]
+          }
+        ]
+      },
+      "next": "seventhPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "I'd want you to meet my family.",
+      "wight": 0,
+      "answer": {
+        "message": ["I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them", "I've been living in a hostel for a couple months now. Last time I saw my family was in September. .......... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "live", "wight": 0 },
+              { "id": "1", "option": "have been living", "wight": 1 },
+              { "id": "2", "option": "was living", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "seen", "wight": 0 },
+              { "id": "1", "option": "seed", "wight": 0 },
+              { "id": "2", "option": "saw", "wight": 1 }
+            ]
+          },
+          {
+            "id": "2",
+            "options": [
+              { "id": "0", "option": "reached", "wight": 1 },
+              { "id": "1", "option": "left", "wight": 0 },
+              { "id": "2", "option": "achieved", "wight": 0 }
+            ]
+          },
+          {
+            "id": "3",
+            "options": [
+              { "id": "0", "option": "went", "wight": 0 },
+              { "id": "1", "option": "had gone", "wight": 1 },
+              { "id": "2", "option": "had been going", "wight": 0 }
+            ]
+          },
+          {
+            "id": "4",
+            "options": [
+              { "id": "0", "option": "had been waiting", "wight": 1 },
+              { "id": "1", "option": "waited", "wight": 0 },
+              { "id": "2", "option": "had waited", "wight": 0 }
+            ]
+          },
+          {
+            "id": "5",
+            "options": [
+              { "id": "0", "option": "reasonably", "wight": 0 },
+              { "id": "1", "option": "eventually", "wight": 1 },
+              { "id": "2", "option": "happily", "wight": 0 }
+            ]
+          },
+          {
+            "id": "6",
+            "options": [
+              {
+                "id": "0",
+                "option": "I didn't wanna bother anybody, so I came on my own",
+                "wight": 0
+              },
+              {
+                "id": "1",
+                "option": "It was intended to be a surprise, so I didn't tell anybody a word about my visit",
+                "wight": 1
+              },
+              {
+                "id": "2",
+                "option": "I don't believe they'd brung me down",
+                "wight": 0
+              }
+            ]
+          }
+        ]
+      },
+      "next": "seventhPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "I want you to meet my family.",
+      "wight": 0,
+      "answer": {
+        "message": ["I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them", "I've been living in a hostel for a couple months now. Last time I saw my family was in September. .......... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "live", "wight": 0 },
+              { "id": "1", "option": "have been living", "wight": 1 },
+              { "id": "2", "option": "was living", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "seen", "wight": 0 },
+              { "id": "1", "option": "seed", "wight": 0 },
+              { "id": "2", "option": "saw", "wight": 1 }
+            ]
+          },
+          {
+            "id": "2",
+            "options": [
+              { "id": "0", "option": "reached", "wight": 1 },
+              { "id": "1", "option": "left", "wight": 0 },
+              { "id": "2", "option": "achieved", "wight": 0 }
+            ]
+          },
+          {
+            "id": "3",
+            "options": [
+              { "id": "0", "option": "went", "wight": 0 },
+              { "id": "1", "option": "had gone", "wight": 1 },
+              { "id": "2", "option": "had been going", "wight": 0 }
+            ]
+          },
+          {
+            "id": "4",
+            "options": [
+              { "id": "0", "option": "had been waiting", "wight": 1 },
+              { "id": "1", "option": "waited", "wight": 0 },
+              { "id": "2", "option": "had waited", "wight": 0 }
+            ]
+          },
+          {
+            "id": "5",
+            "options": [
+              { "id": "0", "option": "reasonably", "wight": 0 },
+              { "id": "1", "option": "eventually", "wight": 1 },
+              { "id": "2", "option": "happily", "wight": 0 }
+            ]
+          },
+          {
+            "id": "6",
+            "options": [
+              {
+                "id": "0",
+                "option": "I didn't wanna bother anybody, so I came on my own",
+                "wight": 0
+              },
+              {
+                "id": "1",
+                "option": "It was intended to be a surprise, so I didn't tell anybody a word about my visit",
+                "wight": 1
+              },
+              {
+                "id": "2",
+                "option": "I don't believe they'd brung me down",
+                "wight": 0
+              }
+            ]
+          }
+        ]
+      },
+      "next": "seventhPhrase"
+    }
+  ],
+  "seventhPhrase": [
+    {
+      "id": "0",
+      "phrase": "It's great that you look on the bright side.",
+      "wight": 1,
+      "answer": {
+      },
+      "next": "eighthPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "It's great that you look at the good side.",
+      "wight": 0,
+      "answer": {
+      },
+      "next": "eighthPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "It's great that you take advantage of it.",
+      "wight": 0,
+      "answer": {
+      },
+      "next": "eighthPhrase"
+    }
+  ],
+  "eighthPhrase": [
+    {
+      "id": "0",
+      "phrase": "If he had warned his parents, he wouldn't have waited for them",
+      "wight": 1,
+      "answer": {
+        "message": ["As soon as I ..... the midterm exam, I will go and see them again."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "passed", "wight": 0 },
+              { "id": "1", "option": "have passed", "wight": 1 },
+              { "id": "2", "option": "go through", "wight": 0 }
+            ]
+          }
+        ],
+        "audio": "/resources/audio/john/Actuallytheplaneticketsherecostanarmandaleg.mp3"
+      },
+      "next": "ninthPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "If he warned his parents, he wouldn't wait for them.",
+      "wight": 0,
+      "answer": {
+        "message": ["As soon as I ..... the midterm exam, I will go and see them again."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "passed", "wight": 0 },
+              { "id": "1", "option": "have passed", "wight": 1 },
+              { "id": "2", "option": "go through", "wight": 0 }
+            ]
+          }
+        ],
+        "audio": "/resources/audio/john/Actuallytheplaneticketsherecostanarmandaleg.mp3"
+      },
+      "next": "ninthPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "If he would warn his parents, he won't have to wait.",
+      "wight": 0,
+      "answer": {
+        "message": ["As soon as I ..... the midterm exam, I will go and see them again."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "passed", "wight": 0 },
+              { "id": "1", "option": "have passed", "wight": 1 },
+              { "id": "2", "option": "go through", "wight": 0 }
+            ]
+          }
+        ],
+        "audio": "/resources/audio/john/Actuallytheplaneticketsherecostanarmandaleg.mp3"
+      },
+      "next": "ninthPhrase"
+    }
+  ],
+  "ninthPhrase": [
+    {
+      "id": "0",
+      "phrase": "He can't travel by plane.",
+      "wight": 0,
+      "answer":{},
+      "next": "tenthPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "The plane tickets are really expensive.",
+      "wight": 1,
+      "answer":{},
+      "next": "tenthPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "The plane tickets are quite cheap.",
+      "wight": 0,
+      "answer":{
+
+      },
+      "next": "tenthPhrase"
+    }
+  ],
+  "tenthPhrase": [
+    {
+      "id": "0",
+      "phrase": "Can anyone give you a lift home?",
+      "wight": 1,
+      "answer": {
+        "audio":"/resources/audio/john/Idontknowyet,butIshouldveaskedmyfriendwhodrives.mp3"
+      },
+      "next": "eleventhPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "Can anyone take you down home?",
+      "wight": 0,
+      "answer": {
+        "audio":"/resources/audio/john/Idontknowyet,butIshouldveaskedmyfriendwhodrives.mp3"
+      },
+      "next": "eleventhPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "Can anyone pull you back home?",
+      "wight": 0,
+      "answer": {
+        "audio":"/resources/audio/john/Idontknowyet,butIshouldveaskedmyfriendwhodrives.mp3"
+      },
+      "next": "eleventhPhrase"
+    }
+  ],
+  "eleventhPhrase": [
+    {
+      "id": "0",
+      "wight": 0,
+      "phrase": "It's a bad idea to ask for help.",
+      "answer": {
+        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.Itmakesmecalmandputsallthestressaway.mp3"
+      },
+      "next": "twelfthPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "He has already asked his friend for help.",
+      "wight": 0,
+      "answer": {
+        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.Itmakesmecalmandputsallthestressaway.mp3"
+      },
+      "next": "twelfthPhrase"
+    },
+    {
+      "id": "2",
+      "wight": 1,
+      "phrase": "He doesn't understand why he didn't ask his friend for help.",
+      "answer": {
+        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.Itmakesmecalmandputsallthestressaway.mp3"
+      },
+      "next": "twelfthPhrase"
+    }
+  ],
+  "twelfthPhrase": [
+    {
+      "id": "0",
+      "phrase": "Oh, could I see it?",
+      "wight": 1,
+      "answer": {
+        "img": "/resources/sad-smiley.png",
+        "message": ["It's not finished… But it will be finished soon!"]
+      },
+      "next": "thirteenthPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "Where?",
+      "wight": 0,
+      "answer": {
+        "img": "/resources/sad-smiley.png",
+        "message": ["It's not finished… But it will be finished soon!"]
+      },
+      "next": "thirteenthPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "I don't think it's a nice idea.",
+      "wight": 0,
+      "answer": {
+        "img": "/resources/sad-smiley.png",
+        "message": ["It's not finished… But it will be finished soon!"]
+      },
+      "next": "thirteenthPhrase"
+    }
+  ],
+  "thirteenthPhrase": [
+    {
+      "id": "0",
+      "phrase": "John's going to complete it in a short time.",
+      "wight": 1,
+      "answer": {
+        "audio": "/resources/audio/ithinkillhavecompleteditbynextwednesday.mp3",
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": " The drawing will be finished on Wednesday",
+                "wight": 0
+              },
+              {
+                "id": "1",
+                "option": "The drawing will be finished before Wednesday",
+                "wight": 1
+              },
+              {
+                "id": "2",
+                "option": "The drawing will be finished after Wednesday",
+                "wight": 0
+              }
+            ]
+          }
+        ]
+      },
+      "next": "fourteenth"
+    },
+    {
+      "id": "1",
+      "phrase": "John doesn't know what else to draw.",
+      "wight": 0,
+      "answer": {
+        "audio": "/resources/audio/ithinkillhavecompleteditbynextwednesday.mp3",
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": " The drawing will be finished on Wednesday",
+                "wight": 0
+              },
+              {
+                "id": "1",
+                "option": "The drawing will be finished before Wednesday",
+                "wight": 1
+              },
+              {
+                "id": "2",
+                "option": "The drawing will be finished after Wednesday",
+                "wight": 0
+              }
+            ]
+          }
+        ]
+      },
+      "next": "fourteenth"
+    },
+    {
+      "id": "2",
+      "phrase": "John has given up drawing it.",
+      "wight": 0,
+      "answer": {
+        "audio": "/resources/audio/ithinkillhavecompleteditbynextwednesday.mp3",
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": " The drawing will be finished on Wednesday",
+                "wight": 0
+              },
+              {
+                "id": "1",
+                "option": "The drawing will be finished before Wednesday",
+                "wight": 1
+              },
+              {
+                "id": "2",
+                "option": "The drawing will be finished after Wednesday",
+                "wight": 0
+              }
+            ]
+          }
+        ]
+      },
+      "next": "fourteenth"
+    }
+  ],
+  "fourteenth": [
+    {
+      "id": "0",
+      "phrase": "That looks lit! Step on your toe!",
+      "wight": 0,
+      "answer": {
+        "message":["Thanks, mate!", "Oh, my apologizes, I have to head out now(( Got some things that I absolutely must do."]
+      },
+      "next": "fifteenth"
+    },
+    {
+      "id": "1",
+      "phrase": "That looks lit! Break your back!",
+      "wight": 0,
+      "answer": {
+        "message":["Thanks, mate!", "Oh, my apologizes, I have to head out now(( Got some things that I absolutely must do."]
+      },
+      "next": "fifteenth"
+    },
+    {
+      "id": "2",
+      "phrase": "That looks lit! Break a leg!",
+      "wight": 0,
+      "answer": {
+        "message":["Thanks, mate!", "Oh, my apologizes, I have to head out now(( Got some things that I absolutely must do."]
+      },
+      "next": "fifteenth"
+    }
+  ],
+  "fifteenth": [
+    {
+      "id": "0",
+      "phrase": "Show your best!",
+      "wight": 1,
+      "answer": {
+        "message": ["Have a nice day!"]
+      },
+      "next": "end"
+    },
+    {
+      "id": "1",
+      "phrase": "Break your back!",
+      "wight": 0,
+      "answer": {
+        "message": ["Have a nice day!"]
+      },
+      "next": "end"
+    },
+    {
+      "id": "2",
+      "phrase": "Hold it still!",
+      "wight": 0,
+      "answer": {
+        "message": ["Have a nice day!"]
+      },
+      "next": "end"
     }
   ]
 }

@@ -132,7 +132,7 @@
         "message": ["Cool! I'm from Australia.", "What do you do?"]
       },
       "next": "fourthPhrase",
-      "wight": 1
+      "wight": null
     }
   ],
   "fourthPhrase": [

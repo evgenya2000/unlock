@@ -20,7 +20,7 @@ class Chat extends React.Component {
     }
 
     scoreRecord(id) {
-        this.pointsScored += this.dataPhrases[this.currentUserPhrase][id].wight;
+        this.pointsScored += this.dataPhrases[this.currentUserPhrase][id].wight === null ? 0 : this.dataPhrases[this.currentUserPhrase][id].wight;
 
         let countSelect = this.currentCountSelect;
         let selectElement = null;
@@ -49,7 +49,7 @@ class Chat extends React.Component {
         newDiv.className = "message";
         let newParagraph = null;
         let paragraphText =null;
-        if (this.dataPhrases[this.currentUserPhrase][checkedId].wight === 1) {
+        if (this.dataPhrases[this.currentUserPhrase][checkedId].wight === 1 || this.dataPhrases[this.currentUserPhrase][checkedId].wight === null) {
             newDiv.id = "option-checked-true";
             newParagraph = document.createElement("p");
             paragraphText = document.createTextNode(checkedPhrase);
