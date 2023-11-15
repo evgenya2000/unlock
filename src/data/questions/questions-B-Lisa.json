@@ -111,7 +111,10 @@
       "phrase": "I'm a student at an English school.",
       "wight": 1,
       "answer": {
-        "message": ["Great! I'm a family doctor", "How do you like ..... your free time?"],
+        "message": [
+          "Great! I'm a family doctor",
+          "How do you like ..... your free time?"
+        ],
         "selects": [
           {
             "id": "0",
@@ -138,7 +141,10 @@
       "phrase": "I am at the computer.",
       "wight": 0,
       "answer": {
-        "message": ["Great! I'm a family doctor", "How do you like ..... your free time?"],
+        "message": [
+          "Great! I'm a family doctor",
+          "How do you like ..... your free time?"
+        ],
         "selects": [
           {
             "id": "0",
@@ -165,7 +171,10 @@
       "phrase": "I'm having a pizza.",
       "wight": 0,
       "answer": {
-        "message": ["Great! I'm a family doctor", "How do you like ..... your free time?"],
+        "message": [
+          "Great! I'm a family doctor",
+          "How do you like ..... your free time?"
+        ],
         "selects": [
           {
             "id": "0",
@@ -325,9 +334,21 @@
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "I'd like you to meet my family", "wight": 1 },
-              { "id": "1", "option": "I'd want you to meet my family", "wight": 0 },
-              { "id": "2", "option": "I want you to meet my family", "wight": 0 }
+              {
+                "id": "0",
+                "option": "I'd like you to meet my family",
+                "wight": 1
+              },
+              {
+                "id": "1",
+                "option": "I'd want you to meet my family",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "I want you to meet my family",
+                "wight": 0
+              }
             ]
           }
         ]
@@ -379,9 +400,21 @@
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "I'd like you to meet my family", "wight": 1 },
-              { "id": "1", "option": "I'd want you to meet my family", "wight": 0 },
-              { "id": "2", "option": "I want you to meet my family", "wight": 0 }
+              {
+                "id": "0",
+                "option": "I'd like you to meet my family",
+                "wight": 1
+              },
+              {
+                "id": "1",
+                "option": "I'd want you to meet my family",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "I want you to meet my family",
+                "wight": 0
+              }
             ]
           }
         ]
@@ -433,9 +466,21 @@
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "I'd like you to meet my family", "wight": 1 },
-              { "id": "1", "option": "I'd want you to meet my family", "wight": 0 },
-              { "id": "2", "option": "I want you to meet my family", "wight": 0 }
+              {
+                "id": "0",
+                "option": "I'd like you to meet my family",
+                "wight": 1
+              },
+              {
+                "id": "1",
+                "option": "I'd want you to meet my family",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "I want you to meet my family",
+                "wight": 0
+              }
             ]
           }
         ]
@@ -449,7 +494,9 @@
       "phrase": "Sweet! You look so likely!",
       "wight": 0,
       "answer": {
-        "message": ["Tell me about your language. It ..... be hard to learn, right?)"],
+        "message": [
+          "Tell me about your language. It ..... be hard to learn, right?)"
+        ],
         "selects": [
           {
             "id": "0",
@@ -468,7 +515,9 @@
       "phrase": "Sweet! You look so lovely!",
       "wight": 1,
       "answer": {
-        "message": ["Tell me about your language. It ..... be hard to learn, right?)"],
+        "message": [
+          "Tell me about your language. It ..... be hard to learn, right?)"
+        ],
         "selects": [
           {
             "id": "0",
@@ -487,7 +536,9 @@
       "phrase": "Sweet! You look so hard!",
       "wight": 0,
       "answer": {
-        "message": ["Tell me about your language. It ..... be hard to learn, right?)"],
+        "message": [
+          "Tell me about your language. It ..... be hard to learn, right?)"
+        ],
         "selects": [
           {
             "id": "0",
@@ -621,7 +672,10 @@
       "phrase": "If I was you, I have try anyway.",
       "wight": 0,
       "answer": {
-        "message": ["Maybe I could try again later", "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"],
+        "message": [
+          "Maybe I could try again later",
+          "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"
+        ],
         "selects": [
           {
             "id": "0",
@@ -659,12 +713,15 @@
             "id": "4",
             "options": [
               { "id": "0", "option": "She came back from Canada", "wight": 0 },
-              { "id": "1", "option": "She wants to see Canada soon", "wight": 0 },
+              {
+                "id": "1",
+                "option": "She wants to see Canada soon",
+                "wight": 0
+              },
               { "id": "2", "option": "She is in Canada now", "wight": 1 }
             ]
           }
-        ],
-        "audio": "/resources/audio/imalsotryingtosketchsomethingatthemoment.mp3"
+        ]
       },
       "next": "eleventhPhrase"
     },
@@ -673,7 +730,10 @@
       "phrase": "If I am you, I will try anyway.",
       "wight": 0,
       "answer": {
-        "message": ["Maybe I could try again later", "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"],
+        "message": [
+          "Maybe I could try again later",
+          "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"
+        ],
         "selects": [
           {
             "id": "0",
@@ -711,12 +771,15 @@
             "id": "4",
             "options": [
               { "id": "0", "option": "She came back from Canada", "wight": 0 },
-              { "id": "1", "option": "She wants to see Canada soon", "wight": 0 },
+              {
+                "id": "1",
+                "option": "She wants to see Canada soon",
+                "wight": 0
+              },
               { "id": "2", "option": "She is in Canada now", "wight": 1 }
             ]
           }
-        ],
-        "audio": "/resources/audio/imalsotryingtosketchsomethingatthemoment.mp3"
+        ]
       },
       "next": "eleventhPhrase"
     },
@@ -725,7 +788,10 @@
       "phrase": "If I were you, I would try anyway.",
       "wight": 1,
       "answer": {
-        "message": ["Maybe I could try again later", "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"],
+        "message": [
+          "Maybe I could try again later",
+          "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"
+        ],
         "selects": [
           {
             "id": "0",
@@ -763,12 +829,15 @@
             "id": "4",
             "options": [
               { "id": "0", "option": "She came back from Canada", "wight": 0 },
-              { "id": "1", "option": "She wants to see Canada soon", "wight": 0 },
+              {
+                "id": "1",
+                "option": "She wants to see Canada soon",
+                "wight": 0
+              },
               { "id": "2", "option": "She is in Canada now", "wight": 1 }
             ]
           }
-        ],
-        "audio": "/resources/audio/imalsotryingtosketchsomethingatthemoment.mp3"
+        ]
       },
       "next": "eleventhPhrase"
     }
@@ -778,8 +847,8 @@
       "id": "0",
       "wight": null,
       "phrase": "Oh, awesome! It's always amazing to travel!",
-      "answer":{
-        "audio":"/resources/audio/lisa/Imalsotryingtos.mp3"
+      "answer": {
+        "audio": "/resources/audio/lisa/Imalsotryingtos.mp3"
       },
       "next": "twelfthPhrase"
     }
@@ -822,14 +891,26 @@
       "phrase": "Lisa is going to complete it in a short time.",
       "wight": 1,
       "answer": {
-        "audio":"/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "audio": "/resources/audio/lisa/IthinkIllhaveco.mp3",
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "The drawing will be finished on Wednesday", "wight": 0 },
-              { "id": "1", "option": "The drawing will be finished before Wednesday", "wight": 1 },
-              { "id": "2", "option": "The drawing will be finished after Wednesday", "wight": 0 }
+              {
+                "id": "0",
+                "option": "The drawing will be finished on Wednesday",
+                "wight": 0
+              },
+              {
+                "id": "1",
+                "option": "The drawing will be finished before Wednesday",
+                "wight": 1
+              },
+              {
+                "id": "2",
+                "option": "The drawing will be finished after Wednesday",
+                "wight": 0
+              }
             ]
           }
         ]
@@ -841,14 +922,26 @@
       "phrase": "Lisa doesn't know what else to draw.",
       "wight": 0,
       "answer": {
-        "audio":"/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "audio": "/resources/audio/lisa/IthinkIllhaveco.mp3",
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "The drawing will be finished on Wednesday", "wight": 0 },
-              { "id": "1", "option": "The drawing will be finished before Wednesday", "wight": 1 },
-              { "id": "2", "option": "The drawing will be finished after Wednesday", "wight": 0 }
+              {
+                "id": "0",
+                "option": "The drawing will be finished on Wednesday",
+                "wight": 0
+              },
+              {
+                "id": "1",
+                "option": "The drawing will be finished before Wednesday",
+                "wight": 1
+              },
+              {
+                "id": "2",
+                "option": "The drawing will be finished after Wednesday",
+                "wight": 0
+              }
             ]
           }
         ]
@@ -860,14 +953,26 @@
       "phrase": "Lisa has given up drawing it.",
       "wight": 0,
       "answer": {
-        "audio":"/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "audio": "/resources/audio/lisa/IthinkIllhaveco.mp3",
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "The drawing will be finished on Wednesday", "wight": 0 },
-              { "id": "1", "option": "The drawing will be finished before Wednesday", "wight": 1 },
-              { "id": "2", "option": "The drawing will be finished after Wednesday", "wight": 0 }
+              {
+                "id": "0",
+                "option": "The drawing will be finished on Wednesday",
+                "wight": 0
+              },
+              {
+                "id": "1",
+                "option": "The drawing will be finished before Wednesday",
+                "wight": 1
+              },
+              {
+                "id": "2",
+                "option": "The drawing will be finished after Wednesday",
+                "wight": 0
+              }
             ]
           }
         ]
@@ -881,10 +986,7 @@
       "phrase": "That looks lit! Step on your toe!",
       "wight": 0,
       "answer": {
-        "message": [
-          "Thanks!",
-          "Oh, my apologies. I have to head out now(("
-        ]
+        "message": ["Thanks!", "Oh, my apologies. I have to head out now(("]
       },
       "next": "fifteenthPhrase"
     },
@@ -893,10 +995,7 @@
       "phrase": "That looks lit! Break your back!",
       "wight": 0,
       "answer": {
-        "message": [
-          "Thanks!",
-          "Oh, my apologies. I have to head out now(("
-        ]
+        "message": ["Thanks!", "Oh, my apologies. I have to head out now(("]
       },
       "next": "fifteenthPhrase"
     },
@@ -905,10 +1004,7 @@
       "phrase": "That looks lit! Break a leg!",
       "wight": 1,
       "answer": {
-        "message": [
-          "Thanks!",
-          "Oh, my apologies. I have to head out now(("
-        ]
+        "message": ["Thanks!", "Oh, my apologies. I have to head out now(("]
       },
       "next": "fifteenthPhrase"
     }

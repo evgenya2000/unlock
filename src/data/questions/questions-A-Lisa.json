@@ -506,7 +506,7 @@
   "eighthPhrase": [
     {
       "id": "0",
-      "phrase": "Me neither!",
+      "phrase": "I do nothing.",
       "wight": 0,
       "answer": {
         "message": ["When ..... you start learning English?"],
@@ -701,21 +701,13 @@
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "terrible", "wight": 0 },
-              { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
-            ]
-          },
-          {
-            "id": "5",
-            "options": [
               { "id": "0", "option": "am going to", "wight": 1 },
               { "id": "1", "option": "am want to", "wight": 0 },
               { "id": "2", "option": "am wanting to", "wight": 0 }
             ]
           },
           {
-            "id": "6",
+            "id": "5",
             "options": [
               { "id": "0", "option": "She enjoyed Canada", "wight": 1 },
               { "id": "1", "option": "She didn't come back from Canada", "wight": 0 },
@@ -771,21 +763,13 @@
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "terrible", "wight": 0 },
-              { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
-            ]
-          },
-          {
-            "id": "5",
-            "options": [
               { "id": "0", "option": "am going to", "wight": 1 },
               { "id": "1", "option": "am want to", "wight": 0 },
               { "id": "2", "option": "am wanting to", "wight": 0 }
             ]
           },
           {
-            "id": "6",
+            "id": "5",
             "options": [
               { "id": "0", "option": "She enjoyed Canada", "wight": 1 },
               { "id": "1", "option": "She didn't come back from Canada", "wight": 0 },
@@ -841,21 +825,13 @@
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "terrible", "wight": 0 },
-              { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
-            ]
-          },
-          {
-            "id": "5",
-            "options": [
               { "id": "0", "option": "am going to", "wight": 1 },
               { "id": "1", "option": "am want to", "wight": 0 },
               { "id": "2", "option": "am wanting to", "wight": 0 }
             ]
           },
           {
-            "id": "6",
+            "id": "5",
             "options": [
               { "id": "0", "option": "She enjoyed Canada", "wight": 1 },
               { "id": "1", "option": "She didn't come back from Canada", "wight": 0 },

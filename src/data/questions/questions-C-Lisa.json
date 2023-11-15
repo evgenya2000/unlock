@@ -2,24 +2,24 @@
   "...": [
     {
       "answer": {
-        "message": ["Hi! I'm Lisa. How is life?"]
+        "message": ["Hi! I'm John. Wanna chat?"]
       }
     }
   ],
   "firstPhrase": [
     {
       "id": "0",
-      "phrase": "Hello! No, thank you.",
+      "phrase": "What's cooking, good-looking?",
       "wight": 0,
       "answer": {
-        "message": ["Nice to ..... you."],
+        "message": ["Sweet! What do you do .....?"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "have", "wight": 0 },
-              { "id": "1", "option": "ask", "wight": 0 },
-              { "id": "2", "option": "meet", "wight": 1 }
+              { "id": "0", "option": "for a living", "wight": 1 },
+              { "id": "1", "option": "to live", "wight": 0 },
+              { "id": "2", "option": "to survive", "wight": 0 }
             ]
           }
         ]
@@ -28,17 +28,17 @@
     },
     {
       "id": "1",
-      "phrase": "Hi! I'm at home.",
+      "phrase": "Hi! It's been ages!",
       "wight": 0,
       "answer": {
-        "message": ["Nice to ..... you."],
+        "message": ["Sweet! What do you do .....?"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "have", "wight": 0 },
-              { "id": "1", "option": "ask", "wight": 0 },
-              { "id": "2", "option": "meet", "wight": 1 }
+              { "id": "0", "option": "for a living", "wight": 1 },
+              { "id": "1", "option": "to live", "wight": 0 },
+              { "id": "2", "option": "to survive", "wight": 0 }
             ]
           }
         ]
@@ -47,17 +47,17 @@
     },
     {
       "id": "2",
-      "phrase": "Hi! Fine, thanks!",
+      "phrase": "Hi! Would love to!",
       "wight": 1,
       "answer": {
-        "message": ["Nice to ..... you."],
+        "message": ["Sweet! What do you do .....?"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "have", "wight": 0 },
-              { "id": "1", "option": "ask", "wight": 0 },
-              { "id": "2", "option": "meet", "wight": 1 }
+              { "id": "0", "option": "for a living", "wight": 1 },
+              { "id": "1", "option": "to live", "wight": 0 },
+              { "id": "2", "option": "to survive", "wight": 0 }
             ]
           }
         ]
@@ -68,58 +68,61 @@
   "secondPhrase": [
     {
       "id": "0",
-      "phrase": "How are you?",
+      "phrase": "I'm a Jack of all trades.",
       "wight": 1,
       "answer": {
-        "message": ["I'm good! Where are you .....?"],
+        "message": ["Alright then, keep your secrets) Would you ..... if I send voice messages?"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "on", "wight": 0 },
-              { "id": "1", "option": "with", "wight": 0 },
-              { "id": "2", "option": "from", "wight": 1 }
+              { "id": "0", "option": "like", "wight": 0 },
+              { "id": "1", "option": "agree", "wight": 0 },
+              { "id": "2", "option": "mind", "wight": 1 }
             ]
           }
-        ]
+        ],
+        "audio":"/resources/audio/lisa/Imafamilydoctor,studyingtobecomeanITguy.mp3"
       },
       "next": "thirdPhrase"
     },
     {
       "id": "1",
-      "phrase": "What is your name?",
+      "phrase": "I'm a bread-maker.",
       "wight": 0,
       "answer": {
-        "message": ["I'm good! Where are you .....?"],
+        "message": ["Alright then, keep your secrets) Would you ..... if I send voice messages?"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "on", "wight": 0 },
-              { "id": "1", "option": "with", "wight": 0 },
-              { "id": "2", "option": "from", "wight": 1 }
+              { "id": "0", "option": "like", "wight": 0 },
+              { "id": "1", "option": "agree", "wight": 0 },
+              { "id": "2", "option": "mind", "wight": 1 }
             ]
           }
-        ]
+        ],
+        "audio":"/resources/audio/lisa/Imafamilydoctor,studyingtobecomeanITguy.mp3"
       },
       "next": "thirdPhrase"
     },
     {
       "id": "2",
-      "phrase": "Who is it?",
+      "phrase": "I'm a die hard.",
       "wight": 0,
       "answer": {
-        "message": ["I'm good! Where are you .....?"],
+        "message": ["Alright then, keep your secrets) Would you ..... if I send voice messages?"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "on", "wight": 0 },
-              { "id": "1", "option": "with", "wight": 0 },
-              { "id": "2", "option": "from", "wight": 1 }
+              { "id": "0", "option": "like", "wight": 0 },
+              { "id": "1", "option": "agree", "wight": 0 },
+              { "id": "2", "option": "mind", "wight": 1 }
             ]
           }
-        ]
+        ],
+        "audio":"/resources/audio/lisa/Imafamilydoctor,studyingtobecomeanITguy.mp3"
       },
       "next": "thirdPhrase"
     }
@@ -128,27 +131,27 @@
     {
       "id": "0",
       "wight": 0,
-      "phrase": "I am from Russia.",
+      "phrase": "Her work doesn't match her expectations she had at university.",
       "answer": {
-        "message": ["Cool! I'm from USA", "What do you do?"]
+        "audio":"/resources/audio/lisa/Imreallyintomyj.mp3"
       },
       "next": "fourthPhrase"
     },
     {
       "id": "1",
-      "phrase": "I am from Russia.",
-      "wight": 0,
+      "phrase": "Despite little experience, she shows her best at work.",
+      "wight": 1,
       "answer": {
-        "message": ["Cool! I'm from USA", "What do you do?"]
+        "audio":"/resources/audio/lisa/Imreallyintomyj.mp3"
       },
       "next": "fourthPhrase"
     },
     {
       "id": "2",
-      "phrase": "I am from Russia.",
+      "phrase": "She can't match professional criteria but tries hard",
       "wight": 0,
       "answer": {
-        "message": ["Cool! I'm from USA", "What do you do?"]
+        "audio":"/resources/audio/lisa/Imreallyintomyj.mp3"
       },
       "next": "fourthPhrase"
     }
@@ -156,58 +159,28 @@
   "fourthPhrase": [
     {
       "id": "0",
-      "phrase": "I'm a student at an English school.",
-      "wight": 1,
+      "phrase": "Oh, and who is your staff?",
+      "wight": 0,
       "answer": {
-        "message": ["Great! I'm a family doctor", "What is your hobby?"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "Lisa has a family", "wight": 0 },
-              { "id": "1", "option": "Lisa doesn't work", "wight": 0 },
-              { "id": "2", "option": "Lisa works with people", "wight": 1 }
-            ]
-          }
-        ]
+        "audio":"/resources/audio/lisa/Ivebeenlearningt.Thathelpstochilloutalot.mp3"
       },
       "next": "fifthPhrase"
     },
     {
       "id": "1",
-      "phrase": "You're welcome.",
-      "wight": 0,
+      "phrase": "Oh, and what have you been up to?",
+      "wight": 1,
       "answer": {
-        "message": ["Great! I'm a family doctor", "What is your hobby?"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "Lisa has a family", "wight": 0 },
-              { "id": "1", "option": "Lisa doesn't work", "wight": 0 },
-              { "id": "2", "option": "Lisa works with people", "wight": 1 }
-            ]
-          }
-        ]
+        "audio":"/resources/audio/lisa/Ivebeenlearningt.Thathelpstochilloutalot.mp3"
       },
       "next": "fifthPhrase"
     },
     {
       "id": "2",
-      "phrase": "I like a pizza.",
+      "phrase": "I see, and how can you fix that?",
       "wight": 0,
       "answer": {
-        "message": ["Great! I'm a family doctor", "What is your hobby?"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "Lisa has a family", "wight": 0 },
-              { "id": "1", "option": "Lisa doesn't work", "wight": 0 },
-              { "id": "2", "option": "Lisa works with people", "wight": 1 }
-            ]
-          }
-        ]
+        "audio":"/resources/audio/lisa/Ivebeenlearningt.Thathelpstochilloutalot.mp3"
       },
       "next": "fifthPhrase"
     }
@@ -215,58 +188,85 @@
   "fifthPhrase": [
     {
       "id": "0",
-      "phrase": "I start music.",
-      "wight": 0,
+      "phrase": "That must be tough to learn, right?",
+      "wight": 1,
       "answer": {
-        "message": ["Oh, and I love cinema."],
+        "message": ["No, it's a piece of cake! I wish I ..... earlier. And I'm really thankful to my dad for ..... me"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "She watchs movies.", "wight": 0 },
-              { "id": "1", "option": "She watches movies.", "wight": 1 },
-              { "id": "2", "option": "She watchies movies.", "wight": 0 }
+              { "id": "0", "option": "start", "wight": 0 },
+              { "id": "1", "option": "had started", "wight": 0 },
+              { "id": "2", "option": "started", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "help", "wight": 0 },
+              { "id": "1", "option": "guiding", "wight": 0 },
+              { "id": "2", "option": "having helped", "wight": 1 }
             ]
           }
-        ]
+        ],
+        "img":"/resources/img-tasks/family-john.jpg"
       },
       "next": "sixthPhrase"
     },
     {
       "id": "1",
-      "phrase": "I enjoy music.",
-      "wight": 1,
+      "phrase": "Oh, I'm not a fan of mountains",
+      "wight": 0,
       "answer": {
-        "message": ["Oh, and I love cinema."],
+        "message": ["No, it's a piece of cake! I wish I ..... earlier. And I'm really thankful to my dad for ..... me"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "She watchs movies.", "wight": 0 },
-              { "id": "1", "option": "She watches movies.", "wight": 1 },
-              { "id": "2", "option": "She watchies movies.", "wight": 0 }
+              { "id": "0", "option": "start", "wight": 0 },
+              { "id": "1", "option": "had started", "wight": 0 },
+              { "id": "2", "option": "started", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "help", "wight": 0 },
+              { "id": "1", "option": "guiding", "wight": 0 },
+              { "id": "2", "option": "having helped", "wight": 1 }
             ]
           }
-        ]
+        ],
+        "img":"/resources/img-tasks/family-john.jpg"
       },
       "next": "sixthPhrase"
     },
     {
       "id": "2",
-      "phrase": "I hate music.",
+      "phrase": "Probably it's time to stop…",
       "wight": 0,
       "answer": {
-        "message": ["Oh, and I love cinema."],
+        "message": ["No, it's a piece of cake! I wish I ..... earlier. And I'm really thankful to my dad for ..... me"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "She watchs movies.", "wight": 0 },
-              { "id": "1", "option": "She watches movies.", "wight": 1 },
-              { "id": "2", "option": "She watchies movies.", "wight": 0 }
+              { "id": "0", "option": "start", "wight": 0 },
+              { "id": "1", "option": "had started", "wight": 0 },
+              { "id": "2", "option": "started", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "help", "wight": 0 },
+              { "id": "1", "option": "guiding", "wight": 0 },
+              { "id": "2", "option": "having helped", "wight": 1 }
             ]
           }
-        ]
+        ],
+        "img":"/resources/img-tasks/family-john.jpg"
       },
       "next": "sixthPhrase"
     }
@@ -274,85 +274,54 @@
   "sixthPhrase": [
     {
       "id": "0",
-      "phrase": "Awesome! Do you like sports?",
-      "wight": 1,
+      "phrase": "Cool! Do you live with your parents?",
+      "wight": null,
       "answer": {
-        "message": ["Yes! I like .....", "I ski ..... winter"],
+        "img":"/resources/img-tasks/family-lisa.jpg",
+        "message": ["No, I live with my husband, Richard, and my little sweetie Tom. Look at this cutie!", "But I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"
+      ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "skieng", "wight": 0 },
-              { "id": "1", "option": "skying", "wight": 0 },
-              { "id": "2", "option": "skiing", "wight": 1 }
+              { "id": "0", "option": "live", "wight": 0 },
+              { "id": "1", "option": "have lived", "wight": 0 },
+              { "id": "2", "option": "have been living", "wight": 1 }
             ]
           },
           {
             "id": "1",
             "options": [
-              { "id": "0", "option": "in", "wight": 1 },
-              { "id": "1", "option": "on", "wight": 0 },
-              { "id": "2", "option": "at", "wight": 0 }
-            ]
-          }
-        ],
-        "audio": "/resources/audio/lisa/Doyouskiinwinter.mp3"
-      },
-      "next": "seventhPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "Awesome! Is you like sports?",
-      "wight": 0,
-      "answer": {
-        "message": ["Yes! I like .....", "I ski ..... winter"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "skieng", "wight": 0 },
-              { "id": "1", "option": "skying", "wight": 0 },
-              { "id": "2", "option": "skiing", "wight": 1 }
+              { "id": "0", "option": "had never been", "wight": 1 },
+              { "id": "1", "option": "had always been", "wight": 0 },
+              { "id": "2", "option": "had always wanted", "wight": 0 }
             ]
           },
           {
-            "id": "1",
+            "id": "2",
             "options": [
-              { "id": "0", "option": "in", "wight": 1 },
-              { "id": "1", "option": "on", "wight": 0 },
-              { "id": "2", "option": "at", "wight": 0 }
-            ]
-          }
-        ],
-        "audio": "/resources/audio/lisa/Doyouskiinwinter.mp3"
-      },
-      "next": "seventhPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "Awesome! When you like sports?",
-      "wight": 0,
-      "answer": {
-        "message": ["Yes! I like .....", "I ski ..... winter"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "skieng", "wight": 0 },
-              { "id": "1", "option": "skying", "wight": 0 },
-              { "id": "2", "option": "skiing", "wight": 1 }
+              { "id": "0", "option": "would like", "wight": 0 },
+              { "id": "1", "option": "had been waiting", "wight": 1 },
+              { "id": "2", "option": "had tried", "wight": 0 }
             ]
           },
           {
-            "id": "1",
+            "id": "3",
             "options": [
-              { "id": "0", "option": "in", "wight": 1 },
-              { "id": "1", "option": "on", "wight": 0 },
-              { "id": "2", "option": "at", "wight": 0 }
+              { "id": "0", "option": "visiting", "wight": 1 },
+              { "id": "1", "option": "visit", "wight": 0 },
+              { "id": "2", "option": "see", "wight": 0 }
+            ]
+          },
+          {
+            "id": "4",
+            "options": [
+              { "id": "0", "option": "She came back from Canada.", "wight": 0 },
+              { "id": "1", "option": "She wants to see Canada soon.", "wight": 0 },
+              { "id": "2", "option": "She is in Canada now.", "wight": 1 }
             ]
           }
-        ],
-        "audio": "/resources/audio/lisa/Doyouskiinwinter.mp3"
+        ]
       },
       "next": "seventhPhrase"
     }
@@ -360,163 +329,21 @@
   "seventhPhrase": [
     {
       "id": "0",
-      "phrase": "No, I do",
-      "wight": 0,
+      "phrase": "Oh, awesome! It's always amazing to travel!",
+      "wight": null,
       "answer": {
-        "img": "/resources/sad-smiley.png",
-        "message": [
-          ".... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?"
-        ],
-        "selects": [
+        "message":["As soon as my next vacation ....., I will visit it again with my family."],
+        "selects":[
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "it", "wight": 0 },
-              { "id": "1", "option": "this", "wight": 1 },
-              { "id": "2", "option": "why", "wight": 0 }
-            ]
-          },
-          {
-            "id": "1",
-            "options": [
-              { "id": "0", "option": "his", "wight": 0 },
-              { "id": "1", "option": "my", "wight": 1 },
-              { "id": "2", "option": "our", "wight": 0 }
-            ]
-          },
-          {
-            "id": "2",
-            "options": [
-              { "id": "0", "option": "son's", "wight": 1 },
-              { "id": "1", "option": "sons", "wight": 0 },
-              { "id": "2", "option": "sons'", "wight": 0 }
-            ]
-          },
-          {
-            "id": "3",
-            "options": [
-              { "id": "0", "option": "are", "wight": 1 },
-              { "id": "1", "option": "do", "wight": 0 },
-              { "id": "2", "option": "can", "wight": 0 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              { "id": "0", "option": "She has children", "wight": 0 },
-              { "id": "1", "option": "She's divorced", "wight": 0 },
-              { "id": "2", "option": "She has a little child", "wight": 1 }
+              { "id": "0", "option": "started", "wight": 0 },
+              { "id": "1", "option": "has started", "wight": 1 },
+              { "id": "2", "option": "passes", "wight": 0 }
             ]
           }
-        ]
-      },
-      "next": "eighthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "Who?",
-      "wight": 0,
-      "answer": {
-        "img": "/resources/sad-smiley.png",
-        "message": [
-          ".... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?"
         ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "it", "wight": 0 },
-              { "id": "1", "option": "this", "wight": 1 },
-              { "id": "2", "option": "why", "wight": 0 }
-            ]
-          },
-          {
-            "id": "1",
-            "options": [
-              { "id": "0", "option": "his", "wight": 0 },
-              { "id": "1", "option": "my", "wight": 1 },
-              { "id": "2", "option": "our", "wight": 0 }
-            ]
-          },
-          {
-            "id": "2",
-            "options": [
-              { "id": "0", "option": "son's", "wight": 1 },
-              { "id": "1", "option": "sons", "wight": 0 },
-              { "id": "2", "option": "sons'", "wight": 0 }
-            ]
-          },
-          {
-            "id": "3",
-            "options": [
-              { "id": "0", "option": "are", "wight": 1 },
-              { "id": "1", "option": "do", "wight": 0 },
-              { "id": "2", "option": "can", "wight": 0 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              { "id": "0", "option": "She has children", "wight": 0 },
-              { "id": "1", "option": "She's divorced", "wight": 0 },
-              { "id": "2", "option": "She has a little child", "wight": 1 }
-            ]
-          }
-        ]
-      },
-      "next": "eighthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "Sometimes",
-      "wight": 1,
-      "answer": {
-        "img": "/resources/sad-smiley.png",
-        "message": [
-          ".... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?"
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "it", "wight": 0 },
-              { "id": "1", "option": "this", "wight": 1 },
-              { "id": "2", "option": "why", "wight": 0 }
-            ]
-          },
-          {
-            "id": "1",
-            "options": [
-              { "id": "0", "option": "his", "wight": 0 },
-              { "id": "1", "option": "my", "wight": 1 },
-              { "id": "2", "option": "our", "wight": 0 }
-            ]
-          },
-          {
-            "id": "2",
-            "options": [
-              { "id": "0", "option": "son's", "wight": 1 },
-              { "id": "1", "option": "sons", "wight": 0 },
-              { "id": "2", "option": "sons'", "wight": 0 }
-            ]
-          },
-          {
-            "id": "3",
-            "options": [
-              { "id": "0", "option": "are", "wight": 1 },
-              { "id": "1", "option": "do", "wight": 0 },
-              { "id": "2", "option": "can", "wight": 0 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              { "id": "0", "option": "She has children", "wight": 0 },
-              { "id": "1", "option": "She's divorced", "wight": 0 },
-              { "id": "2", "option": "She has a little child", "wight": 1 }
-            ]
-          }
-        ]
+        "audio":"/resources/audio/lisa/Actuallytheplanet.mp3"
       },
       "next": "eighthPhrase"
     }
@@ -524,58 +351,28 @@
   "eighthPhrase": [
     {
       "id": "0",
-      "phrase": "Me neither!",
+      "phrase": "She can't travel by plane.",
       "wight": 0,
       "answer": {
-        "message": ["When ..... you start learning English?"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "did", "wight": 1 },
-              { "id": "1", "option": "was", "wight": 0 },
-              { "id": "2", "option": "had", "wight": 0 }
-            ]
-          }
-        ]
+        "audio": "/resources/audio/lisa/Imalsotryingtos.mp3"
       },
       "next": "ninthPhrase"
     },
     {
       "id": "1",
-      "phrase": "I'm studying English words",
+      "phrase": "The plane tickets are really expensive.",
       "wight": 1,
       "answer": {
-        "message": ["When ..... you start learning English?"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "did", "wight": 1 },
-              { "id": "1", "option": "was", "wight": 0 },
-              { "id": "2", "option": "had", "wight": 0 }
-            ]
-          }
-        ]
+        "audio": "/resources/audio/lisa/Imalsotryingtos.mp3"
       },
       "next": "ninthPhrase"
     },
     {
       "id": "2",
-      "phrase": "I'm having a shower.",
+      "phrase": "The plane tickets are quite cheap.",
       "wight": 0,
       "answer": {
-        "message": ["When ..... you start learning English?"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "did", "wight": 1 },
-              { "id": "1", "option": "was", "wight": 0 },
-              { "id": "2", "option": "had", "wight": 0 }
-            ]
-          }
-        ]
+        "audio": "/resources/audio/lisa/Imalsotryingtos.mp3"
       },
       "next": "ninthPhrase"
     }
@@ -583,64 +380,31 @@
   "ninthPhrase": [
     {
       "id": "0",
-      "phrase": "I startied not long ago.",
-      "wight": 0,
+      "phrase": "Oh, could I see it?",
+      "wight": 1,
       "answer": {
-        "message": [
-          "What is ..... - English or your language"
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "easer", "wight": 0 },
-              { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
-            ]
-          }
-        ]
+        "img": "/resources/sad-smiley.png",
+        "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "tenthPhrase"
     },
     {
       "id": "1",
-      "phrase": "I startd not long last",
+      "phrase": "Where?",
       "wight": 0,
       "answer": {
-        "message": [
-          "What is ..... - English or your language"
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "easer", "wight": 0 },
-              { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
-            ]
-          }
-        ]
+        "img": "/resources/sad-smiley.png",
+        "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "tenthPhrase"
     },
     {
       "id": "2",
-      "phrase": "I started not long ago",
-      "wight": 1,
+      "phrase": "I don't think it's a nice idea.",
+      "wight": 0,
       "answer": {
-        "message": [
-          "What is ..... - English or your language"
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "easer", "wight": 0 },
-              { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
-            ]
-          }
-        ]
+        "img": "/resources/sad-smiley.png",
+        "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "tenthPhrase"
     }
@@ -648,28 +412,58 @@
   "tenthPhrase": [
     {
       "id": "0",
-      "phrase": "Mine, of course.",
+      "phrase": "Lisa is going to complete it in a short time.",
       "wight": 1,
       "answer": {
-        "audio":"/resources/audio/lisa/HaveyoueverbeentoCanada.mp3"
+        "audio":"/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "The drawing will be finished on Wednesday", "wight": 0 },
+              { "id": "1", "option": "The drawing will be finished before Wednesday", "wight": 1 },
+              { "id": "2", "option": "The drawing will be finished after Wednesday", "wight": 0 }
+            ]
+          }
+        ]
       },
       "next": "eleventhPhrase"
     },
     {
       "id": "1",
-      "phrase": "My, of course.",
+      "phrase": "Lisa doesn't know what else to draw.",
       "wight": 0,
       "answer": {
-        "audio":"/resources/audio/lisa/HaveyoueverbeentoCanada.mp3"
+        "audio":"/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "The drawing will be finished on Wednesday", "wight": 0 },
+              { "id": "1", "option": "The drawing will be finished before Wednesday", "wight": 1 },
+              { "id": "2", "option": "The drawing will be finished after Wednesday", "wight": 0 }
+            ]
+          }
+        ]
       },
       "next": "eleventhPhrase"
     },
     {
       "id": "2",
-      "phrase": "Our, for sure.",
+      "phrase": "Lisa has given up drawing it.",
       "wight": 0,
       "answer": {
-        "audio":"/resources/audio/lisa/HaveyoueverbeentoCanada.mp3"
+        "audio":"/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "The drawing will be finished on Wednesday", "wight": 0 },
+              { "id": "1", "option": "The drawing will be finished before Wednesday", "wight": 1 },
+              { "id": "2", "option": "The drawing will be finished after Wednesday", "wight": 0 }
+            ]
+          }
+        ]
       },
       "next": "eleventhPhrase"
     }
@@ -677,211 +471,37 @@
   "eleventhPhrase": [
     {
       "id": "0",
+      "phrase": "That looks lit! Step on your toe!",
       "wight": 0,
-      "phrase": "I don't know.",
       "answer": {
         "message": [
-          " It's ..... country in the world! I ..... to Canada ..... month for a medical conference and it was really .....! I ..... visit it again soon!"
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "the best", "wight": 1 },
-              { "id": "1", "option": "best", "wight": 0 },
-              { "id": "2", "option": "the better", "wight": 0 }
-            ]
-          },
-          {
-            "id": "1",
-            "options": [
-              { "id": "0", "option": "goed", "wight": 0 },
-              { "id": "1", "option": "went", "wight": 1 },
-              { "id": "2", "option": "was", "wight": 0 }
-            ]
-          },
-          {
-            "id": "2",
-            "options": [
-              { "id": "0", "option": "last", "wight": 1 },
-              { "id": "1", "option": "ago", "wight": 0 },
-              { "id": "2", "option": "next", "wight": 0 }
-            ]
-          },
-          {
-            "id": "3",
-            "options": [
-              { "id": "0", "option": "terrible", "wight": 0 },
-              { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              { "id": "0", "option": "terrible", "wight": 0 },
-              { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
-            ]
-          },
-          {
-            "id": "5",
-            "options": [
-              { "id": "0", "option": "am going to", "wight": 1 },
-              { "id": "1", "option": "am want to", "wight": 0 },
-              { "id": "2", "option": "am wanting to", "wight": 0 }
-            ]
-          },
-          {
-            "id": "6",
-            "options": [
-              { "id": "0", "option": "She enjoyed Canada", "wight": 1 },
-              { "id": "1", "option": "She didn't come back from Canada", "wight": 0 },
-              { "id": "2", "option": "She lives in Canada", "wight": 0 }
-            ]
-          }
-        ],
-        "audio":"/resources/audio/lisa/Whatsthenameofy.mp3"
+          "Thanks, mate!",
+          "Oh, my apologizes, I have to head out now. Got some things that I absolutely must do."
+        ]
       },
       "next": "twelfthPhrase"
     },
     {
       "id": "1",
-      "phrase": "It's great.",
+      "phrase": "That looks lit! Break your back!",
       "wight": 0,
       "answer": {
         "message": [
-          " It's ..... country in the world! I ..... to Canada ..... month for a medical conference and it was really .....! I ..... visit it again soon!"
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "the best", "wight": 1 },
-              { "id": "1", "option": "best", "wight": 0 },
-              { "id": "2", "option": "the better", "wight": 0 }
-            ]
-          },
-          {
-            "id": "1",
-            "options": [
-              { "id": "0", "option": "goed", "wight": 0 },
-              { "id": "1", "option": "went", "wight": 1 },
-              { "id": "2", "option": "was", "wight": 0 }
-            ]
-          },
-          {
-            "id": "2",
-            "options": [
-              { "id": "0", "option": "last", "wight": 1 },
-              { "id": "1", "option": "ago", "wight": 0 },
-              { "id": "2", "option": "next", "wight": 0 }
-            ]
-          },
-          {
-            "id": "3",
-            "options": [
-              { "id": "0", "option": "terrible", "wight": 0 },
-              { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              { "id": "0", "option": "terrible", "wight": 0 },
-              { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
-            ]
-          },
-          {
-            "id": "5",
-            "options": [
-              { "id": "0", "option": "am going to", "wight": 1 },
-              { "id": "1", "option": "am want to", "wight": 0 },
-              { "id": "2", "option": "am wanting to", "wight": 0 }
-            ]
-          },
-          {
-            "id": "6",
-            "options": [
-              { "id": "0", "option": "She enjoyed Canada", "wight": 1 },
-              { "id": "1", "option": "She didn't come back from Canada", "wight": 0 },
-              { "id": "2", "option": "She lives in Canada", "wight": 0 }
-            ]
-          }
-        ],
-        "audio":"/resources/audio/lisa/Whatsthenameofy.mp3"
+          "Thanks, mate!",
+          "Oh, my apologizes, I have to head out now. Got some things that I absolutely must do."
+        ]
       },
       "next": "twelfthPhrase"
     },
     {
       "id": "2",
-      "phrase": "No, I haven't.",
+      "phrase": "That looks lit! Break a leg!",
       "wight": 1,
       "answer": {
         "message": [
-          " It's ..... country in the world! I ..... to Canada ..... month for a medical conference and it was really .....! I ..... visit it again soon!"
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "the best", "wight": 1 },
-              { "id": "1", "option": "best", "wight": 0 },
-              { "id": "2", "option": "the better", "wight": 0 }
-            ]
-          },
-          {
-            "id": "1",
-            "options": [
-              { "id": "0", "option": "goed", "wight": 0 },
-              { "id": "1", "option": "went", "wight": 1 },
-              { "id": "2", "option": "was", "wight": 0 }
-            ]
-          },
-          {
-            "id": "2",
-            "options": [
-              { "id": "0", "option": "last", "wight": 1 },
-              { "id": "1", "option": "ago", "wight": 0 },
-              { "id": "2", "option": "next", "wight": 0 }
-            ]
-          },
-          {
-            "id": "3",
-            "options": [
-              { "id": "0", "option": "terrible", "wight": 0 },
-              { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              { "id": "0", "option": "terrible", "wight": 0 },
-              { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
-            ]
-          },
-          {
-            "id": "5",
-            "options": [
-              { "id": "0", "option": "am going to", "wight": 1 },
-              { "id": "1", "option": "am want to", "wight": 0 },
-              { "id": "2", "option": "am wanting to", "wight": 0 }
-            ]
-          },
-          {
-            "id": "6",
-            "options": [
-              { "id": "0", "option": "She enjoyed Canada", "wight": 1 },
-              { "id": "1", "option": "She didn't come back from Canada", "wight": 0 },
-              { "id": "2", "option": "She lives in Canada", "wight": 0 }
-            ]
-          }
-        ],
-        "audio":"/resources/audio/lisa/Whatsthenameofy.mp3"
+          "Thanks, mate!",
+          "Oh, my apologizes, I have to head out now. Got some things that I absolutely must do."
+        ]
       },
       "next": "twelfthPhrase"
     }
@@ -889,42 +509,7 @@
   "twelfthPhrase": [
     {
       "id": "0",
-      "phrase": "My city is Moscow",
-      "wight": 0,
-      "answer": {
-        "message": [
-          "Oh, I'm sorry, I need to go now."
-        ]
-      },
-      "next": "thirteenthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "Saint Petersburg",
-      "wight": 0,
-      "answer": {
-        "message": [
-          "Oh, I'm sorry, I need to go now."
-        ]
-      },
-      "next": "thirteenthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "Another",
-      "wight": 0,
-      "answer": {
-        "message": [
-          "Oh, I'm sorry, I need to go now."
-        ]
-      },
-      "next": "thirteenthPhrase"
-    }
-  ],
-  "thirteenthPhrase": [
-    {
-      "id": "0",
-      "phrase": "See you soon!",
+      "phrase": "Show your best!",
       "wight": 1,
       "answer": {
         "message": ["Have a nice day!"]
@@ -933,7 +518,7 @@
     },
     {
       "id": "1",
-      "phrase": "I'm too.",
+      "phrase": "Break your back!",
       "wight": 0,
       "answer": {
         "message": ["Have a nice day!"]
@@ -942,7 +527,7 @@
     },
     {
       "id": "2",
-      "phrase": "Stop!",
+      "phrase": "Hold it still!",
       "wight": 0,
       "answer": {
         "message": ["Have a nice day!"]
