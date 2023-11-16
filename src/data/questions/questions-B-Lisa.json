@@ -120,8 +120,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "spend", "wight": 0 },
-              { "id": "1", "option": "spending", "wight": 0 },
-              { "id": "2", "option": " saving", "wight": 1 }
+              { "id": "1", "option": "spending", "wight": 1 },
+              { "id": "2", "option": " saving", "wight": 0 }
             ]
           },
           {
@@ -150,8 +150,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "spend", "wight": 0 },
-              { "id": "1", "option": "spending", "wight": 0 },
-              { "id": "2", "option": " saving", "wight": 1 }
+              { "id": "1", "option": "spending", "wight": 1 },
+              { "id": "2", "option": " saving", "wight": 0 }
             ]
           },
           {
@@ -180,8 +180,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "spend", "wight": 0 },
-              { "id": "1", "option": "spending", "wight": 0 },
-              { "id": "2", "option": " saving", "wight": 1 }
+              { "id": "1", "option": "spending", "wight": 1 },
+              { "id": "2", "option": " saving", "wight": 0 }
             ]
           },
           {

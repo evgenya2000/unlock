@@ -385,7 +385,7 @@
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
-          ".... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?"
+          "..... is me and ..... dog. My ..... name is Buddy."
         ],
         "selects": [
           {
@@ -407,25 +407,9 @@
           {
             "id": "2",
             "options": [
-              { "id": "0", "option": "son's", "wight": 1 },
-              { "id": "1", "option": "sons", "wight": 0 },
-              { "id": "2", "option": "sons'", "wight": 0 }
-            ]
-          },
-          {
-            "id": "3",
-            "options": [
-              { "id": "0", "option": "are", "wight": 1 },
-              { "id": "1", "option": "do", "wight": 0 },
-              { "id": "2", "option": "can", "wight": 0 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              { "id": "0", "option": "She has children", "wight": 0 },
-              { "id": "1", "option": "She's divorced", "wight": 0 },
-              { "id": "2", "option": "She has a little child", "wight": 1 }
+              { "id": "0", "option": "dog's", "wight": 1 },
+              { "id": "1", "option": "dogs", "wight": 0 },
+              { "id": "2", "option": "dogs'", "wight": 0 }
             ]
           }
         ]
@@ -439,7 +423,7 @@
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
-          ".... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?"
+          "..... is me and ..... dog. My ..... name is Buddy."
         ],
         "selects": [
           {
@@ -461,25 +445,9 @@
           {
             "id": "2",
             "options": [
-              { "id": "0", "option": "son's", "wight": 1 },
-              { "id": "1", "option": "sons", "wight": 0 },
-              { "id": "2", "option": "sons'", "wight": 0 }
-            ]
-          },
-          {
-            "id": "3",
-            "options": [
-              { "id": "0", "option": "are", "wight": 1 },
-              { "id": "1", "option": "do", "wight": 0 },
-              { "id": "2", "option": "can", "wight": 0 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              { "id": "0", "option": "She has children", "wight": 0 },
-              { "id": "1", "option": "She's divorced", "wight": 0 },
-              { "id": "2", "option": "She has a little child", "wight": 1 }
+              { "id": "0", "option": "dog's", "wight": 1 },
+              { "id": "1", "option": "dogs", "wight": 0 },
+              { "id": "2", "option": "dogs'", "wight": 0 }
             ]
           }
         ]
@@ -559,9 +527,9 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "did", "wight": 0 },
+              { "id": "0", "option": "did", "wight": 1 },
               { "id": "1", "option": "was", "wight": 0 },
-              { "id": "2", "option": "had", "wight": 1 }
+              { "id": "2", "option": "had", "wight": 0 }
             ]
           }
         ]
@@ -571,27 +539,6 @@
     {
       "id": "1",
       "phrase": "I'm studying English words.",
-      "wight": 0,
-      "answer": {
-        "message": [
-          "When ..... you start learning English?"
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "did", "wight": 0 },
-              { "id": "1", "option": "was", "wight": 0 },
-              { "id": "2", "option": "had", "wight": 1 }
-            ]
-          }
-        ]
-      },
-      "next": "tenthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "I'm having a shower.",
       "wight": 1,
       "answer": {
         "message": [
@@ -601,9 +548,30 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "did", "wight": 0 },
+              { "id": "0", "option": "did", "wight": 1 },
               { "id": "1", "option": "was", "wight": 0 },
-              { "id": "2", "option": "had", "wight": 1 }
+              { "id": "2", "option": "had", "wight": 0 }
+            ]
+          }
+        ]
+      },
+      "next": "tenthPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "I'm having a shower.",
+      "wight": 0,
+      "answer": {
+        "message": [
+          "When ..... you start learning English?"
+        ],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "did", "wight": 1 },
+              { "id": "1", "option": "was", "wight": 0 },
+              { "id": "2", "option": "had", "wight": 0 }
             ]
           }
         ]

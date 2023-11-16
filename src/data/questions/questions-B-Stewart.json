@@ -239,7 +239,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/arethereanyplacestoskiinyourcountry.mp3"
+        "audio": "/resources/audio/john/arethereanyplacestoskiinyourcountry.mp3"
       },
       "next": "eighthPhrase"
     },
@@ -259,7 +259,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/arethereanyplacestoskiinyourcountry.mp3"
+        "audio": "/resources/audio/john/arethereanyplacestoskiinyourcountry.mp3"
       },
       "next": "eighthPhrase"
     },
@@ -279,7 +279,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/arethereanyplacestoskiinyourcountry.mp3"
+        "audio": "/resources/audio/john/arethereanyplacestoskiinyourcountry.mp3"
       },
       "next": "eighthPhrase"
     }
@@ -825,7 +825,7 @@
       "wight": null,
       "phrase": "Oh, awesome! It's always amazing to travel!",
       "answer":{
-        "audio":"/resources/audio/lisa/Imalsotryingtos.mp3"
+        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.mp3"
       },
       "next": "fourteenthPhrase"
     }
