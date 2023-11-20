@@ -27,6 +27,10 @@ body {
   --yellow-color: #FFD03A;
   --red-color: #F5ABAB;
   --green-color: #B1F5AB;
+  --base-font-size: 24px;
+  --font-size-900: 20px;
+  --font-size-590: 18px;
+  --font-size-375: 16px;
   background-image: url("../public/resources/background.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;

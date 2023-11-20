@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
     font-family: "CocoGothicAlternate";
-    font-size: 24px;
+    font-size: var(--base-font-size);
 }
 
 .steps {
@@ -59,9 +59,11 @@
     border: 0;
     border-radius: 30px;
     font-family: "CocoGothicAlternate-Bold";
-    font-size: 24px;
+    font-size: var(--base-font-size);
     background-color: var(--purple-light-color);
     color: var(--white-app-back-color);
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -96,6 +98,7 @@
 
 .answer>.ball {
     margin: 0 6% 0 0;
+    cursor: pointer;
 }
 
 .label-levels {
@@ -109,6 +112,7 @@
     height: auto;
     width: auto;
     line-height: 32px;
+    cursor: pointer;
 }
 
 .answer .level {
@@ -133,12 +137,18 @@
     padding: 1%;
 }
 
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .option {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: auto;
     width: auto;
-    margin-bottom: 3%;
 }
 
 .choice {
@@ -152,11 +162,13 @@
     margin-right: 8%;
     height: 30px;
     width: 30px;
+    cursor: pointer;
 }
 
 .photo {
     width: 180px;
     height: 180px;
+    border-radius: 10px;
 }
 
 .label-column {
@@ -164,6 +176,10 @@
     flex-direction: column;
     height: auto;
     width: 50%;
+}
+
+.label-column label {
+    cursor: pointer;
 }
 
 .name-age,
@@ -176,7 +192,7 @@
 
 @media screen and (max-width: 1265px) {
 
-    /* Styles for pages 1, 2 and 3 */
+    /* Styles for pages 1*/
     #form1 {
         width: 57%;
     }
@@ -204,11 +220,11 @@
     #page_q1,
     #page_q2,
     #page_chat {
-        font-size: 20px;
+        font-size: var(--font-size-900);
     }
 
     .btn {
-        font-size: 20px;
+        font-size: var(--font-size-900);
     }
 
     /* Styles for page1 */
@@ -257,11 +273,11 @@
     #page_q1,
     #page_q2,
     #page_chat {
-        font-size: 18px;
+        font-size: var(--font-size-590);
     }
 
     .btn {
-        font-size: 18px;
+        font-size: var(--font-size-590);
     }
 }
 
@@ -370,7 +386,7 @@
     #page_q1,
     #page_q2,
     #page_chat {
-        font-size: 16px;
+        font-size: var(--font-size-375);
     }
 
     .steps {
@@ -379,7 +395,7 @@
     }
 
     .btn {
-        font-size: 16px;
+        font-size: var(--font-size-375);
     }
 
     .ball {

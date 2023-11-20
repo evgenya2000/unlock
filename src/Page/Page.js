@@ -4,7 +4,7 @@ import "./page.css";
 import Chat from "../Chat/Chat";
 import { levels } from "../data/Levels";
 import { personalities } from "../data/Personalities";
-import { question, warning } from "../data/HeaderPage";
+import { question} from "../data/HeaderPage";
 class Page extends React.Component {
     constructor(props) {
         super(props);
@@ -17,7 +17,7 @@ class Page extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault(); // Prevents form resubmission
-        let input;
+        let input = null;
         switch (this.state.step) {
             case "q1":
                 input = document.querySelector('input[name=level]:checked');
@@ -27,9 +27,6 @@ class Page extends React.Component {
                         step: "q2"
                     });
                 }
-                else {
-                    alert(warning.q1);
-                }
                 break;
             case "q2":
                 input = document.querySelector('input[name=human]:checked');
@@ -38,9 +35,6 @@ class Page extends React.Component {
                     this.setState({
                         step: "chat"
                     });
-                }
-                else {
-                    alert(warning.q2);
                 }
                 break;
             default:
@@ -61,8 +55,8 @@ class Page extends React.Component {
         return (
             <form id="form1">
                 {levels.map((level) => (
-                    <div className="answer">
-                        <input className="ball" id={level.id} type="radio" name="level" value={level.id} />
+                    <div className="answer" key={level.id}>
+                        <input className="ball" id={level.id} type="radio" name="level" value={level.id}/>
                         <div className="label-levels">
                             <label className="level" htmlFor={level.id}>{level.level}</label>
                             <label className="str" htmlFor={level.id}>{level.str}</label>

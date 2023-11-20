@@ -28,7 +28,6 @@ class Chat extends React.Component {
         while (countSelect !== 0) {
             selectId = `${this.countScriptPhrase}-select-${countSelect - 1}`;
             selectElement = document.getElementById(selectId);
-
             selectedIndex = selectElement.selectedIndex;
             this.pointsScored += this.dataPhrases[this.preventUserPhrase][this.preventUserPhraseId].answer.selects[countSelect - 1].options[selectedIndex].wight;
             countSelect--;
@@ -48,7 +47,7 @@ class Chat extends React.Component {
         var newDiv = document.createElement("div");
         newDiv.className = "message";
         let newParagraph = null;
-        let paragraphText =null;
+        let paragraphText = null;
         if (this.dataPhrases[this.currentUserPhrase][checkedId].wight === 1 || this.dataPhrases[this.currentUserPhrase][checkedId].wight === null) {
             newDiv.id = "option-checked-true";
             newParagraph = document.createElement("p");
@@ -65,7 +64,7 @@ class Chat extends React.Component {
             let newParagraphTrue = document.createElement("p");
             let truePhrase = "";
             for (let id in this.dataPhrases[this.currentUserPhrase]) {
-                if (this.dataPhrases[this.currentUserPhrase][id].wight === 1){
+                if (this.dataPhrases[this.currentUserPhrase][id].wight === 1) {
                     truePhrase = this.dataPhrases[this.currentUserPhrase][id].phrase;
                     break;
                 }
@@ -100,18 +99,78 @@ class Chat extends React.Component {
         let newScriptSelector = null;
         let newOption = null;
         let selectId;
+        let i = 0;
+        let str = "";
+        let parts = "";
+        let regex = null;
+        let matches = null;
+        let countSelectsInCurrentMessage = 0;
+        let numSelect = 0;
         for (let key in this.dataPhrases[this.currentUserPhrase][id].answer) {
             switch (key) {
                 case "message":
-                    for (let str in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
-                        newScriptDivChilde = document.createElement("div");
-                        newScriptDivChilde.className = "message";
-                        newScriptParagraph = document.createElement("p");
-                        paragraphScriptText = document.createTextNode(this.dataPhrases[this.currentUserPhrase][id].answer[key][str]);
-                        newScriptParagraph.appendChild(paragraphScriptText);
-                        newScriptDivChilde.appendChild(newScriptParagraph);
-                        newScriptDivParent.appendChild(newScriptDivChilde);
+                    if ("selects" in this.dataPhrases[this.currentUserPhrase][id].answer) {
+                        numSelect = 0;
+                        for (let num in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
+                            newScriptDivChilde = document.createElement("div");
+                            newScriptDivChilde.className = "message-selects";
+                            str = this.dataPhrases[this.currentUserPhrase][id].answer[key][num];
+                            parts = str.split(".....");
+                            regex = new RegExp("\\.\\.\\.\\.\\.", "gi");
+                            matches = str.match(regex);
+                            countSelectsInCurrentMessage = matches ? matches.length : 0;
+                            newScriptParagraph = document.createElement("p");
+                            paragraphScriptText = document.createTextNode(parts[0]);
+                            newScriptParagraph.appendChild(paragraphScriptText);
+                            
+                            i = 1;
+                            for (; i < parts.length; i++) {
+                                newScriptSelector = document.createElement("select");
+                                selectId = `${this.countScriptPhrase}-select-${this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].id}`
+                                newScriptSelector.id = selectId;
+                                newScriptSelector.key = selectId;
+                                
+                                for (let j = 0; j < this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options.length; j++) {
+                                    newOption = document.createElement("option");
+                                    newOption.innerHTML = this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options[j].option;
+                                    newOption.id = `${selectId}-option-${this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options[j].id}`;
+                                    newScriptSelector.appendChild(newOption);
+                                }
+                                newScriptParagraph.appendChild(newScriptSelector);
+                                countSelectsInCurrentMessage--;
+                                numSelect++;
+                                paragraphScriptText = document.createTextNode(parts[i]);
+                                newScriptParagraph.appendChild(paragraphScriptText);
+                            }
+
+                            if (countSelectsInCurrentMessage !== 0) {
+                                newScriptSelector = document.createElement("select");
+                                selectId = `${this.countScriptPhrase}-select-${this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].id}`
+                                newScriptSelector.id = selectId;
+                                for (let j = 0; j < this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].length; j++) {
+                                    newOption = document.createElement("option");
+                                    newOption.innerHTML = this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options[j].option;
+                                    newOption.id = `${selectId}-option-${this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options[j].id}`;
+                                    newScriptSelector.appendChild(newOption);
+                                }
+                                newScriptParagraph.appendChild(newScriptSelector);
+                                numSelect++;
+                            }
+                            newScriptDivChilde.appendChild(newScriptParagraph);
+                            newScriptDivParent.appendChild(newScriptDivChilde);
+                        }
+                    } else {
+                        for (let str in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
+                            newScriptDivChilde = document.createElement("div");
+                            newScriptDivChilde.className = "message";
+                            newScriptParagraph = document.createElement("p");
+                            paragraphScriptText = document.createTextNode(this.dataPhrases[this.currentUserPhrase][id].answer[key][str]);
+                            newScriptParagraph.appendChild(paragraphScriptText);
+                            newScriptDivChilde.appendChild(newScriptParagraph);
+                            newScriptDivParent.appendChild(newScriptDivChilde);
+                        }
                     }
+
                     break;
                 case "img":
                     newScriptImg = document.createElement("img");
@@ -127,7 +186,8 @@ class Chat extends React.Component {
                     newScriptAudio.setAttribute('controls', 'controls');
                     newScriptDivParent.appendChild(newScriptAudio);
                     break;
-                case "selects":
+                /* case "selects":
+
                     for (let select in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
                         newScriptDivChilde = document.createElement("div");
                         newScriptDivChilde.className = "drop-down-list";
@@ -146,7 +206,7 @@ class Chat extends React.Component {
                         newScriptDivChilde.appendChild(newScriptSelector);
                         newScriptDivParent.appendChild(newScriptDivChilde);
                     }
-                    break;
+                    break; */
                 default:
                     break;
 

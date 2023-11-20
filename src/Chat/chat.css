@@ -35,32 +35,27 @@
     flex-direction: column;
 }
 
-.message {
+.message,
+.message-selects {
     height: auto;
     width: auto;
     box-sizing: border-box;
-    padding: 4%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border-radius: 30px;
 }
 
 .user-phrase>.message,
-.script-phrase>.message {
+.script-phrase>.message,
+.script-phrase>.message-selects {
     margin-bottom: 2%;
     max-width: 48%;
 }
 
-.chat p {
-    height: auto;
-    width: auto;
-    word-wrap: break-word;
-    display: inline-block;
-}
-
 .chat button {
     font-family: "CocoGothicAlternate-Bold";
-    font-size: 24px;
+    font-size: var(--base-font-size);
     color: var(--white-app-back-color);
     text-align: center;
     padding: 1% 8% 1% 8%;
@@ -70,6 +65,8 @@
     border: 0;
     border-radius: 30px;
     background-color: var(--purple-light-color);
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .chat button:hover {
@@ -99,12 +96,23 @@
 }
 
 .option-user-phrase>.message {
-    max-width: 80%;
+    max-width: 48%;
+}
+
+.option-user-phrase label {
+    cursor: pointer;
 }
 
 .user-phrase .message {
     text-align: end;
     background-color: var(--yellow-color);
+    /* display: flex;
+    flex-wrap: nowrap; */
+}
+
+.user-phrase p {
+    display: inline;
+    width: auto;
 }
 
 #option-checked-true {
@@ -128,7 +136,8 @@
     margin-bottom: 2%;
 }
 
-.script-phrase .message {
+.script-phrase .message,
+.script-phrase .message-selects {
     text-align: start;
     background-color: var(--purple-pink-color);
 }
@@ -137,6 +146,7 @@
     max-width: 30%;
     max-height: 30%;
     margin-bottom: 2%;
+    border-radius: 20px;
 }
 
 .script-phrase .script-phrase-audio {
@@ -168,36 +178,35 @@
     height: 8px;
 }
 
-.script-phrase .drop-down-list {
-    height: 30%;
-    max-width: 30%;
-    /* width: auto; */
-    padding: 2% 4% 2% 4%;
-    border-radius: 30px;
-    background-color: var(--purple-pink-color);
-    margin-bottom: 2%;
+.message-selects {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-select {
-    /* width: auto; */
-    max-width: 100%;
-    height: 90%;
+.message-selects select {
+    height: auto;
+    width: min-content;
+    max-width: 45%;
     font-family: 'CocoGothicAlternate';
-    font-size: 24px;
+    font-size: var(--base-font-size);
     border: none;
-    border-radius: 15px;
-    padding: 5%;
+    border-radius: 10px;
+    padding: 1.5%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-option {
-    font-family: 'CocoGothicAlternate';
-    font-size: 24px;
-    padding-top: 1%;
+.message-selects p {
+    height: auto;
+    display: inline-block;
+    flex: 0 0 auto;
+    margin-right: 15px;
+    line-height: calc(var(--base-font-size) + 25px);
 }
 
 .modal {
     font-family: 'CocoGothicAlternate-Bold';
-    font-size: 24px;
+    font-size: var(--base-font-size);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -217,7 +226,7 @@ option {
 
 .modal>button {
     font-family: "CocoGothicAlternate-Bold";
-    font-size: 24px;
+    font-size: var(--base-font-size);
     color: var(--white-app-back-color);
     text-align: center;
     padding: 1% 8% 1% 8%;
@@ -227,6 +236,8 @@ option {
     border: 0;
     border-radius: 30px;
     background-color: var(--purple-light-color);
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .modal>button:hover {
@@ -245,14 +256,31 @@ option {
     z-index: 998;
 }
 
-  
+@media screen and (max-width: 2000px) {
+    .message-selects p {
+        line-height: calc(var(--base-font-size) + 20px);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .message-selects p {
+        line-height: calc(var(--base-font-size) + 15px);
+    }
+}
+
 @media screen and (max-width: 900px) {
-    select, .chat button, .modal {
-        font-size: 20px;
+    .message-selects select,
+    .chat button,
+    .modal {
+        font-size: var(--font-size-900);
     }
 
-    option {
-        font-size: 20px;
+    .message-selects option {
+        font-size: var(--font-size-900);
+    }
+
+    .message-selects p {
+        line-height: calc(var(--base-font-size) + 10px);
     }
 }
 
@@ -267,45 +295,53 @@ option {
         padding-bottom: 4%;
     }
 
-    .script-phrase .drop-down-list {
-        padding: 3% 5% 3% 5%;
-        max-width: 20%;
-    }
-
     .script-phrase .script-phrase-audio {
         max-width: 90%;
+    }
+
+    .message-selects p {
+        line-height: calc(var(--base-font-size) + 5px);
     }
 }
 
 @media screen and (max-width: 590px) {
-    select, .chat button, .modal {
-        font-size: 18px;
+    .message-selects select,
+    .chat button,
+    .modal {
+        font-size: var(--font-size-590);
     }
 
-    option {
-        font-size: 18px;
+    .message-selects option {
+        font-size: var(--font-size-590);
     }
 
     .user-phrase>.message,
-    .script-phrase>.message {
-        max-width: 55%;
+    .script-phrase>.message,
+    .script-phrase>.message-selects {
+        max-width: 60%;
     }
 
     .script-phrase .script-phrase-img {
         margin-left: 5%;
     }
+
+    .message-selects p {
+        line-height: calc(var(--base-font-size));
+    }
 }
 
 @media screen and (max-width: 450px) {
-    .message {
+    .message,
+    .message-selects {
         padding: 6%;
         padding-top: 5%;
         padding-bottom: 5%;
     }
 
     .user-phrase>.message,
-    .script-phrase>.message {
-        max-width: 70%;
+    .script-phrase>.message,
+    .script-phrase>.message-selects {
+        max-width: 80%;
         margin-bottom: 4%;
     }
 
@@ -323,26 +359,23 @@ option {
         margin-bottom: 4%;
     }
 
-    .script-phrase .drop-down-list {
-        margin-bottom: 4%;
+    .message-selects p {
+        line-height: calc(var(--font-size-900));
     }
 }
 
 @media screen and (max-width: 375px) {
-    select, .chat button, .modal {
-        font-size: 16px;
+    .message-selects select,
+    .chat button,
+    .modal {
+        font-size: var(--font-size-375);
     }
 
     option {
-        font-size: 16px;
+        font-size: var(--font-size-375);
     }
 
     .script-phrase .script-phrase-audio {
         max-width: 95%;
-    }
-
-    .script-phrase .drop-down-list {
-        padding: 4% 6% 4% 6%;
-        max-width: 25%;
     }
 }
