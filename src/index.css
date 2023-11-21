@@ -27,6 +27,8 @@ body {
   --yellow-color: #FFD03A;
   --red-color: #F5ABAB;
   --green-color: #B1F5AB;
+  --red-light-color: #f36767;
+  --green-light-color: #5df04f;
   --base-font-size: 24px;
   --font-size-900: 20px;
   --font-size-590: 18px;
@@ -35,6 +37,16 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: fixed;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 /* Background changes */

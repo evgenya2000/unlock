@@ -5,7 +5,7 @@
 
 .chat {
     height: 100%;
-    width: 100%;
+    width: 98%;
     margin-bottom: 1%;
     padding: 5% 2% 5% 2%;
     border-radius: 45px;
@@ -16,7 +16,7 @@
 }
 
 .chat::-webkit-scrollbar {
-    width: 8px;
+    width: 2%;
 }
 
 .chat::-webkit-scrollbar-thumb {
@@ -194,6 +194,7 @@
     padding: 1.5%;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.5);
+    transition-duration: 0.4s;
 }
 
 .message-selects p {
@@ -202,6 +203,14 @@
     flex: 0 0 auto;
     margin-right: 15px;
     line-height: calc(var(--base-font-size) + 25px);
+}
+
+.select-true {
+    color: var(--green-light-color);
+}
+
+.select-false {
+    color: var(--red-light-color);
 }
 
 .modal {

@@ -72,8 +72,15 @@
 }
 
 /* Styles for page1 */
+
+#page1 {
+    display: flex;
+    flex-direction: column;
+}
+
 #content_q1 {
     margin-top: 3%;
+    max-height: 94%;
 }
 
 #form1 {
@@ -140,7 +147,7 @@
 .options {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .option {
@@ -149,6 +156,7 @@
     justify-content: center;
     height: auto;
     width: auto;
+    margin-bottom: 3%;
 }
 
 .choice {
@@ -235,6 +243,15 @@
 
     #form1 {
         width: 70%;
+    }
+
+    /* Styles for page2 */
+    .options {
+        justify-content: space-evenly;
+    }
+
+    .option {
+        margin-bottom: 0;
     }
 }
 
