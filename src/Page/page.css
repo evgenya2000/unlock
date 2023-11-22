@@ -244,15 +244,6 @@
     #form1 {
         width: 70%;
     }
-
-    /* Styles for page2 */
-    .options {
-        justify-content: space-evenly;
-    }
-
-    .option {
-        margin-bottom: 0;
-    }
 }
 
 @media screen and (max-width: 810px) {
