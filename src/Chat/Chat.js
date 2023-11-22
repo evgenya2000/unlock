@@ -2,7 +2,6 @@ import React from "react";
 
 import "./chat.css";
 import { result } from "../data/Result";
-import { warning } from "../data/HeaderPage";
 class Chat extends React.Component {
     constructor(props) {
         super(props);
@@ -28,7 +27,6 @@ class Chat extends React.Component {
         while (countSelect !== 0) {
             selectId = `${this.countScriptPhrase}-select-${countSelect - 1}`;
             selectElement = document.getElementById(selectId);
-
             selectedIndex = selectElement.selectedIndex;
             this.pointsScored += this.dataPhrases[this.preventUserPhrase][this.preventUserPhraseId].answer.selects[countSelect - 1].options[selectedIndex].wight;
             countSelect--;
@@ -40,15 +38,14 @@ class Chat extends React.Component {
     pinChoice(checkedId) {
         /* Pin User-phrase */
         const form = document.getElementById(`form-user-phrase-${this.countUserPhrase}`);
-        form.remove();
         const button = document.getElementsByClassName('send')[0];
-        button.remove();
 
         let checkedPhrase = this.dataPhrases[this.currentUserPhrase][checkedId].phrase;
-        var newDiv = document.createElement("div");
+        let newDiv = document.createElement("div");
+        newDiv.style.opacity = 0;
         newDiv.className = "message";
         let newParagraph = null;
-        let paragraphText =null;
+        let paragraphText = null;
         if (this.dataPhrases[this.currentUserPhrase][checkedId].wight === 1 || this.dataPhrases[this.currentUserPhrase][checkedId].wight === null) {
             newDiv.id = "option-checked-true";
             newParagraph = document.createElement("p");
@@ -65,7 +62,7 @@ class Chat extends React.Component {
             let newParagraphTrue = document.createElement("p");
             let truePhrase = "";
             for (let id in this.dataPhrases[this.currentUserPhrase]) {
-                if (this.dataPhrases[this.currentUserPhrase][id].wight === 1){
+                if (this.dataPhrases[this.currentUserPhrase][id].wight === 1) {
                     truePhrase = this.dataPhrases[this.currentUserPhrase][id].phrase;
                     break;
                 }
@@ -76,21 +73,64 @@ class Chat extends React.Component {
         }
 
         let parentDiv = document.getElementById(`user-phrase-${this.countUserPhrase}`);
-        parentDiv.appendChild(newDiv);
 
+        setTimeout(function() {
+            form.classList.remove('fade-in');
+            form.classList.add('fade-out');
+            button.classList.remove('fade-in');
+            button.classList.add('fade-out');
+            setTimeout(function() {
+                form.remove();
+                button.remove();
+                parentDiv.appendChild(newDiv);
+                setTimeout(function() {
+                    newDiv.classList.add('fade-in');
+                    newDiv.style.opacity = 1;
+                }, 250); // Небольшая задержка перед установкой полной непрозрачности нового контента
+            }, 250); // задержка в 1 секунду
+          }, 400); // задержка в 2 секунды перед удалением
+        
         /* Pin Script-phrase */
         let select = null;
+        let selectedIndex = null;
         while (this.currentCountSelect !== 0) {
             select = document.getElementById(`${this.countScriptPhrase}-select-${this.currentCountSelect - 1}`);
             select.disabled = true;
+            selectedIndex = select.selectedIndex;
+            if (this.dataPhrases[this.preventUserPhrase][this.preventUserPhraseId].answer.selects[this.currentCountSelect - 1].options[selectedIndex].wight === 1){
+                select.className = "select-true";
+            } else {
+                select.className = "select-false";
+            }
             this.currentCountSelect--;
         }
+    }
+
+    smoothScrollToElement(element) {
+        var offset = element.getBoundingClientRect().top;
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        // Количество шагов, которые будут создавать плавную прокрутку
+        var steps = 50;
+        var stepValue = offset / steps;
+
+        function scrollStep() {
+            if (steps > 0) {
+                scrollPosition += stepValue;
+                window.scrollTo(0, scrollPosition);
+                steps--;
+                setTimeout(scrollStep, 10); // Время задержки в миллисекундах
+            } else {
+                element.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+        }
+        scrollStep();
     }
 
     outputAnswerScript(id) {
         let newScriptDivParent = document.createElement("div");
         newScriptDivParent.className = "script-phrase";
-
+        newScriptDivParent.style.opacity = 0;
         let newScriptDivChilde = null;
         let newScriptParagraph = null;
         let paragraphScriptText = null;
@@ -100,17 +140,77 @@ class Chat extends React.Component {
         let newScriptSelector = null;
         let newOption = null;
         let selectId;
+        let i = 0;
+        let str = "";
+        let parts = "";
+        let regex = null;
+        let matches = null;
+        let countSelectsInCurrentMessage = 0;
+        let numSelect = 0;
         for (let key in this.dataPhrases[this.currentUserPhrase][id].answer) {
             switch (key) {
                 case "message":
-                    for (let str in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
-                        newScriptDivChilde = document.createElement("div");
-                        newScriptDivChilde.className = "message";
-                        newScriptParagraph = document.createElement("p");
-                        paragraphScriptText = document.createTextNode(this.dataPhrases[this.currentUserPhrase][id].answer[key][str]);
-                        newScriptParagraph.appendChild(paragraphScriptText);
-                        newScriptDivChilde.appendChild(newScriptParagraph);
-                        newScriptDivParent.appendChild(newScriptDivChilde);
+                    if ("selects" in this.dataPhrases[this.currentUserPhrase][id].answer) {
+                        numSelect = 0;
+                        for (let num in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
+                            newScriptDivChilde = document.createElement("div");
+                            newScriptDivChilde.className = "message-selects";
+                            str = this.dataPhrases[this.currentUserPhrase][id].answer[key][num];
+                            parts = str.split(".....");
+                            regex = new RegExp("\\.\\.\\.\\.\\.", "gi");
+                            matches = str.match(regex);
+                            countSelectsInCurrentMessage = matches ? matches.length : 0;
+                            this.currentCountSelect += countSelectsInCurrentMessage;
+                            newScriptParagraph = document.createElement("p");
+                            paragraphScriptText = document.createTextNode(parts[0]);
+                            newScriptParagraph.appendChild(paragraphScriptText);
+                            
+                            i = 1;
+                            for (; i < parts.length; i++) {
+                                newScriptSelector = document.createElement("select");
+                                selectId = `${this.countScriptPhrase}-select-${this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].id}`
+                                newScriptSelector.id = selectId;
+                                newScriptSelector.key = selectId;
+                                
+                                for (let j = 0; j < this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options.length; j++) {
+                                    newOption = document.createElement("option");
+                                    newOption.innerHTML = this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options[j].option;
+                                    newOption.id = `${selectId}-option-${this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options[j].id}`;
+                                    newScriptSelector.appendChild(newOption);
+                                }
+                                newScriptParagraph.appendChild(newScriptSelector);
+                                countSelectsInCurrentMessage--;
+                                numSelect++;
+                                paragraphScriptText = document.createTextNode(parts[i]);
+                                newScriptParagraph.appendChild(paragraphScriptText);
+                            }
+
+                            if (countSelectsInCurrentMessage !== 0) {
+                                newScriptSelector = document.createElement("select");
+                                selectId = `${this.countScriptPhrase}-select-${this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].id}`
+                                newScriptSelector.id = selectId;
+                                for (let j = 0; j < this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].length; j++) {
+                                    newOption = document.createElement("option");
+                                    newOption.innerHTML = this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options[j].option;
+                                    newOption.id = `${selectId}-option-${this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options[j].id}`;
+                                    newScriptSelector.appendChild(newOption);
+                                }
+                                newScriptParagraph.appendChild(newScriptSelector);
+                                numSelect++;
+                            }
+                            newScriptDivChilde.appendChild(newScriptParagraph);
+                            newScriptDivParent.appendChild(newScriptDivChilde);
+                        }
+                    } else {
+                        for (let str in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
+                            newScriptDivChilde = document.createElement("div");
+                            newScriptDivChilde.className = "message";
+                            newScriptParagraph = document.createElement("p");
+                            paragraphScriptText = document.createTextNode(this.dataPhrases[this.currentUserPhrase][id].answer[key][str]);
+                            newScriptParagraph.appendChild(paragraphScriptText);
+                            newScriptDivChilde.appendChild(newScriptParagraph);
+                            newScriptDivParent.appendChild(newScriptDivChilde);
+                        }
                     }
                     break;
                 case "img":
@@ -127,26 +227,6 @@ class Chat extends React.Component {
                     newScriptAudio.setAttribute('controls', 'controls');
                     newScriptDivParent.appendChild(newScriptAudio);
                     break;
-                case "selects":
-                    for (let select in this.dataPhrases[this.currentUserPhrase][id].answer[key]) {
-                        newScriptDivChilde = document.createElement("div");
-                        newScriptDivChilde.className = "drop-down-list";
-                        newScriptSelector = document.createElement("select");
-                        selectId = `${this.countScriptPhrase}-select-${this.dataPhrases[this.currentUserPhrase][id].answer[key][select].id}`
-                        newScriptSelector.id = selectId;
-                        this.currentCountSelect++;
-
-                        for (let option_num in this.dataPhrases[this.currentUserPhrase][id].answer[key][select].options) {
-                            newOption = document.createElement("option");
-                            newOption.innerHTML = this.dataPhrases[this.currentUserPhrase][id].answer[key][select].options[option_num].option;
-                            newOption.id = `${selectId}-option-${this.dataPhrases[this.currentUserPhrase][id].answer[key][select].options[option_num].id}`;
-                            newScriptSelector.appendChild(newOption);
-                        }
-
-                        newScriptDivChilde.appendChild(newScriptSelector);
-                        newScriptDivParent.appendChild(newScriptDivChilde);
-                    }
-                    break;
                 default:
                     break;
 
@@ -155,14 +235,21 @@ class Chat extends React.Component {
 
         let parentDiv = document.getElementById("chat");
         parentDiv.appendChild(newScriptDivParent);
+        setTimeout(function(){
+            newScriptDivParent.classList.add("fade-in");
+            newScriptDivParent.style.opacity = 1;
+        },250);
+        
 
         /* parentDiv.scrollTop = parentDiv.scrollHeight; */
-        newScriptDivParent.scrollIntoView({ behavior: 'smooth' });
+        /* this.smoothScrollToElement(newScriptDivParent); */
+        /* newScriptDivParent.scrollIntoView({ behavior: "smooth", block: "center" }); */
     }
 
     updateUserOptions(next) {
         let newUserDivParent = document.createElement("div");
         newUserDivParent.className = "user-phrase";
+        newUserDivParent.style.opacity = 0;
         newUserDivParent.id = `user-phrase-${this.countUserPhrase}`;
         let newForm = document.createElement("form");
         newForm.className = "form-user-phrase";
@@ -200,15 +287,19 @@ class Chat extends React.Component {
 
         let newButton = document.createElement("button");
         newButton.className = "send";
+        newButton.id = "send-message-user";
         newButton.addEventListener('click', this.handleSubmit);
         newButton.textContent = "Send";
         newUserDivParent.appendChild(newButton);
 
         let parentDiv = document.getElementById("chat");
         parentDiv.appendChild(newUserDivParent);
-
+        setTimeout(function(){
+            newUserDivParent.classList.add("fade-in");
+            newUserDivParent.style.opacity = 1;
+        }, 250)
         /* parentDiv.scrollTop = parentDiv.scrollHeight; */ /* Scrolls down*/
-        /* newUserDivParent.scrollIntoView({ behavior: 'smooth' }); */
+        /* newUserDivParent.scrollIntoView({ behavior: 'smooth', block: "center" }); */
     }
 
     handleWebsite() {
@@ -260,27 +351,28 @@ class Chat extends React.Component {
         event.preventDefault(); // Prevents form resubmission
         const selected = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked');
         if (selected) {
+            document.getElementById("send-message-user").disabled = true; 
             const selectedId = selected.id;
             const selectedNext = selected.value;
 
             this.scoreRecord(selectedId);
             this.pinChoice(selectedId);
 
-            this.countUserPhrase++;
-            this.countScriptPhrase++;
-            this.outputAnswerScript(selectedId);
-            this.preventUserPhrase = this.currentUserPhrase;
-            this.preventUserPhraseId = selectedId;
-            this.currentUserPhrase = selectedNext;
-            if (this.currentUserPhrase !== "end") {
-                this.updateUserOptions(selectedNext);
-            } else {
-                this.renderResultButton();
-            }
-        } else {
-            alert(warning.chat);
+            let self = this;
+            setTimeout(function() {
+                self.countUserPhrase++;
+                self.countScriptPhrase++;
+                self.outputAnswerScript(selectedId);
+                self.preventUserPhrase = self.currentUserPhrase;
+                self.preventUserPhraseId = selectedId;
+                self.currentUserPhrase = selectedNext;
+                if (self.currentUserPhrase !== "end") {
+                    self.updateUserOptions(selectedNext);
+                } else {
+                    self.renderResultButton();
+                }
+            }, 1500);
         }
-
     }
 
     firstScriptPhrase() {
@@ -296,7 +388,7 @@ class Chat extends React.Component {
     firstUserPhrase() {
         this.countUserPhrase++;
         return (
-            <div className="user-phrase" id={`user-phrase-${this.countUserPhrase}`}>
+            <div className="user-phrase fade-in" id={`user-phrase-${this.countUserPhrase}`}>
                 <form className="form-user-phrase" id={`form-user-phrase-${this.countUserPhrase}`}>
                     {this.dataPhrases.firstPhrase.map((option) => (
                         <div className="option-user-phrase" key={option.id}>
@@ -305,7 +397,7 @@ class Chat extends React.Component {
                         </div>
                     ))}
                 </form>
-                <button className="send" onClick={this.handleSubmit}>Send</button>
+                <button className="send" id = "send-message-user" onClick={this.handleSubmit}>Send</button>
             </div>
         );
     }

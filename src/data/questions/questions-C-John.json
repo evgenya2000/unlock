@@ -277,7 +277,7 @@
       "phrase": "I'd like you to meet my family.",
       "wight": 1,
       "answer": {
-        "message": ["I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them", "I've been living in a hostel for a couple months now. Last time I saw my family was in September. .......... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"],
+        "message": ["I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them", "I've been living in a hostel for a couple months now. Last time I saw my family was in September. ..... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"],
         "selects": [
           {
             "id": "0",
@@ -356,7 +356,7 @@
       "phrase": "I'd want you to meet my family.",
       "wight": 0,
       "answer": {
-        "message": ["I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them", "I've been living in a hostel for a couple months now. Last time I saw my family was in September. .......... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"],
+        "message": ["I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them", "I've been living in a hostel for a couple months now. Last time I saw my family was in September. ..... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"],
         "selects": [
           {
             "id": "0",
@@ -435,7 +435,7 @@
       "phrase": "I want you to meet my family.",
       "wight": 0,
       "answer": {
-        "message": ["I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them", "I've been living in a hostel for a couple months now. Last time I saw my family was in September. .......... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"],
+        "message": ["I ..... in a hostel for a couple months now. Last time I ..... my family was in September. When I ..... home, I realized they ..... on a short trip, so I ..... for a day before they arrived, haha. But I'm glad I ..... met them", "I've been living in a hostel for a couple months now. Last time I saw my family was in September. ..... When I reached home, I realized they had gone on a short trip, so I had been waiting for a day before they arrived, haha"],
         "selects": [
           {
             "id": "0",
@@ -658,7 +658,7 @@
       "wight": 0,
       "phrase": "It's a bad idea to ask for help.",
       "answer": {
-        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.Itmakesmecalmandputsallthestressaway.mp3"
+        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.mp3"
       },
       "next": "twelfthPhrase"
     },
@@ -667,7 +667,7 @@
       "phrase": "He has already asked his friend for help.",
       "wight": 0,
       "answer": {
-        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.Itmakesmecalmandputsallthestressaway.mp3"
+        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.mp3"
       },
       "next": "twelfthPhrase"
     },
@@ -676,7 +676,7 @@
       "wight": 1,
       "phrase": "He doesn't understand why he didn't ask his friend for help.",
       "answer": {
-        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.Itmakesmecalmandputsallthestressaway.mp3"
+        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.mp3"
       },
       "next": "twelfthPhrase"
     }
