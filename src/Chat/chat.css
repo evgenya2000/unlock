@@ -69,9 +69,18 @@
     cursor: pointer;
 }
 
-.chat button:hover {
+.chat .send-active:hover {
     background-color: var(--purple-color);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.chat button:disabled {
+    background-color: var(--purple-light-transparent-color);
+}
+
+.chat .send-disabled:hover {
+    box-shadow: none;
+    cursor: auto;
 }
 
 .chat .result {
@@ -105,9 +114,7 @@
 
 .user-phrase .message {
     text-align: end;
-    background-color: var(--yellow-color);
-    /* display: flex;
-    flex-wrap: nowrap; */
+    background-color: var(--gray-color); /* var(--yellow-color); */
 }
 
 .user-phrase p {
@@ -125,6 +132,12 @@
     flex-direction: column;
 }
 
+#option-checked-true-border {
+    /* border: 2px solid var(--green-color); */
+    outline: 2px solid var(--green-color);
+    outline-offset:-2px;
+}
+
 #false-text {
     text-decoration-line: line-through;
 }
@@ -133,7 +146,7 @@
 
 .script-phrase {
     align-items: flex-start;
-    margin-bottom: 2%;
+    margin-bottom: 12%;
 }
 
 .script-phrase .message,
@@ -356,6 +369,7 @@
 
     .option-user-phrase>.ball {
         margin-right: 8%;
+        transition-duration: 0.8s;
     }
 
     .script-phrase .script-phrase-audio {

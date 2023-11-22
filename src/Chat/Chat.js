@@ -31,62 +31,40 @@ class Chat extends React.Component {
             this.pointsScored += this.dataPhrases[this.preventUserPhrase][this.preventUserPhraseId].answer.selects[countSelect - 1].options[selectedIndex].wight;
             countSelect--;
         }
-
     }
 
     /* Deleting a form and committing a response */
     pinChoice(checkedId) {
         /* Pin User-phrase */
-        const form = document.getElementById(`form-user-phrase-${this.countUserPhrase}`);
-        const button = document.getElementsByClassName('send')[0];
+        for (let optionNum in this.dataPhrases[this.currentUserPhrase]){
+            const ball = document.getElementById(`ball-${this.currentUserPhrase}-${optionNum}`);
+            ball.disabled = true;
+        }
+        
+        let message = document.getElementById(`phrase-${this.currentUserPhrase}-${checkedId}`);
 
-        let checkedPhrase = this.dataPhrases[this.currentUserPhrase][checkedId].phrase;
-        let newDiv = document.createElement("div");
-        newDiv.style.opacity = 0;
-        newDiv.className = "message";
-        let newParagraph = null;
-        let paragraphText = null;
         if (this.dataPhrases[this.currentUserPhrase][checkedId].wight === 1 || this.dataPhrases[this.currentUserPhrase][checkedId].wight === null) {
-            newDiv.id = "option-checked-true";
-            newParagraph = document.createElement("p");
-            paragraphText = document.createTextNode(checkedPhrase);
-            newParagraph.appendChild(paragraphText);
-            newDiv.appendChild(newParagraph);
+            message.id = "option-checked-true";
         } else {
-            newDiv.id = "option-checked-false";
-            let newParagraphFalse = document.createElement("p");
-            let paragraphFalseText = document.createTextNode(checkedPhrase);
-            newParagraphFalse.id = 'false-text';
-            newParagraphFalse.appendChild(paragraphFalseText);
-            newDiv.appendChild(newParagraphFalse);
-            let newParagraphTrue = document.createElement("p");
-            let truePhrase = "";
-            for (let id in this.dataPhrases[this.currentUserPhrase]) {
-                if (this.dataPhrases[this.currentUserPhrase][id].wight === 1) {
-                    truePhrase = this.dataPhrases[this.currentUserPhrase][id].phrase;
+            message.id = "option-checked-false";
+            let trueId = null;
+            for (trueId in this.dataPhrases[this.currentUserPhrase]) {
+                if (this.dataPhrases[this.currentUserPhrase][trueId].wight === 1) {
+                    message = document.getElementById(`phrase-${this.currentUserPhrase}-${trueId}`);
+                    message.id = "option-checked-true-border";
                     break;
                 }
             }
-            let paragraphTrueText = document.createTextNode(truePhrase);
-            newParagraphTrue.appendChild(paragraphTrueText);
-            newDiv.appendChild(newParagraphTrue);
         }
 
-        let parentDiv = document.getElementById(`user-phrase-${this.countUserPhrase}`);
+        const button = document.getElementById(`send-message-user-${this.currentUserPhrase}`);
+        button.className = "send-disabled";
 
         setTimeout(function() {
-            form.classList.remove('fade-in');
-            form.classList.add('fade-out');
-            button.classList.remove('fade-in');
-            button.classList.add('fade-out');
+            button.classList.remove("fade-in");
+            button.classList.add("fade-out");
             setTimeout(function() {
-                form.remove();
-                button.remove();
-                parentDiv.appendChild(newDiv);
-                setTimeout(function() {
-                    newDiv.classList.add('fade-in');
-                    newDiv.style.opacity = 1;
-                }, 250); // Небольшая задержка перед установкой полной непрозрачности нового контента
+                button.style.opacity = 0;
             }, 250); // задержка в 1 секунду
           }, 400); // задержка в 2 секунды перед удалением
         
@@ -106,12 +84,12 @@ class Chat extends React.Component {
         }
     }
 
-    smoothScrollToElement(element) {
+/*     smoothScrollToElement(element) {
         var offset = element.getBoundingClientRect().top;
         var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
         // Количество шагов, которые будут создавать плавную прокрутку
-        var steps = 50;
+        var steps = 100;
         var stepValue = offset / steps;
 
         function scrollStep() {
@@ -125,7 +103,7 @@ class Chat extends React.Component {
             }
         }
         scrollStep();
-    }
+    } */
 
     outputAnswerScript(id) {
         let newScriptDivParent = document.createElement("div");
@@ -238,12 +216,12 @@ class Chat extends React.Component {
         setTimeout(function(){
             newScriptDivParent.classList.add("fade-in");
             newScriptDivParent.style.opacity = 1;
-        },250);
+        }, 200);
         
 
-        /* parentDiv.scrollTop = parentDiv.scrollHeight; */
+        parentDiv.scrollTop = parentDiv.scrollHeight;
         /* this.smoothScrollToElement(newScriptDivParent); */
-        /* newScriptDivParent.scrollIntoView({ behavior: "smooth", block: "center" }); */
+        /* newScriptDivParent.scrollIntoView(false); */
     }
 
     updateUserOptions(next) {
@@ -268,13 +246,14 @@ class Chat extends React.Component {
             newInput.className = "ball";
             newInput.type = "radio";
             newInput.name = next;
-            newInput.id = this.dataPhrases[next][key].id;
+            newInput.id =`ball-${this.currentUserPhrase}-${this.dataPhrases[next][key].id}`
             newInput.value = this.dataPhrases[next][key].next;
 
             newUserDivMessage = document.createElement("div");
             newUserDivMessage.className = "message";
+            newUserDivMessage.id = `phrase-${this.currentUserPhrase}-${this.dataPhrases[next][key].id}`;
             newUserParagraph = document.createElement("label");
-            newUserParagraph.htmlFor = this.dataPhrases[next][key].id;
+            newUserParagraph.htmlFor = `ball-${this.currentUserPhrase}-${this.dataPhrases[next][key].id}`
             paragraphUserText = document.createTextNode(this.dataPhrases[next][key].phrase);
 
             newUserParagraph.appendChild(paragraphUserText);
@@ -286,8 +265,8 @@ class Chat extends React.Component {
         newUserDivParent.appendChild(newForm);
 
         let newButton = document.createElement("button");
-        newButton.className = "send";
-        newButton.id = "send-message-user";
+        newButton.className = "send-active";
+        newButton.id = `send-message-user-${this.currentUserPhrase}`;
         newButton.addEventListener('click', this.handleSubmit);
         newButton.textContent = "Send";
         newUserDivParent.appendChild(newButton);
@@ -297,9 +276,10 @@ class Chat extends React.Component {
         setTimeout(function(){
             newUserDivParent.classList.add("fade-in");
             newUserDivParent.style.opacity = 1;
-        }, 250)
+        }, 1000)
         /* parentDiv.scrollTop = parentDiv.scrollHeight; */ /* Scrolls down*/
         /* newUserDivParent.scrollIntoView({ behavior: 'smooth', block: "center" }); */
+        /* this.smoothScrollToElement(parentDiv.lastElementChild); */
     }
 
     handleWebsite() {
@@ -351,8 +331,8 @@ class Chat extends React.Component {
         event.preventDefault(); // Prevents form resubmission
         const selected = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked');
         if (selected) {
-            document.getElementById("send-message-user").disabled = true; 
-            const selectedId = selected.id;
+            document.getElementById(`send-message-user-${this.currentUserPhrase}`).disabled = true; 
+            const selectedId = selected.id[selected.id.length - 1];
             const selectedNext = selected.value;
 
             this.scoreRecord(selectedId);
@@ -371,7 +351,7 @@ class Chat extends React.Component {
                 } else {
                     self.renderResultButton();
                 }
-            }, 1500);
+            }, 1000);
         }
     }
 
@@ -392,12 +372,12 @@ class Chat extends React.Component {
                 <form className="form-user-phrase" id={`form-user-phrase-${this.countUserPhrase}`}>
                     {this.dataPhrases.firstPhrase.map((option) => (
                         <div className="option-user-phrase" key={option.id}>
-                            <input className="ball" type="radio" name={this.currentUserPhrase} id={option.id} value={option.next} />
-                            <div className="message"><label htmlFor={option.id}>{option.phrase}</label></div>
+                            <input className="ball" type="radio" name={this.currentUserPhrase} id={`ball-firstPhrase-${option.id}`} value={option.next} />
+                            <div className="message" id={`phrase-firstPhrase-${option.id}`}><label htmlFor={`ball-firstPhrase-${option.id}`}>{option.phrase}</label></div>
                         </div>
                     ))}
                 </form>
-                <button className="send" id = "send-message-user" onClick={this.handleSubmit}>Send</button>
+                <button className="send-active" id = "send-message-user-firstPhrase" onClick={this.handleSubmit}>Send</button>
             </div>
         );
     }
