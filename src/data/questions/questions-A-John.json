@@ -447,7 +447,7 @@
               {
                 "id": "0",
                 "option": "There is a table in the room.",
-                "wight": 1
+                "wight": 2
               },
               {
                 "id": "1",
@@ -513,7 +513,7 @@
               {
                 "id": "0",
                 "option": "There is a table in the room.",
-                "wight": 1
+                "wight": 2
               },
               {
                 "id": "1",
@@ -579,7 +579,7 @@
               {
                 "id": "0",
                 "option": "There is a table in the room.",
-                "wight": 1
+                "wight": 2
               },
               {
                 "id": "1",
@@ -596,10 +596,36 @@
         ]
       },
       "next": "eleventhPhrase",
-      "wight": 1
+      "wight": 2
     }
   ],
   "eleventhPhrase": [
+    {
+      "id": "0",
+      "phrase": "There is a table in the room.",
+      "answer": {
+      },
+      "next": "twelfthPhrase",
+      "wight": 2
+    },
+    {
+      "id": "1",
+      "phrase": "There isn't a dog in the photo.",
+      "answer": {
+      },
+      "next": "twelfthPhrase",
+      "wight": 0
+    },
+    {
+      "id": "2",
+      "phrase": "There are 5 people in the photo.",
+      "answer": {
+      },
+      "next": "twelfthPhrase",
+      "wight": 0
+    }
+  ],
+  "twelfthPhrase": [
     {
       "id": "0",
       "phrase": "Nice! When have you visit them last time?",
@@ -612,7 +638,7 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "visited", "wight": 1 },
+              { "id": "0", "option": "visited", "wight": 2 },
               { "id": "1", "option": "visitied", "wight": 0 },
               { "id": "2", "option": "visityd", "wight": 0 }
             ]
@@ -627,7 +653,7 @@
           }
         ]
       },
-      "next": "twelfthPhrase",
+      "next": "thirteenthPhrase",
       "wight": 0
     },
     {
@@ -642,7 +668,7 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "visited", "wight": 1 },
+              { "id": "0", "option": "visited", "wight": 2 },
               { "id": "1", "option": "visitied", "wight": 0 },
               { "id": "2", "option": "visityd", "wight": 0 }
             ]
@@ -657,8 +683,8 @@
           }
         ]
       },
-      "next": "twelfthPhrase",
-      "wight": 1
+      "next": "thirteenthPhrase",
+      "wight": 2
     },
     {
       "id": "2",
@@ -672,7 +698,7 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "visited", "wight": 1 },
+              { "id": "0", "option": "visited", "wight": 2 },
               { "id": "1", "option": "visitied", "wight": 0 },
               { "id": "2", "option": "visityd", "wight": 0 }
             ]
@@ -687,11 +713,11 @@
           }
         ]
       },
-      "next": "twelfthPhrase",
+      "next": "thirteenthPhrase",
       "wight": 0
     }
   ],
-  "twelfthPhrase": [
+  "thirteenthPhrase": [
     {
       "id": "0",
       "phrase": "I do nothing",
@@ -703,12 +729,12 @@
             "options": [
               { "id": "0", "option": "easer", "wight": 0 },
               { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
+              { "id": "2", "option": "easier", "wight": 2 }
             ]
           }
         ]
       },
-      "next": "thirteenthPhrase",
+      "next": "fourteenthPhrase",
       "wight": 0
     },
     {
@@ -722,13 +748,13 @@
             "options": [
               { "id": "0", "option": "easer", "wight": 0 },
               { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
+              { "id": "2", "option": "easier", "wight": 2 }
             ]
           }
         ]
       },
-      "next": "thirteenthPhrase",
-      "wight": 1
+      "next": "fourteenthPhrase",
+      "wight": 2
     },
     {
       "id": "2",
@@ -741,24 +767,24 @@
             "options": [
               { "id": "0", "option": "easer", "wight": 0 },
               { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
+              { "id": "2", "option": "easier", "wight": 2 }
             ]
           }
         ]
       },
-      "next": "thirteenthPhrase",
+      "next": "fourteenthPhrase",
       "wight": 0
     }
   ],
-  "thirteenthPhrase": [
+  "fourteenthPhrase": [
     {
       "id": "0",
       "phrase": "Mine, of course.",
       "answer": {
         "audio": "/resources/audio/john/haveyoueverbeentoaustralia.mp3"
       },
-      "next": "fourteenthPhrase",
-      "wight": 1
+      "next": "fifteenthPhrase",
+      "wight": 2
     },
     {
       "id": "1",
@@ -766,7 +792,7 @@
       "answer": {
         "audio": "/resources/audio/john/haveyoueverbeentoaustralia.mp3"
       },
-      "next": "fourteenthPhrase",
+      "next": "fifteenthPhrase",
       "wight": 0
     },
     {
@@ -775,11 +801,11 @@
       "answer": {
         "audio": "/resources/audio/john/haveyoueverbeentoaustralia.mp3"
       },
-      "next": "fourteenthPhrase",
+      "next": "fifteenthPhrase",
       "wight": 0
     }
   ],
-  "fourteenthPhrase": [
+  "fifteenthPhrase": [
     {
       "id": "0",
       "phrase": " I don't know.",
@@ -792,14 +818,14 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "the best", "wight": 1 },
+              { "id": "0", "option": "the best", "wight": 2 },
               { "id": "1", "option": "best", "wight": 0 },
               { "id": "2", "option": "the better", "wight": 0 }
             ]
           }
         ]
       },
-      "next": "fifteenthPhrase",
+      "next": "sixteenthPhrase",
       "wight": 0
     },
     {
@@ -814,14 +840,14 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "the best", "wight": 1 },
+              { "id": "0", "option": "the best", "wight": 2 },
               { "id": "1", "option": "best", "wight": 0 },
               { "id": "2", "option": "the better", "wight": 0 }
             ]
           }
         ]
       },
-      "next": "fifteenthPhrase",
+      "next": "sixteenthPhrase",
       "wight": 0
     },
     {
@@ -836,18 +862,18 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "the best", "wight": 1 },
+              { "id": "0", "option": "the best", "wight": 2 },
               { "id": "1", "option": "best", "wight": 0 },
               { "id": "2", "option": "the better", "wight": 0 }
             ]
           }
         ]
       },
-      "next": "fifteenthPhrase",
-      "wight": 1
+      "next": "sixteenthPhrase",
+      "wight": 2
     }
   ],
-  "fifteenthPhrase": [
+  "sixteenthPhrase": [
     {
       "id": "0",
       "phrase": "See you soon!",

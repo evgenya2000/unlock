@@ -9,13 +9,13 @@ export const result = {
 }
 
 export const dispointment = {
-    "A-John": {"A1": "", "A2": "", "max": "28"},
-    "B-John": {"A1": "", "A2": "", "max": "33"},
-    "C-John": {"A1": "", "A2": "", "max": "28"},
-    "A-Lisa": {"A1": "", "A2": "", "max": "30"},
-    "B-Lisa": {"A1": "", "A2": "", "max": "32"},
-    "C-Lisa": {"A1": "", "A2": "", "max": "21"},
-    "A-Stewart": {"A1": "", "A2": "", "max": "28"},
-    "B-Stewart": {"A1": "", "A2": "", "max": "33"},
-    "C-Stewart": {"A1": "", "A2": "", "max": "22"},
+    "A-John": { "min": "5.4", "threshold-difficult": 5.4, "threshold-max": "24.3", l1: "A1", l2: "A1", l3: "A2", l4: "B1" }, /* all "difficult": 9 "max": "27"*/
+    "B-John": { "min": "6.6", "threshold-difficult": 12, "threshold-max": "30.6", l1: "A2", l2: "B1", l3: "B2", l4: "C1" }, /* all "difficult": 20 "max": "34"*/
+    "C-John": { "min": "5.6", "threshold-difficult": 14.4, "threshold-max": "25.2", l1: "B2", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 16 "max": "28 "*/
+    "A-Lisa": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "A1", l2: "A1", l3: "A2", l4: "B1" }, /* all "difficult": 20 "max": "30"*/
+    "B-Lisa": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "A2", l2: "B1", l3: "B2", l4: "C1" }, /* all "difficult": 20 "max": "32"*/
+    "C-Lisa": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "B2", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 20 "max": "21"*/
+    "A-Stewart": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "A1", l2: "A1", l3: "A2", l4: "B1" }, /* all "difficult": 20 "max": "28"*/
+    "B-Stewart": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "A2", l2: "B1", l3: "B2", l4: "C1" }, /* all "difficult": 20 "max": "33"*/
+    "C-Stewart": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "B2", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 20 "max": "22"*/
 }

@@ -1,12 +1,13 @@
 import React from "react";
 
 import "./chat.css";
-import { result } from "../data/Result";
+import { result, dispointment } from "../data/Result";
 class Chat extends React.Component {
     constructor(props) {
         super(props);
         this.dataPhrases = null;
         this.pointsScored = 0;
+        this.pointsScoredDifficult = 0;
         this.preventUserPhrase = "...";
         this.preventUserPhraseId = "0";
         this.currentUserPhrase = "firstPhrase";
@@ -19,8 +20,15 @@ class Chat extends React.Component {
     }
 
     scoreRecord(id) {
-        this.pointsScored += this.dataPhrases[this.currentUserPhrase][id].wight === null ? 0 : this.dataPhrases[this.currentUserPhrase][id].wight;
-
+        let point = this.dataPhrases[this.currentUserPhrase][id].wight;
+        if ( point === 2) {
+            this.pointsScoredDifficult += 1;
+            this.pointsScored += 1;
+        } else {
+            this.pointsScored += point === null ? 0 : point;
+        }
+        /*         this.pointsScored += this.dataPhrases[this.currentUserPhrase][id].wight === null ? 0 : this.dataPhrases[this.currentUserPhrase][id].wight;
+         */
         let countSelect = this.currentCountSelect;
         let selectElement = null;
         let selectId, selectedIndex;
@@ -28,7 +36,13 @@ class Chat extends React.Component {
             selectId = `${this.countScriptPhrase}-select-${countSelect - 1}`;
             selectElement = document.getElementById(selectId);
             selectedIndex = selectElement.selectedIndex;
-            this.pointsScored += this.dataPhrases[this.preventUserPhrase][this.preventUserPhraseId].answer.selects[countSelect - 1].options[selectedIndex].wight;
+            point = this.dataPhrases[this.preventUserPhrase][this.preventUserPhraseId].answer.selects[countSelect - 1].options[selectedIndex].wight;
+            if ( point === 2) {
+                this.pointsScoredDifficult += 1;
+                this.pointsScored += 1;
+            } else {
+                this.pointsScored += point === null ? 0 : point;
+            }
             countSelect--;
         }
     }
@@ -36,14 +50,14 @@ class Chat extends React.Component {
     /* Deleting a form and committing a response */
     pinChoice(checkedId) {
         /* Pin User-phrase */
-        for (let optionNum in this.dataPhrases[this.currentUserPhrase]){
+        for (let optionNum in this.dataPhrases[this.currentUserPhrase]) {
             const ball = document.getElementById(`ball-${this.currentUserPhrase}-${optionNum}`);
             ball.disabled = true;
         }
-        
+
         let message = document.getElementById(`phrase-${this.currentUserPhrase}-${checkedId}`);
 
-        if (this.dataPhrases[this.currentUserPhrase][checkedId].wight === 1 || this.dataPhrases[this.currentUserPhrase][checkedId].wight === null) {
+        if (this.dataPhrases[this.currentUserPhrase][checkedId].wight !== 0) {
             message.id = "option-checked-true";
         } else {
             message.id = "option-checked-false";
@@ -60,14 +74,14 @@ class Chat extends React.Component {
         const button = document.getElementById(`send-message-user-${this.currentUserPhrase}`);
         button.className = "send-disabled";
 
-        setTimeout(function() {
+        setTimeout(function () {
             button.classList.remove("fade-in");
             button.classList.add("fade-out");
-            setTimeout(function() {
+            setTimeout(function () {
                 button.style.opacity = 0;
             }, 250); // задержка в 1 секунду
-          }, 400); // задержка в 2 секунды перед удалением
-        
+        }, 400); // задержка в 2 секунды перед удалением
+
         /* Pin Script-phrase */
         let select = null;
         let selectedIndex = null;
@@ -75,7 +89,7 @@ class Chat extends React.Component {
             select = document.getElementById(`${this.countScriptPhrase}-select-${this.currentCountSelect - 1}`);
             select.disabled = true;
             selectedIndex = select.selectedIndex;
-            if (this.dataPhrases[this.preventUserPhrase][this.preventUserPhraseId].answer.selects[this.currentCountSelect - 1].options[selectedIndex].wight === 1){
+            if (this.dataPhrases[this.preventUserPhrase][this.preventUserPhraseId].answer.selects[this.currentCountSelect - 1].options[selectedIndex].wight >= 1) {
                 select.className = "select-true";
             } else {
                 select.className = "select-false";
@@ -84,26 +98,26 @@ class Chat extends React.Component {
         }
     }
 
-/*     smoothScrollToElement(element) {
-        var offset = element.getBoundingClientRect().top;
-        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-
-        // Количество шагов, которые будут создавать плавную прокрутку
-        var steps = 100;
-        var stepValue = offset / steps;
-
-        function scrollStep() {
-            if (steps > 0) {
-                scrollPosition += stepValue;
-                window.scrollTo(0, scrollPosition);
-                steps--;
-                setTimeout(scrollStep, 10); // Время задержки в миллисекундах
-            } else {
-                element.scrollIntoView({ behavior: "smooth", block: "center" });
+    /*     smoothScrollToElement(element) {
+            var offset = element.getBoundingClientRect().top;
+            var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    
+            // Количество шагов, которые будут создавать плавную прокрутку
+            var steps = 100;
+            var stepValue = offset / steps;
+    
+            function scrollStep() {
+                if (steps > 0) {
+                    scrollPosition += stepValue;
+                    window.scrollTo(0, scrollPosition);
+                    steps--;
+                    setTimeout(scrollStep, 10); // Время задержки в миллисекундах
+                } else {
+                    element.scrollIntoView({ behavior: "smooth", block: "center" });
+                }
             }
-        }
-        scrollStep();
-    } */
+            scrollStep();
+        } */
 
     outputAnswerScript(id) {
         let newScriptDivParent = document.createElement("div");
@@ -142,14 +156,14 @@ class Chat extends React.Component {
                             newScriptParagraph = document.createElement("p");
                             paragraphScriptText = document.createTextNode(parts[0]);
                             newScriptParagraph.appendChild(paragraphScriptText);
-                            
+
                             i = 1;
                             for (; i < parts.length; i++) {
                                 newScriptSelector = document.createElement("select");
                                 selectId = `${this.countScriptPhrase}-select-${this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].id}`
                                 newScriptSelector.id = selectId;
                                 newScriptSelector.key = selectId;
-                                
+
                                 for (let j = 0; j < this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options.length; j++) {
                                     newOption = document.createElement("option");
                                     newOption.innerHTML = this.dataPhrases[this.currentUserPhrase][id].answer.selects[numSelect].options[j].option;
@@ -213,11 +227,11 @@ class Chat extends React.Component {
 
         let parentDiv = document.getElementById("chat");
         parentDiv.appendChild(newScriptDivParent);
-        setTimeout(function(){
+        setTimeout(function () {
             newScriptDivParent.classList.add("fade-in");
             newScriptDivParent.style.opacity = 1;
         }, 200);
-        
+
 
         parentDiv.scrollTop = parentDiv.scrollHeight;
         /* this.smoothScrollToElement(newScriptDivParent); */
@@ -246,7 +260,7 @@ class Chat extends React.Component {
             newInput.className = "ball";
             newInput.type = "radio";
             newInput.name = next;
-            newInput.id =`ball-${this.currentUserPhrase}-${this.dataPhrases[next][key].id}`
+            newInput.id = `ball-${this.currentUserPhrase}-${this.dataPhrases[next][key].id}`
             newInput.value = this.dataPhrases[next][key].next;
 
             newUserDivMessage = document.createElement("div");
@@ -273,7 +287,7 @@ class Chat extends React.Component {
 
         let parentDiv = document.getElementById("chat");
         parentDiv.appendChild(newUserDivParent);
-        setTimeout(function(){
+        setTimeout(function () {
             newUserDivParent.classList.add("fade-in");
             newUserDivParent.style.opacity = 1;
         }, 1000)
@@ -292,12 +306,20 @@ class Chat extends React.Component {
         let newModal = document.createElement("div");
         newModal.className = "modal";
         let answer = "";
-        if (this.pointsScored >= 0) {
-            answer = result.A1;
+        let testName = this.props.file.replace("questions-", "");
+        if ( dispointment[testName].min > this.pointsScored ) {
+            answer = result[dispointment[testName].l1];
+        } else if ( dispointment[testName]["threshold-difficult"] > this.pointsScoredDifficult ) {
+            answer = result[dispointment[testName].l2];
+        } else if ( dispointment[testName]["threshold-max"] > this.pointsScored ) {
+            answer = result[dispointment[testName].l3];
+        } else {
+            answer = result[dispointment[testName].l4];
         }
+
         let paragraphText = document.createTextNode(answer);
         let lineBreak = document.createElement("br");
-        let a1Text = document.createTextNode(result.defoult + this.pointsScored);
+        let a1Text = document.createTextNode(result.defoult);
 
         let paragraph = document.createElement("p");
         paragraph.appendChild(paragraphText);
@@ -331,7 +353,7 @@ class Chat extends React.Component {
         event.preventDefault(); // Prevents form resubmission
         const selected = document.querySelector('input[name=' + this.currentUserPhrase + ']:checked');
         if (selected) {
-            document.getElementById(`send-message-user-${this.currentUserPhrase}`).disabled = true; 
+            document.getElementById(`send-message-user-${this.currentUserPhrase}`).disabled = true;
             const selectedId = selected.id[selected.id.length - 1];
             const selectedNext = selected.value;
 
@@ -339,7 +361,7 @@ class Chat extends React.Component {
             this.pinChoice(selectedId);
 
             let self = this;
-            setTimeout(function() {
+            setTimeout(function () {
                 self.countUserPhrase++;
                 self.countScriptPhrase++;
                 self.outputAnswerScript(selectedId);
@@ -377,7 +399,7 @@ class Chat extends React.Component {
                         </div>
                     ))}
                 </form>
-                <button className="send-active" id = "send-message-user-firstPhrase" onClick={this.handleSubmit}>Send</button>
+                <button className="send-active" id="send-message-user-firstPhrase" onClick={this.handleSubmit}>Send</button>
             </div>
         );
     }

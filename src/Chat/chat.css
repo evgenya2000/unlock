@@ -146,7 +146,7 @@
 
 .script-phrase {
     align-items: flex-start;
-    margin-bottom: 12%;
+    margin-bottom: 0%;
 }
 
 .script-phrase .message,
@@ -233,17 +233,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: auto;
+    /* width: auto; */
     height: auto;
+    max-width: 60%;
+    /* max-height: 70%; */
     background-color: white;
     z-index: 999;
     border-radius: 30px;
     padding: 4%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal>p {
-    line-height: 60px;
+    line-height: 40px;
+    display: inline-block;
+    width: auto;
+    height: auto;
 }
 
 .modal>button {
@@ -279,29 +288,34 @@
 }
 
 @media screen and (max-width: 2000px) {
-    .message-selects p {
+    .message-selects p, .modal p {
         line-height: calc(var(--base-font-size) + 20px);
     }
 }
 
 @media screen and (max-width: 1500px) {
-    .message-selects p {
+    .message-selects p, .modal p {
         line-height: calc(var(--base-font-size) + 15px);
+    }
+}
+
+@media screen and (max-width: 1130px){
+    .modal {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
     }
 }
 
 @media screen and (max-width: 900px) {
     .message-selects select,
+    .message-selects option,
     .chat button,
-    .modal {
+    .modal, .modal>button {
         font-size: var(--font-size-900);
     }
 
-    .message-selects option {
-        font-size: var(--font-size-900);
-    }
-
-    .message-selects p {
+    .message-selects p, .modal p {
         line-height: calc(var(--base-font-size) + 10px);
     }
 }
@@ -321,19 +335,16 @@
         max-width: 90%;
     }
 
-    .message-selects p {
+    .message-selects p, .modal p {
         line-height: calc(var(--base-font-size) + 5px);
     }
 }
 
 @media screen and (max-width: 590px) {
     .message-selects select,
+    .message-selects option,
     .chat button,
-    .modal {
-        font-size: var(--font-size-590);
-    }
-
-    .message-selects option {
+    .modal, .modal>button {
         font-size: var(--font-size-590);
     }
 
@@ -347,7 +358,7 @@
         margin-left: 5%;
     }
 
-    .message-selects p {
+    .message-selects p, .modal p {
         line-height: calc(var(--base-font-size));
     }
 }
@@ -382,20 +393,21 @@
         margin-bottom: 4%;
     }
 
-    .message-selects p {
+    .message-selects p, .modal p {
         line-height: calc(var(--font-size-900));
     }
 }
 
 @media screen and (max-width: 375px) {
     .message-selects select,
+    .message-selects option,
     .chat button,
-    .modal {
+    .modal, .modal button {
         font-size: var(--font-size-375);
     }
 
-    option {
-        font-size: var(--font-size-375);
+    .modal {
+        max-width: 80%;
     }
 
     .script-phrase .script-phrase-audio {
