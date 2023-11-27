@@ -109,6 +109,8 @@
 }
 
 .option-user-phrase label {
+    height: auto;
+    width: auto;
     cursor: pointer;
 }
 
@@ -233,10 +235,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* width: auto; */
     height: auto;
     max-width: 60%;
-    /* max-height: 70%; */
     background-color: white;
     z-index: 999;
     border-radius: 30px;
@@ -348,7 +348,7 @@
         font-size: var(--font-size-590);
     }
 
-    .user-phrase>.message,
+    .user-phrase .message,
     .script-phrase>.message,
     .script-phrase>.message-selects {
         max-width: 60%;
@@ -371,7 +371,7 @@
         padding-bottom: 5%;
     }
 
-    .user-phrase>.message,
+    .user-phrase .message,
     .script-phrase>.message,
     .script-phrase>.message-selects {
         max-width: 80%;
@@ -396,6 +396,11 @@
     .message-selects p, .modal p {
         line-height: calc(var(--font-size-900));
     }
+
+    .option-user-phrase .ball {
+        vertical-align:middle;
+        margin-top: -10px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -406,6 +411,13 @@
         font-size: var(--font-size-375);
     }
 
+    .message,
+    .message-selects {
+        padding: 8%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    
     .modal {
         max-width: 80%;
     }
