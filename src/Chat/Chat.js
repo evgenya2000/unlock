@@ -139,7 +139,8 @@ class Chat extends React.Component {
         let matches = null;
         let countSelectsInCurrentMessage = 0;
         let numSelect = 0;
-        for (let key in this.dataPhrases[this.currentUserPhrase][id].answer) {
+        let key = null;
+        for (key in this.dataPhrases[this.currentUserPhrase][id].answer) {
             switch (key) {
                 case "message":
                     if ("selects" in this.dataPhrases[this.currentUserPhrase][id].answer) {
@@ -226,12 +227,13 @@ class Chat extends React.Component {
         }
 
         let parentDiv = document.getElementById("chat");
-        parentDiv.appendChild(newScriptDivParent);
-        setTimeout(function () {
-            newScriptDivParent.classList.add("fade-in");
-            newScriptDivParent.style.opacity = 1;
-        }, 200);
-
+        if (key) { 
+            parentDiv.appendChild(newScriptDivParent);
+            setTimeout(function () {
+                newScriptDivParent.classList.add("fade-in");
+                newScriptDivParent.style.opacity = 1;
+            }, 200);
+        }
 
         parentDiv.scrollTop = parentDiv.scrollHeight;
         /* this.smoothScrollToElement(newScriptDivParent); */
@@ -341,11 +343,16 @@ class Chat extends React.Component {
     renderResultButton() {
         let newButton = document.createElement("button");
         newButton.className = "result";
+        newButton.style.opacity = 0;
         newButton.addEventListener('click', this.handleResult);
         newButton.textContent = "Show result";
 
         let parentDiv = document.getElementById("chat");
         parentDiv.appendChild(newButton);
+        setTimeout(function () {
+            newButton.classList.add("fade-in");
+            newButton.style.opacity = 1;
+        }, 200);
         parentDiv.scrollTop = parentDiv.scrollHeight; /* Scrolls down*/
     }
 

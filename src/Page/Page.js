@@ -96,7 +96,6 @@ class Page extends React.Component {
                 return (
                     <div className="content" id="content_q1">
                         <label className="question" id="question_q1">{question.q1}</label>
-                        <br></br>
                         {this.renderForm1()}
                         <button className="btn" type="submit" onClick={this.handleSubmit} form="form1">Следующий этап</button>
                     </div>);

@@ -128,7 +128,7 @@
     {
       "id": "0",
       "wight": null,
-      "phrase": "I am from Russia.",
+      "phrase": "I'am a citizen of the world.",
       "answer": {
         "message": ["Cool! I'm from UK", "What do you do?"]
       },
@@ -811,29 +811,7 @@
   "twelfthPhrase": [
     {
       "id": "0",
-      "phrase": "My city is Moscow",
-      "wight": null,
-      "answer": {
-        "message": [
-          "Oh, I'm sorry, I need to go now."
-        ]
-      },
-      "next": "thirteenthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "Saint Petersburg",
-      "wight": null,
-      "answer": {
-        "message": [
-          "Oh, I'm sorry, I need to go now."
-        ]
-      },
-      "next": "thirteenthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "Another",
+      "phrase": "I'am a citizen of the world",
       "wight": null,
       "answer": {
         "message": [

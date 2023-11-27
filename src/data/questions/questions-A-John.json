@@ -127,7 +127,7 @@
   "thirdPhrase": [
     {
       "id": "0",
-      "phrase": "I'am from Russia.",
+      "phrase": "I'am a citizen of the world.",
       "answer": {
         "message": ["Cool! I'm from Australia.", "What do you do?"]
       },
