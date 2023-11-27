@@ -406,7 +406,8 @@
       "answer": {
         "img": "/resources/img-tasks/family-john.jpg",
         "message": [
-          "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often."
+          "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often.",
+          "Выберите описание картинки: ....."
         ],
         "selects": [
           {
@@ -472,7 +473,8 @@
       "answer": {
         "img": "/resources/img-tasks/family-john.jpg",
         "message": [
-          "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often."
+          "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often.",
+          "Выберите описание картинки: ....."
         ],
         "selects": [
           {
@@ -538,7 +540,8 @@
       "answer": {
         "img": "/resources/img-tasks/family-john.jpg",
         "message": [
-          "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often."
+          "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often.",
+          "Выберите описание картинки: ....."
         ],
         "selects": [
           {
@@ -602,32 +605,6 @@
   "eleventhPhrase": [
     {
       "id": "0",
-      "phrase": "There is a table in the room.",
-      "answer": {
-      },
-      "next": "twelfthPhrase",
-      "wight": 2
-    },
-    {
-      "id": "1",
-      "phrase": "There isn't a dog in the photo.",
-      "answer": {
-      },
-      "next": "twelfthPhrase",
-      "wight": 0
-    },
-    {
-      "id": "2",
-      "phrase": "There are 5 people in the photo.",
-      "answer": {
-      },
-      "next": "twelfthPhrase",
-      "wight": 0
-    }
-  ],
-  "twelfthPhrase": [
-    {
-      "id": "0",
       "phrase": "Nice! When have you visit them last time?",
       "answer": {
         "message": [
@@ -653,7 +630,7 @@
           }
         ]
       },
-      "next": "thirteenthPhrase",
+      "next": "twelfthPhrase",
       "wight": 0
     },
     {
@@ -683,7 +660,7 @@
           }
         ]
       },
-      "next": "thirteenthPhrase",
+      "next": "twelfthPhrase",
       "wight": 2
     },
     {
@@ -713,11 +690,11 @@
           }
         ]
       },
-      "next": "thirteenthPhrase",
+      "next": "twelfthPhrase",
       "wight": 0
     }
   ],
-  "thirteenthPhrase": [
+  "twelfthPhrase": [
     {
       "id": "0",
       "phrase": "I do nothing",
@@ -734,7 +711,7 @@
           }
         ]
       },
-      "next": "fourteenthPhrase",
+      "next": "thirteenthPhrase",
       "wight": 0
     },
     {
@@ -753,7 +730,7 @@
           }
         ]
       },
-      "next": "fourteenthPhrase",
+      "next": "thirteenthPhrase",
       "wight": 2
     },
     {
@@ -772,18 +749,18 @@
           }
         ]
       },
-      "next": "fourteenthPhrase",
+      "next": "thirteenthPhrase",
       "wight": 0
     }
   ],
-  "fourteenthPhrase": [
+  "thirteenthPhrase": [
     {
       "id": "0",
       "phrase": "Mine, of course.",
       "answer": {
         "audio": "/resources/audio/john/haveyoueverbeentoaustralia.mp3"
       },
-      "next": "fifteenthPhrase",
+      "next": "fourteenthPhrase",
       "wight": 2
     },
     {
@@ -792,7 +769,7 @@
       "answer": {
         "audio": "/resources/audio/john/haveyoueverbeentoaustralia.mp3"
       },
-      "next": "fifteenthPhrase",
+      "next": "fourteenthPhrase",
       "wight": 0
     },
     {
@@ -801,11 +778,11 @@
       "answer": {
         "audio": "/resources/audio/john/haveyoueverbeentoaustralia.mp3"
       },
-      "next": "fifteenthPhrase",
+      "next": "fourteenthPhrase",
       "wight": 0
     }
   ],
-  "fifteenthPhrase": [
+  "fourteenthPhrase": [
     {
       "id": "0",
       "phrase": " I don't know.",
@@ -825,7 +802,7 @@
           }
         ]
       },
-      "next": "sixteenthPhrase",
+      "next": "fifteenthPhrase",
       "wight": 0
     },
     {
@@ -847,7 +824,7 @@
           }
         ]
       },
-      "next": "sixteenthPhrase",
+      "next": "fifteenthPhrase",
       "wight": 0
     },
     {
@@ -869,11 +846,11 @@
           }
         ]
       },
-      "next": "sixteenthPhrase",
+      "next": "fifteenthPhrase",
       "wight": 2
     }
   ],
-  "sixteenthPhrase": [
+  "fifteenthPhrase": [
     {
       "id": "0",
       "phrase": "See you soon!",

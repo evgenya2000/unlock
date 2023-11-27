@@ -318,7 +318,7 @@
     {
       "id": "1",
       "phrase": "Yup, a lot of them)",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
@@ -555,7 +555,7 @@
     {
       "id": "0",
       "phrase": "Nah, it's a piece of cake)",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": [
           "I tried to study it but I failed… I believe if I ..... hard, I ..... it, but I'm not hard-working ....."
@@ -565,7 +565,7 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "studied", "wight": 0 },
-              { "id": "1", "option": "had studied", "wight": 1 },
+              { "id": "1", "option": "had studied", "wight": 2 },
               { "id": "2", "option": "was studying", "wight": 0 }
             ]
           },
@@ -573,7 +573,7 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "would learn", "wight": 0 },
-              { "id": "1", "option": "would have learnt", "wight": 1 },
+              { "id": "1", "option": "would have learnt", "wight": 2 },
               { "id": "2", "option": "had learnt", "wight": 0 }
             ]
           },
@@ -581,7 +581,7 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "too", "wight": 0 },
-              { "id": "1", "option": "enough", "wight": 1 },
+              { "id": "1", "option": "enough", "wight": 2 },
               { "id": "2", "option": "for sure", "wight": 0 }
             ]
           }
@@ -602,7 +602,7 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "studied", "wight": 0 },
-              { "id": "1", "option": "had studied", "wight": 1 },
+              { "id": "1", "option": "had studied", "wight": 2 },
               { "id": "2", "option": "was studying", "wight": 0 }
             ]
           },
@@ -610,7 +610,7 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "would learn", "wight": 0 },
-              { "id": "1", "option": "would have learnt", "wight": 1 },
+              { "id": "1", "option": "would have learnt", "wight": 2 },
               { "id": "2", "option": "had learnt", "wight": 0 }
             ]
           },
@@ -618,7 +618,7 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "too", "wight": 0 },
-              { "id": "1", "option": "enough", "wight": 1 },
+              { "id": "1", "option": "enough", "wight": 2 },
               { "id": "2", "option": "for sure", "wight": 0 }
             ]
           }
@@ -639,7 +639,7 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "studied", "wight": 0 },
-              { "id": "1", "option": "had studied", "wight": 1 },
+              { "id": "1", "option": "had studied", "wight": 2 },
               { "id": "2", "option": "was studying", "wight": 0 }
             ]
           },
@@ -647,7 +647,7 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "would learn", "wight": 0 },
-              { "id": "1", "option": "would have learnt", "wight": 1 },
+              { "id": "1", "option": "would have learnt", "wight": 2 },
               { "id": "2", "option": "had learnt", "wight": 0 }
             ]
           },
@@ -655,7 +655,7 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "too", "wight": 0 },
-              { "id": "1", "option": "enough", "wight": 1 },
+              { "id": "1", "option": "enough", "wight": 2 },
               { "id": "2", "option": "for sure", "wight": 0 }
             ]
           }
@@ -670,20 +670,20 @@
       "phrase": "If I was you, I have try anyway.",
       "wight": 0,
       "answer": {
-        "message": ["Maybe I could try again later", "I ..... in Canada for a while. I ..... to Canada before I went there to write about an economic congress. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"],
+        "message": ["Maybe I could try again later", "I ..... in Canada for a while. I ..... to Canada before I went there to write about an economic congress. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!", "Выберите правильное описание текста: ....."],
         "selects": [
           {
             "id": "0",
             "options": [
               { "id": "0", "option": "live", "wight": 0 },
               { "id": "1", "option": "have lived", "wight": 0 },
-              { "id": "2", "option": "have been living", "wight": 1 }
+              { "id": "2", "option": "have been living", "wight": 2 }
             ]
           },
           {
             "id": "1",
             "options": [
-              { "id": "0", "option": "had never been", "wight": 1 },
+              { "id": "0", "option": "had never been", "wight": 2 },
               { "id": "1", "option": "had always been", "wight": 0 },
               { "id": "2", "option": "had always wanted", "wight": 0 }
             ]
@@ -692,14 +692,14 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "would like", "wight": 0 },
-              { "id": "1", "option": "had been waiting", "wight": 1 },
+              { "id": "1", "option": "had been waiting", "wight": 2 },
               { "id": "2", "option": "had tried", "wight": 0 }
             ]
           },
           {
             "id": "3",
             "options": [
-              { "id": "0", "option": "visiting", "wight": 1 },
+              { "id": "0", "option": "visiting", "wight": 2 },
               { "id": "1", "option": "visit", "wight": 0 },
               { "id": "2", "option": "see", "wight": 0 }
             ]
@@ -709,7 +709,7 @@
             "options": [
               { "id": "0", "option": "He came back from Canada", "wight": 0 },
               { "id": "1", "option": "He wants to see Canada soon", "wight": 0 },
-              { "id": "2", "option": "He is in Canada now", "wight": 1 }
+              { "id": "2", "option": "He is in Canada now", "wight": 2 }
             ]
           }
         ]
@@ -721,20 +721,20 @@
       "phrase": "If I am you, I will try anyway.",
       "wight": 0,
       "answer": {
-        "message": ["Maybe I could try again later", "I ..... in Canada for a while. I ..... to Canada before I went there to write about an economic congress. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"],
+        "message": ["Maybe I could try again later", "I ..... in Canada for a while. I ..... to Canada before I went there to write about an economic congress. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!", "Выберите правильное описание текста: ....."],
         "selects": [
           {
             "id": "0",
             "options": [
               { "id": "0", "option": "live", "wight": 0 },
               { "id": "1", "option": "have lived", "wight": 0 },
-              { "id": "2", "option": "have been living", "wight": 1 }
+              { "id": "2", "option": "have been living", "wight": 2 }
             ]
           },
           {
             "id": "1",
             "options": [
-              { "id": "0", "option": "had never been", "wight": 1 },
+              { "id": "0", "option": "had never been", "wight": 2 },
               { "id": "1", "option": "had always been", "wight": 0 },
               { "id": "2", "option": "had always wanted", "wight": 0 }
             ]
@@ -743,14 +743,14 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "would like", "wight": 0 },
-              { "id": "1", "option": "had been waiting", "wight": 1 },
+              { "id": "1", "option": "had been waiting", "wight": 2 },
               { "id": "2", "option": "had tried", "wight": 0 }
             ]
           },
           {
             "id": "3",
             "options": [
-              { "id": "0", "option": "visiting", "wight": 1 },
+              { "id": "0", "option": "visiting", "wight": 2 },
               { "id": "1", "option": "visit", "wight": 0 },
               { "id": "2", "option": "see", "wight": 0 }
             ]
@@ -760,7 +760,7 @@
             "options": [
               { "id": "0", "option": "He came back from Canada", "wight": 0 },
               { "id": "1", "option": "He wants to see Canada soon", "wight": 0 },
-              { "id": "2", "option": "He is in Canada now", "wight": 1 }
+              { "id": "2", "option": "He is in Canada now", "wight": 2 }
             ]
           }
         ]
@@ -772,20 +772,20 @@
       "phrase": "If I were you, I would try anyway.",
       "wight": 1,
       "answer": {
-        "message": ["Maybe I could try again later", "I ..... in Canada for a while. I ..... to Canada before I went there to write about an economic congress. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"],
+        "message": ["Maybe I could try again later", "I ..... in Canada for a while. I ..... to Canada before I went there to write about an economic congress. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!", "Выберите правильное описание текста: ....."],
         "selects": [
           {
             "id": "0",
             "options": [
               { "id": "0", "option": "live", "wight": 0 },
               { "id": "1", "option": "have lived", "wight": 0 },
-              { "id": "2", "option": "have been living", "wight": 1 }
+              { "id": "2", "option": "have been living", "wight": 2 }
             ]
           },
           {
             "id": "1",
             "options": [
-              { "id": "0", "option": "had never been", "wight": 1 },
+              { "id": "0", "option": "had never been", "wight": 2 },
               { "id": "1", "option": "had always been", "wight": 0 },
               { "id": "2", "option": "had always wanted", "wight": 0 }
             ]
@@ -794,14 +794,14 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "would like", "wight": 0 },
-              { "id": "1", "option": "had been waiting", "wight": 1 },
+              { "id": "1", "option": "had been waiting", "wight": 2 },
               { "id": "2", "option": "had tried", "wight": 0 }
             ]
           },
           {
             "id": "3",
             "options": [
-              { "id": "0", "option": "visiting", "wight": 1 },
+              { "id": "0", "option": "visiting", "wight": 2 },
               { "id": "1", "option": "visit", "wight": 0 },
               { "id": "2", "option": "see", "wight": 0 }
             ]
@@ -811,7 +811,7 @@
             "options": [
               { "id": "0", "option": "He came back from Canada", "wight": 0 },
               { "id": "1", "option": "He wants to see Canada soon", "wight": 0 },
-              { "id": "2", "option": "He is in Canada now", "wight": 1 }
+              { "id": "2", "option": "He is in Canada now", "wight": 2 }
             ]
           }
         ]
@@ -834,7 +834,7 @@
     {
       "id": "0",
       "phrase": "Oh, could I see it?",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "img": "/resources/sad-smiley.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
@@ -866,9 +866,10 @@
     {
       "id": "0",
       "phrase": "Stewart's going to complete it in a short time.",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "audio": "/resources/audio/john/ithinkillhavecompleteditbynextwednesday.mp3",
+        "message":["Выберите правильное описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -881,7 +882,7 @@
               {
                 "id": "1",
                 "option": "The drawing will be finished before Wednesday",
-                "wight": 1
+                "wight": 2
               },
               {
                 "id": "2",
@@ -900,6 +901,7 @@
       "wight": 0,
       "answer": {
         "audio": "/resources/audio/john/ithinkillhavecompleteditbynextwednesday.mp3",
+        "message":["Выберите правильное описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -912,7 +914,7 @@
               {
                 "id": "1",
                 "option": "The drawing will be finished before Wednesday",
-                "wight": 1
+                "wight": 2
               },
               {
                 "id": "2",
@@ -931,6 +933,7 @@
       "wight": 0,
       "answer": {
         "audio": "/resources/audio/john/ithinkillhavecompleteditbynextwednesday.mp3",
+        "message":["Выберите правильное описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -943,7 +946,7 @@
               {
                 "id": "1",
                 "option": "The drawing will be finished before Wednesday",
-                "wight": 1
+                "wight": 2
               },
               {
                 "id": "2",
@@ -985,7 +988,7 @@
     {
       "id": "2",
       "phrase": "That looks lit! Break a leg!",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": [
           "Thanks, mate!",

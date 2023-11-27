@@ -113,7 +113,8 @@
       "answer": {
         "message": [
           "Great! I'm a family doctor",
-          "How do you like ..... your free time?"
+          "How do you like ..... your free time?",
+          "Выберите правильное описание: ....."
         ],
         "selects": [
           {
@@ -143,7 +144,8 @@
       "answer": {
         "message": [
           "Great! I'm a family doctor",
-          "How do you like ..... your free time?"
+          "How do you like ..... your free time?",
+          "Выберите правильное описание: ....."
         ],
         "selects": [
           {
@@ -173,7 +175,8 @@
       "answer": {
         "message": [
           "Great! I'm a family doctor",
-          "How do you like ..... your free time?"
+          "How do you like ..... your free time?",
+          "Выберите правильное описание: ....."
         ],
         "selects": [
           {
@@ -210,7 +213,7 @@
     {
       "id": "1",
       "phrase": "I'm quite keen on music.",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": ["Oh, and I enjoy sports"]
       },
@@ -237,7 +240,7 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "For instance", "wight": 1 },
+              { "id": "0", "option": "For instance", "wight": 2 },
               { "id": "1", "option": "You see ", "wight": 0 },
               { "id": "2", "option": "To be honest", "wight": 0 }
             ]
@@ -257,7 +260,7 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "For instance", "wight": 1 },
+              { "id": "0", "option": "For instance", "wight": 2 },
               { "id": "1", "option": "You see ", "wight": 0 },
               { "id": "2", "option": "To be honest", "wight": 0 }
             ]
@@ -270,14 +273,14 @@
     {
       "id": "2",
       "phrase": "So do I!",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": ["Cool! ..... , I go skiing in winter"],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "For instance", "wight": 1 },
+              { "id": "0", "option": "For instance", "wight": 2 },
               { "id": "1", "option": "You see ", "wight": 0 },
               { "id": "2", "option": "To be honest", "wight": 0 }
             ]
@@ -296,11 +299,31 @@
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
-          "My son's name is Tom and my husband's name is Richard. We ..... 3 years ..... and we ..... a baby ..... a year."
+          "..... My son's name is Tom and my husband's name is Richard. We ..... 3 years ..... and we ..... a baby ..... a year."
         ],
         "selects": [
           {
             "id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": "I'd like you to meet my family.",
+                "wight": 1
+              },
+              {
+                "id": "1",
+                "option": "I'd want you to meet my family.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "I want you to meet my family.",
+                "wight": 0
+              }
+            ]
+          },
+          {
+            "id": "1",
             "options": [
               { "id": "0", "option": "marred", "wight": 0 },
               { "id": "1", "option": "married", "wight": 1 },
@@ -308,7 +331,7 @@
             ]
           },
           {
-            "id": "1",
+            "id": "2",
             "options": [
               { "id": "0", "option": "last", "wight": 0 },
               { "id": "1", "option": "before", "wight": 0 },
@@ -316,7 +339,7 @@
             ]
           },
           {
-            "id": "2",
+            "id": "3",
             "options": [
               { "id": "0", "option": "had", "wight": 1 },
               { "id": "1", "option": "made", "wight": 0 },
@@ -324,31 +347,11 @@
             ]
           },
           {
-            "id": "3",
+            "id": "4",
             "options": [
               { "id": "0", "option": "with", "wight": 0 },
               { "id": "1", "option": "in", "wight": 1 },
               { "id": "2", "option": "for", "wight": 0 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              {
-                "id": "0",
-                "option": "I'd like you to meet my family",
-                "wight": 1
-              },
-              {
-                "id": "1",
-                "option": "I'd want you to meet my family",
-                "wight": 0
-              },
-              {
-                "id": "2",
-                "option": "I want you to meet my family",
-                "wight": 0
-              }
             ]
           }
         ]
@@ -362,11 +365,31 @@
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
-          "My son's name is Tom and my husband's name is Richard. We ..... 3 years ..... and we ..... a baby ..... a year."
+          "..... My son's name is Tom and my husband's name is Richard. We ..... 3 years ..... and we ..... a baby ..... a year."
         ],
         "selects": [
           {
             "id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": "I'd like you to meet my family.",
+                "wight": 1
+              },
+              {
+                "id": "1",
+                "option": "I'd want you to meet my family.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "I want you to meet my family.",
+                "wight": 0
+              }
+            ]
+          },
+          {
+            "id": "1",
             "options": [
               { "id": "0", "option": "marred", "wight": 0 },
               { "id": "1", "option": "married", "wight": 1 },
@@ -374,7 +397,7 @@
             ]
           },
           {
-            "id": "1",
+            "id": "2",
             "options": [
               { "id": "0", "option": "last", "wight": 0 },
               { "id": "1", "option": "before", "wight": 0 },
@@ -382,7 +405,7 @@
             ]
           },
           {
-            "id": "2",
+            "id": "3",
             "options": [
               { "id": "0", "option": "had", "wight": 1 },
               { "id": "1", "option": "made", "wight": 0 },
@@ -390,31 +413,11 @@
             ]
           },
           {
-            "id": "3",
+            "id": "4",
             "options": [
               { "id": "0", "option": "with", "wight": 0 },
               { "id": "1", "option": "in", "wight": 1 },
               { "id": "2", "option": "for", "wight": 0 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              {
-                "id": "0",
-                "option": "I'd like you to meet my family",
-                "wight": 1
-              },
-              {
-                "id": "1",
-                "option": "I'd want you to meet my family",
-                "wight": 0
-              },
-              {
-                "id": "2",
-                "option": "I want you to meet my family",
-                "wight": 0
-              }
             ]
           }
         ]
@@ -428,11 +431,31 @@
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
-          "My son's name is Tom and my husband's name is Richard. We ..... 3 years ..... and we ..... a baby ..... a year."
+          "..... My son's name is Tom and my husband's name is Richard. We ..... 3 years ..... and we ..... a baby ..... a year."
         ],
         "selects": [
           {
             "id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": "I'd like you to meet my family.",
+                "wight": 1
+              },
+              {
+                "id": "1",
+                "option": "I'd want you to meet my family.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "I want you to meet my family.",
+                "wight": 0
+              }
+            ]
+          },
+          {
+            "id": "1",
             "options": [
               { "id": "0", "option": "marred", "wight": 0 },
               { "id": "1", "option": "married", "wight": 1 },
@@ -440,7 +463,7 @@
             ]
           },
           {
-            "id": "1",
+            "id": "2",
             "options": [
               { "id": "0", "option": "last", "wight": 0 },
               { "id": "1", "option": "before", "wight": 0 },
@@ -448,7 +471,7 @@
             ]
           },
           {
-            "id": "2",
+            "id": "3",
             "options": [
               { "id": "0", "option": "had", "wight": 1 },
               { "id": "1", "option": "made", "wight": 0 },
@@ -456,31 +479,11 @@
             ]
           },
           {
-            "id": "3",
+            "id": "4",
             "options": [
               { "id": "0", "option": "with", "wight": 0 },
               { "id": "1", "option": "in", "wight": 1 },
               { "id": "2", "option": "for", "wight": 0 }
-            ]
-          },
-          {
-            "id": "4",
-            "options": [
-              {
-                "id": "0",
-                "option": "I'd like you to meet my family",
-                "wight": 1
-              },
-              {
-                "id": "1",
-                "option": "I'd want you to meet my family",
-                "wight": 0
-              },
-              {
-                "id": "2",
-                "option": "I want you to meet my family",
-                "wight": 0
-              }
             ]
           }
         ]
@@ -513,7 +516,7 @@
     {
       "id": "1",
       "phrase": "Sweet! You look so lovely!",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": [
           "Tell me about your language. It ..... be hard to learn, right?)"
@@ -557,7 +560,7 @@
     {
       "id": "0",
       "phrase": "Nah, it's a piece of cake)",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": [
           "I tried to study it but I failed… I believe if I ..... hard, I ..... it, but I'm not hard-working ....."
@@ -567,7 +570,7 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "studied", "wight": 0 },
-              { "id": "1", "option": "had studied", "wight": 1 },
+              { "id": "1", "option": "had studied", "wight": 2 },
               { "id": "2", "option": "was studying", "wight": 0 }
             ]
           },
@@ -575,7 +578,7 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "would learn", "wight": 0 },
-              { "id": "1", "option": "would have learnt", "wight": 1 },
+              { "id": "1", "option": "would have learnt", "wight": 2 },
               { "id": "2", "option": "had learnt", "wight": 0 }
             ]
           },
@@ -583,7 +586,7 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "too", "wight": 0 },
-              { "id": "1", "option": "enough", "wight": 1 },
+              { "id": "1", "option": "enough", "wight": 2 },
               { "id": "2", "option": "for sure", "wight": 0 }
             ]
           }
@@ -604,7 +607,7 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "studied", "wight": 0 },
-              { "id": "1", "option": "had studied", "wight": 1 },
+              { "id": "1", "option": "had studied", "wight": 2 },
               { "id": "2", "option": "was studying", "wight": 0 }
             ]
           },
@@ -612,7 +615,7 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "would learn", "wight": 0 },
-              { "id": "1", "option": "would have learnt", "wight": 1 },
+              { "id": "1", "option": "would have learnt", "wight": 2 },
               { "id": "2", "option": "had learnt", "wight": 0 }
             ]
           },
@@ -620,7 +623,7 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "too", "wight": 0 },
-              { "id": "1", "option": "enough", "wight": 1 },
+              { "id": "1", "option": "enough", "wight": 2 },
               { "id": "2", "option": "for sure", "wight": 0 }
             ]
           }
@@ -641,7 +644,7 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "studied", "wight": 0 },
-              { "id": "1", "option": "had studied", "wight": 1 },
+              { "id": "1", "option": "had studied", "wight": 2 },
               { "id": "2", "option": "was studying", "wight": 0 }
             ]
           },
@@ -649,7 +652,7 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "would learn", "wight": 0 },
-              { "id": "1", "option": "would have learnt", "wight": 1 },
+              { "id": "1", "option": "would have learnt", "wight": 2 },
               { "id": "2", "option": "had learnt", "wight": 0 }
             ]
           },
@@ -657,7 +660,7 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "too", "wight": 0 },
-              { "id": "1", "option": "enough", "wight": 1 },
+              { "id": "1", "option": "enough", "wight": 2 },
               { "id": "2", "option": "for sure", "wight": 0 }
             ]
           }
@@ -674,7 +677,8 @@
       "answer": {
         "message": [
           "Maybe I could try again later",
-          "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"
+          "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!",
+          "Выберите правильное описание: ....."
         ],
         "selects": [
           {
@@ -682,13 +686,13 @@
             "options": [
               { "id": "0", "option": "live", "wight": 0 },
               { "id": "1", "option": "have lived", "wight": 0 },
-              { "id": "2", "option": "have been living", "wight": 1 }
+              { "id": "2", "option": "have been living", "wight": 2 }
             ]
           },
           {
             "id": "1",
             "options": [
-              { "id": "0", "option": "had never been", "wight": 1 },
+              { "id": "0", "option": "had never been", "wight": 2 },
               { "id": "1", "option": "had always been", "wight": 0 },
               { "id": "2", "option": "had always wanted", "wight": 0 }
             ]
@@ -697,14 +701,14 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "would like", "wight": 0 },
-              { "id": "1", "option": "had been waiting", "wight": 1 },
+              { "id": "1", "option": "had been waiting", "wight": 2 },
               { "id": "2", "option": "had tried", "wight": 0 }
             ]
           },
           {
             "id": "3",
             "options": [
-              { "id": "0", "option": "visiting", "wight": 1 },
+              { "id": "0", "option": "visiting", "wight": 2 },
               { "id": "1", "option": "visit", "wight": 0 },
               { "id": "2", "option": "see", "wight": 0 }
             ]
@@ -712,13 +716,13 @@
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "She came back from Canada", "wight": 0 },
+              { "id": "0", "option": "She came back from Canada.", "wight": 0 },
               {
                 "id": "1",
-                "option": "She wants to see Canada soon",
+                "option": "She wants to see Canada soon.",
                 "wight": 0
               },
-              { "id": "2", "option": "She is in Canada now", "wight": 1 }
+              { "id": "2", "option": "She is in Canada now.", "wight": 2 }
             ]
           }
         ]
@@ -732,7 +736,8 @@
       "answer": {
         "message": [
           "Maybe I could try again later",
-          "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"
+          "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!",
+          "Выберите правильное описание: ....."
         ],
         "selects": [
           {
@@ -740,13 +745,13 @@
             "options": [
               { "id": "0", "option": "live", "wight": 0 },
               { "id": "1", "option": "have lived", "wight": 0 },
-              { "id": "2", "option": "have been living", "wight": 1 }
+              { "id": "2", "option": "have been living", "wight": 2 }
             ]
           },
           {
             "id": "1",
             "options": [
-              { "id": "0", "option": "had never been", "wight": 1 },
+              { "id": "0", "option": "had never been", "wight": 2 },
               { "id": "1", "option": "had always been", "wight": 0 },
               { "id": "2", "option": "had always wanted", "wight": 0 }
             ]
@@ -755,14 +760,14 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "would like", "wight": 0 },
-              { "id": "1", "option": "had been waiting", "wight": 1 },
+              { "id": "1", "option": "had been waiting", "wight": 2 },
               { "id": "2", "option": "had tried", "wight": 0 }
             ]
           },
           {
             "id": "3",
             "options": [
-              { "id": "0", "option": "visiting", "wight": 1 },
+              { "id": "0", "option": "visiting", "wight": 2 },
               { "id": "1", "option": "visit", "wight": 0 },
               { "id": "2", "option": "see", "wight": 0 }
             ]
@@ -770,13 +775,13 @@
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "She came back from Canada", "wight": 0 },
+              { "id": "0", "option": "She came back from Canada.", "wight": 0 },
               {
                 "id": "1",
-                "option": "She wants to see Canada soon",
+                "option": "She wants to see Canada soon.",
                 "wight": 0
               },
-              { "id": "2", "option": "She is in Canada now", "wight": 1 }
+              { "id": "2", "option": "She is in Canada now.", "wight": 2 }
             ]
           }
         ]
@@ -786,11 +791,12 @@
     {
       "id": "2",
       "phrase": "If I were you, I would try anyway.",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": [
           "Maybe I could try again later",
-          "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!"
+          "I ..... in Canada for a while. I ..... to Canada before I went there for a medical conference. The architecture and nature in Canada are so nice! I ..... with excitement to come here and now I'm really looking forward to ..... it again!",
+          "Выберите правильное описание: ....."
         ],
         "selects": [
           {
@@ -798,13 +804,13 @@
             "options": [
               { "id": "0", "option": "live", "wight": 0 },
               { "id": "1", "option": "have lived", "wight": 0 },
-              { "id": "2", "option": "have been living", "wight": 1 }
+              { "id": "2", "option": "have been living", "wight": 2 }
             ]
           },
           {
             "id": "1",
             "options": [
-              { "id": "0", "option": "had never been", "wight": 1 },
+              { "id": "0", "option": "had never been", "wight": 2 },
               { "id": "1", "option": "had always been", "wight": 0 },
               { "id": "2", "option": "had always wanted", "wight": 0 }
             ]
@@ -813,14 +819,14 @@
             "id": "2",
             "options": [
               { "id": "0", "option": "would like", "wight": 0 },
-              { "id": "1", "option": "had been waiting", "wight": 1 },
+              { "id": "1", "option": "had been waiting", "wight": 2 },
               { "id": "2", "option": "had tried", "wight": 0 }
             ]
           },
           {
             "id": "3",
             "options": [
-              { "id": "0", "option": "visiting", "wight": 1 },
+              { "id": "0", "option": "visiting", "wight": 2 },
               { "id": "1", "option": "visit", "wight": 0 },
               { "id": "2", "option": "see", "wight": 0 }
             ]
@@ -828,13 +834,13 @@
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "She came back from Canada", "wight": 0 },
+              { "id": "0", "option": "She came back from Canada.", "wight": 0 },
               {
                 "id": "1",
-                "option": "She wants to see Canada soon",
+                "option": "She wants to see Canada soon.",
                 "wight": 0
               },
-              { "id": "2", "option": "She is in Canada now", "wight": 1 }
+              { "id": "2", "option": "She is in Canada now.", "wight": 2 }
             ]
           }
         ]
@@ -857,7 +863,7 @@
     {
       "id": "0",
       "phrase": "Oh, could I see it?",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": ["It's not finished… But it will be finished soon!"]
@@ -889,9 +895,10 @@
     {
       "id": "0",
       "phrase": "Lisa is going to complete it in a short time.",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "audio": "/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "message":["Выберите правильное описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -904,7 +911,7 @@
               {
                 "id": "1",
                 "option": "The drawing will be finished before Wednesday",
-                "wight": 1
+                "wight": 2
               },
               {
                 "id": "2",
@@ -923,6 +930,7 @@
       "wight": 0,
       "answer": {
         "audio": "/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "message":["Выберите правильное описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -935,7 +943,7 @@
               {
                 "id": "1",
                 "option": "The drawing will be finished before Wednesday",
-                "wight": 1
+                "wight": 2
               },
               {
                 "id": "2",
@@ -954,6 +962,7 @@
       "wight": 0,
       "answer": {
         "audio": "/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "message":["Выберите правильное описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -966,7 +975,7 @@
               {
                 "id": "1",
                 "option": "The drawing will be finished before Wednesday",
-                "wight": 1
+                "wight": 2
               },
               {
                 "id": "2",
@@ -1002,7 +1011,7 @@
     {
       "id": "2",
       "phrase": "That looks lit! Break a leg!",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": ["Thanks!", "Oh, my apologies. I have to head out now(("]
       },

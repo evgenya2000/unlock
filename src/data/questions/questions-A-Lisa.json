@@ -141,14 +141,14 @@
       "phrase": "I'm a student at an English school.",
       "wight": 1,
       "answer": {
-        "message": ["Great! I'm a family doctor", "What is your hobby?"],
+        "message": ["Great! I'm a family doctor", "Выберите описание: .....", "What is your hobby?"],
         "selects": [
           {
             "id": "0",
             "options": [
               { "id": "0", "option": "Lisa has a family", "wight": 0 },
               { "id": "1", "option": "Lisa doesn't work", "wight": 0 },
-              { "id": "2", "option": "Lisa works with people", "wight": 1 }
+              { "id": "2", "option": "Lisa works with people", "wight": 2 }
             ]
           }
         ]
@@ -160,14 +160,14 @@
       "phrase": "You're welcome.",
       "wight": 0,
       "answer": {
-        "message": ["Great! I'm a family doctor", "What is your hobby?"],
+        "message": ["Great! I'm a family doctor", "Выберите описание: .....", "What is your hobby?"],
         "selects": [
           {
             "id": "0",
             "options": [
               { "id": "0", "option": "Lisa has a family", "wight": 0 },
               { "id": "1", "option": "Lisa doesn't work", "wight": 0 },
-              { "id": "2", "option": "Lisa works with people", "wight": 1 }
+              { "id": "2", "option": "Lisa works with people", "wight": 2 }
             ]
           }
         ]
@@ -179,14 +179,14 @@
       "phrase": "I like a pizza.",
       "wight": 0,
       "answer": {
-        "message": ["Great! I'm a family doctor", "What is your hobby?"],
+        "message": ["Great! I'm a family doctor", "Выберите описание: .....", "What is your hobby?"],
         "selects": [
           {
             "id": "0",
             "options": [
               { "id": "0", "option": "Lisa has a family", "wight": 0 },
               { "id": "1", "option": "Lisa doesn't work", "wight": 0 },
-              { "id": "2", "option": "Lisa works with people", "wight": 1 }
+              { "id": "2", "option": "Lisa works with people", "wight": 2 }
             ]
           }
         ]
@@ -200,7 +200,7 @@
       "phrase": "I start music.",
       "wight": 0,
       "answer": {
-        "message": ["Oh, and I love cinema."],
+        "message": ["Oh, and I love cinema.", "Выберите описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -219,7 +219,7 @@
       "phrase": "I enjoy music.",
       "wight": 1,
       "answer": {
-        "message": ["Oh, and I love cinema."],
+        "message": ["Oh, and I love cinema.", "Выберите описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -238,7 +238,7 @@
       "phrase": "I hate music.",
       "wight": 0,
       "answer": {
-        "message": ["Oh, and I love cinema."],
+        "message": ["Oh, and I love cinema.", "Выберите описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -347,15 +347,15 @@
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
-          ".... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?"
+          "..... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?", "Выберите описание: ....."
         ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "it", "wight": 0 },
-              { "id": "1", "option": "this", "wight": 1 },
-              { "id": "2", "option": "why", "wight": 0 }
+              { "id": "0", "option": "It", "wight": 0 },
+              { "id": "1", "option": "This", "wight": 1 },
+              { "id": "2", "option": "Why", "wight": 0 }
             ]
           },
           {
@@ -387,7 +387,7 @@
             "options": [
               { "id": "0", "option": "She has children", "wight": 0 },
               { "id": "1", "option": "She's divorced", "wight": 0 },
-              { "id": "2", "option": "She has a little child", "wight": 1 }
+              { "id": "2", "option": "She has a little child", "wight": 2 }
             ]
           }
         ]
@@ -401,15 +401,15 @@
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
-          ".... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?"
+          "..... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?", "Выберите описание: ....."
         ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "it", "wight": 0 },
-              { "id": "1", "option": "this", "wight": 1 },
-              { "id": "2", "option": "why", "wight": 0 }
+              { "id": "0", "option": "It", "wight": 0 },
+              { "id": "1", "option": "This", "wight": 1 },
+              { "id": "2", "option": "Why", "wight": 0 }
             ]
           },
           {
@@ -441,7 +441,7 @@
             "options": [
               { "id": "0", "option": "She has children", "wight": 0 },
               { "id": "1", "option": "She's divorced", "wight": 0 },
-              { "id": "2", "option": "She has a little child", "wight": 1 }
+              { "id": "2", "option": "She has a little child", "wight": 2 }
             ]
           }
         ]
@@ -451,19 +451,19 @@
     {
       "id": "2",
       "phrase": "Sometimes",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
-          ".... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?"
+          "..... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?", "Выберите описание: ....."
         ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "it", "wight": 0 },
-              { "id": "1", "option": "this", "wight": 1 },
-              { "id": "2", "option": "why", "wight": 0 }
+              { "id": "0", "option": "It", "wight": 0 },
+              { "id": "1", "option": "This", "wight": 1 },
+              { "id": "2", "option": "Why", "wight": 0 }
             ]
           },
           {
@@ -495,7 +495,7 @@
             "options": [
               { "id": "0", "option": "She has children", "wight": 0 },
               { "id": "1", "option": "She's divorced", "wight": 0 },
-              { "id": "2", "option": "She has a little child", "wight": 1 }
+              { "id": "2", "option": "She has a little child", "wight": 2 }
             ]
           }
         ]
@@ -577,7 +577,7 @@
             "options": [
               { "id": "0", "option": "easer", "wight": 0 },
               { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
+              { "id": "2", "option": "easier", "wight": 2 }
             ]
           }
         ]
@@ -598,7 +598,7 @@
             "options": [
               { "id": "0", "option": "easer", "wight": 0 },
               { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
+              { "id": "2", "option": "easier", "wight": 2 }
             ]
           }
         ]
@@ -608,7 +608,7 @@
     {
       "id": "2",
       "phrase": "I started not long ago",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": [
           "What is ..... - English or your language"
@@ -619,7 +619,7 @@
             "options": [
               { "id": "0", "option": "easer", "wight": 0 },
               { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
+              { "id": "2", "option": "easier", "wight": 2 }
             ]
           }
         ]
@@ -631,7 +631,7 @@
     {
       "id": "0",
       "phrase": "Mine, of course.",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "audio":"/resources/audio/lisa/HaveyoueverbeentoCanada.mp3"
       },
@@ -663,13 +663,13 @@
       "phrase": "I don't know.",
       "answer": {
         "message": [
-          " It's ..... country in the world! I ..... to Canada ..... month for a medical conference and it was really .....! I ..... visit it again soon!"
+          " It's ..... country in the world! I ..... to Canada ..... month for a medical conference and it was really .....! I ..... visit it again soon!", "Выберите описание: ....."
         ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "the best", "wight": 1 },
+              { "id": "0", "option": "the best", "wight": 2 },
               { "id": "1", "option": "best", "wight": 0 },
               { "id": "2", "option": "the better", "wight": 0 }
             ]
@@ -678,14 +678,14 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "goed", "wight": 0 },
-              { "id": "1", "option": "went", "wight": 1 },
+              { "id": "1", "option": "went", "wight": 2 },
               { "id": "2", "option": "was", "wight": 0 }
             ]
           },
           {
             "id": "2",
             "options": [
-              { "id": "0", "option": "last", "wight": 1 },
+              { "id": "0", "option": "last", "wight": 2 },
               { "id": "1", "option": "ago", "wight": 0 },
               { "id": "2", "option": "next", "wight": 0 }
             ]
@@ -695,13 +695,13 @@
             "options": [
               { "id": "0", "option": "terrible", "wight": 0 },
               { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
+              { "id": "2", "option": "exciting", "wight": 2 }
             ]
           },
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "am going to", "wight": 1 },
+              { "id": "0", "option": "am going to", "wight": 2 },
               { "id": "1", "option": "am want to", "wight": 0 },
               { "id": "2", "option": "am wanting to", "wight": 0 }
             ]
@@ -709,7 +709,7 @@
           {
             "id": "5",
             "options": [
-              { "id": "0", "option": "She enjoyed Canada", "wight": 1 },
+              { "id": "0", "option": "She enjoyed Canada", "wight": 2 },
               { "id": "1", "option": "She didn't come back from Canada", "wight": 0 },
               { "id": "2", "option": "She lives in Canada", "wight": 0 }
             ]
@@ -725,13 +725,13 @@
       "wight": 0,
       "answer": {
         "message": [
-          " It's ..... country in the world! I ..... to Canada ..... month for a medical conference and it was really .....! I ..... visit it again soon!"
+          " It's ..... country in the world! I ..... to Canada ..... month for a medical conference and it was really .....! I ..... visit it again soon!", "Выберите описание: ....."
         ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "the best", "wight": 1 },
+              { "id": "0", "option": "the best", "wight": 2 },
               { "id": "1", "option": "best", "wight": 0 },
               { "id": "2", "option": "the better", "wight": 0 }
             ]
@@ -740,14 +740,14 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "goed", "wight": 0 },
-              { "id": "1", "option": "went", "wight": 1 },
+              { "id": "1", "option": "went", "wight": 2 },
               { "id": "2", "option": "was", "wight": 0 }
             ]
           },
           {
             "id": "2",
             "options": [
-              { "id": "0", "option": "last", "wight": 1 },
+              { "id": "0", "option": "last", "wight": 2 },
               { "id": "1", "option": "ago", "wight": 0 },
               { "id": "2", "option": "next", "wight": 0 }
             ]
@@ -757,13 +757,13 @@
             "options": [
               { "id": "0", "option": "terrible", "wight": 0 },
               { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
+              { "id": "2", "option": "exciting", "wight": 2 }
             ]
           },
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "am going to", "wight": 1 },
+              { "id": "0", "option": "am going to", "wight": 2 },
               { "id": "1", "option": "am want to", "wight": 0 },
               { "id": "2", "option": "am wanting to", "wight": 0 }
             ]
@@ -771,7 +771,7 @@
           {
             "id": "5",
             "options": [
-              { "id": "0", "option": "She enjoyed Canada", "wight": 1 },
+              { "id": "0", "option": "She enjoyed Canada", "wight": 2 },
               { "id": "1", "option": "She didn't come back from Canada", "wight": 0 },
               { "id": "2", "option": "She lives in Canada", "wight": 0 }
             ]
@@ -784,16 +784,16 @@
     {
       "id": "2",
       "phrase": "No, I haven't.",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": [
-          " It's ..... country in the world! I ..... to Canada ..... month for a medical conference and it was really .....! I ..... visit it again soon!"
+          " It's ..... country in the world! I ..... to Canada ..... month for a medical conference and it was really .....! I ..... visit it again soon!", "Выберите описание: ....."
         ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "the best", "wight": 1 },
+              { "id": "0", "option": "the best", "wight": 2 },
               { "id": "1", "option": "best", "wight": 0 },
               { "id": "2", "option": "the better", "wight": 0 }
             ]
@@ -802,14 +802,14 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "goed", "wight": 0 },
-              { "id": "1", "option": "went", "wight": 1 },
+              { "id": "1", "option": "went", "wight": 2 },
               { "id": "2", "option": "was", "wight": 0 }
             ]
           },
           {
             "id": "2",
             "options": [
-              { "id": "0", "option": "last", "wight": 1 },
+              { "id": "0", "option": "last", "wight": 2 },
               { "id": "1", "option": "ago", "wight": 0 },
               { "id": "2", "option": "next", "wight": 0 }
             ]
@@ -819,13 +819,13 @@
             "options": [
               { "id": "0", "option": "terrible", "wight": 0 },
               { "id": "1", "option": "funny", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
+              { "id": "2", "option": "exciting", "wight": 2 }
             ]
           },
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "am going to", "wight": 1 },
+              { "id": "0", "option": "am going to", "wight": 2 },
               { "id": "1", "option": "am want to", "wight": 0 },
               { "id": "2", "option": "am wanting to", "wight": 0 }
             ]
@@ -833,7 +833,7 @@
           {
             "id": "5",
             "options": [
-              { "id": "0", "option": "She enjoyed Canada", "wight": 1 },
+              { "id": "0", "option": "She enjoyed Canada", "wight": 2 },
               { "id": "1", "option": "She didn't come back from Canada", "wight": 0 },
               { "id": "2", "option": "She lives in Canada", "wight": 0 }
             ]

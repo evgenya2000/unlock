@@ -141,14 +141,14 @@
       "phrase": "I'm a student at an English school.",
       "wight": 1,
       "answer": {
-        "message": ["Great! I'm a journalist", "What is your hobby?"],
+        "message": ["Great! I'm a journalist", "Выберите правильное описание: .....", "What is your hobby?"],
         "selects": [
           {
             "id": "0",
             "options": [
               { "id": "0", "option": "Stewart reads journals", "wight": 0 },
               { "id": "1", "option": "Stewart works online", "wight": 0 },
-              { "id": "2", "option": "Stewart works for a magazine", "wight": 1 }
+              { "id": "2", "option": "Stewart works for a magazine", "wight": 2 }
             ]
           }
         ]
@@ -160,14 +160,14 @@
       "phrase": "You're welcome.",
       "wight": 0,
       "answer": {
-        "message": ["Great! I'm a journalist", "What is your hobby?"],
+        "message": ["Great! I'm a journalist", "Выберите правильное описание: .....", "What is your hobby?"],
         "selects": [
           {
             "id": "0",
             "options": [
               { "id": "0", "option": "Stewart reads journals", "wight": 0 },
               { "id": "1", "option": "Stewart works online", "wight": 0 },
-              { "id": "2", "option": "Stewart works for a magazine", "wight": 1 }
+              { "id": "2", "option": "Stewart works for a magazine", "wight": 2 }
             ]
           }
         ]
@@ -179,14 +179,14 @@
       "phrase": "I like a pizza.",
       "wight": 0,
       "answer": {
-        "message": ["Great! I'm a journalist", "What is your hobby?"],
+        "message": ["Great! I'm a journalist", "Выберите правильное описание: .....", "What is your hobby?"],
         "selects": [
           {
             "id": "0",
             "options": [
               { "id": "0", "option": "Stewart reads journals", "wight": 0 },
               { "id": "1", "option": "Stewart works online", "wight": 0 },
-              { "id": "2", "option": "Stewart works for a magazine", "wight": 1 }
+              { "id": "2", "option": "Stewart works for a magazine", "wight": 2 }
             ]
           }
         ]
@@ -200,7 +200,7 @@
       "phrase": "I start music.",
       "wight": 0,
       "answer": {
-        "message": ["Oh, and I love cinema."],
+        "message": ["Oh, and I love cinema.", "Выберите правильное описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -219,7 +219,7 @@
       "phrase": "I enjoy music.",
       "wight": 1,
       "answer": {
-        "message": ["Oh, and I love cinema."],
+        "message": ["Oh, and I love cinema.", "Выберите правильное описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -238,7 +238,7 @@
       "phrase": "I hate music.",
       "wight": 0,
       "answer": {
-        "message": ["Oh, and I love cinema."],
+        "message": ["Oh, and I love cinema.", "Выберите правильное описание: ....."],
         "selects": [
           {
             "id": "0",
@@ -353,9 +353,9 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "it", "wight": 0 },
-              { "id": "1", "option": "this", "wight": 1 },
-              { "id": "2", "option": "why", "wight": 0 }
+              { "id": "0", "option": "It", "wight": 0 },
+              { "id": "1", "option": "This", "wight": 1 },
+              { "id": "2", "option": "Why", "wight": 0 }
             ]
           },
           {
@@ -391,9 +391,9 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "it", "wight": 0 },
-              { "id": "1", "option": "this", "wight": 1 },
-              { "id": "2", "option": "why", "wight": 0 }
+              { "id": "0", "option": "It", "wight": 0 },
+              { "id": "1", "option": "This", "wight": 1 },
+              { "id": "2", "option": "Why", "wight": 0 }
             ]
           },
           {
@@ -419,7 +419,7 @@
     {
       "id": "2",
       "phrase": "Sometimes",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "img": "/resources/sad-smiley.png",
         "message": [
@@ -429,9 +429,9 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "it", "wight": 0 },
-              { "id": "1", "option": "this", "wight": 1 },
-              { "id": "2", "option": "why", "wight": 0 }
+              { "id": "0", "option": "It", "wight": 0 },
+              { "id": "1", "option": "This", "wight": 1 },
+              { "id": "2", "option": "Why", "wight": 0 }
             ]
           },
           {
@@ -527,7 +527,7 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "did", "wight": 1 },
+              { "id": "0", "option": "did", "wight": 2 },
               { "id": "1", "option": "was", "wight": 0 },
               { "id": "2", "option": "had", "wight": 0 }
             ]
@@ -548,7 +548,7 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "did", "wight": 1 },
+              { "id": "0", "option": "did", "wight": 2 },
               { "id": "1", "option": "was", "wight": 0 },
               { "id": "2", "option": "had", "wight": 0 }
             ]
@@ -569,7 +569,7 @@
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "did", "wight": 1 },
+              { "id": "0", "option": "did", "wight": 2 },
               { "id": "1", "option": "was", "wight": 0 },
               { "id": "2", "option": "had", "wight": 0 }
             ]
@@ -594,7 +594,7 @@
             "options": [
               { "id": "0", "option": "easer", "wight": 0 },
               { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
+              { "id": "2", "option": "easier", "wight": 2 }
             ]
           }
         ]
@@ -615,7 +615,7 @@
             "options": [
               { "id": "0", "option": "easer", "wight": 0 },
               { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
+              { "id": "2", "option": "easier", "wight": 2 }
             ]
           }
         ]
@@ -625,7 +625,7 @@
     {
       "id": "2",
       "phrase": "I started not long ago",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message": [
           "What is ..... - English or your language"
@@ -636,7 +636,7 @@
             "options": [
               { "id": "0", "option": "easer", "wight": 0 },
               { "id": "1", "option": "easyer", "wight": 0 },
-              { "id": "2", "option": "easier", "wight": 1 }
+              { "id": "2", "option": "easier", "wight": 2 }
             ]
           }
         ]
@@ -648,16 +648,16 @@
     {
       "id": "0",
       "phrase": "Mine, of course.",
-      "wight": 1,
+      "wight": 2,
       "answer": {
         "message":[
-          "..... you ever been to Australia? I travel a lot at work! For example, I ..... to Australia ..... month. The nature in Australia is so .....!"
+          "..... you ever been to Australia? I travel a lot at work! For example, I ..... to Australia ..... month. The nature in Australia is so .....!", "Выберите правильное описание текста: ....."
         ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "Have", "wight": 1 },
+              { "id": "0", "option": "Have", "wight": 2 },
               { "id": "1", "option": "Can", "wight": 0 },
               { "id": "2", "option": "Do", "wight": 0 }
             ]
@@ -666,14 +666,14 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "goed", "wight": 0 },
-              { "id": "1", "option": "went", "wight": 1 },
+              { "id": "1", "option": "went", "wight": 2 },
               { "id": "2", "option": "trip", "wight": 0 }
             ]
           },
           {
             "id": "2",
             "options": [
-              { "id": "0", "option": "last", "wight": 1 },
+              { "id": "0", "option": "last", "wight": 2 },
               { "id": "1", "option": "ago", "wight": 0 },
               { "id": "2", "option": "next", "wight": 0 }
             ]
@@ -683,13 +683,13 @@
             "options": [
               { "id": "0", "option": "excited", "wight": 0 },
               { "id": "1", "option": "relaxed", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
+              { "id": "2", "option": "exciting", "wight": 2 }
             ]
           },
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "Stewart enjoyed Australia.", "wight": 1 },
+              { "id": "0", "option": "Stewart enjoyed Australia.", "wight": 2 },
               { "id": "1", "option": "Stewart is in Australia.", "wight": 0 },
               { "id": "2", "option": "Stewart doesn't like nature.", "wight": 0 }
             ]
@@ -705,13 +705,13 @@
       "wight": 0,
       "answer": {
         "message":[
-          "..... you ever been to Australia? I travel a lot at work! For example, I ..... to Australia ..... month. The nature in Australia is so .....!"
+          "..... you ever been to Australia? I travel a lot at work! For example, I ..... to Australia ..... month. The nature in Australia is so .....!", "Выберите правильное описание текста: ....."
         ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "Have", "wight": 1 },
+              { "id": "0", "option": "Have", "wight": 2 },
               { "id": "1", "option": "Can", "wight": 0 },
               { "id": "2", "option": "Do", "wight": 0 }
             ]
@@ -720,14 +720,14 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "goed", "wight": 0 },
-              { "id": "1", "option": "went", "wight": 1 },
+              { "id": "1", "option": "went", "wight": 2 },
               { "id": "2", "option": "trip", "wight": 0 }
             ]
           },
           {
             "id": "2",
             "options": [
-              { "id": "0", "option": "last", "wight": 1 },
+              { "id": "0", "option": "last", "wight": 2 },
               { "id": "1", "option": "ago", "wight": 0 },
               { "id": "2", "option": "next", "wight": 0 }
             ]
@@ -737,13 +737,13 @@
             "options": [
               { "id": "0", "option": "excited", "wight": 0 },
               { "id": "1", "option": "relaxed", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
+              { "id": "2", "option": "exciting", "wight": 2 }
             ]
           },
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "Stewart enjoyed Australia.", "wight": 1 },
+              { "id": "0", "option": "Stewart enjoyed Australia.", "wight": 2 },
               { "id": "1", "option": "Stewart is in Australia.", "wight": 0 },
               { "id": "2", "option": "Stewart doesn't like nature.", "wight": 0 }
             ]
@@ -759,13 +759,13 @@
       "wight": 0,
       "answer": {
         "message":[
-          "..... you ever been to Australia? I travel a lot at work! For example, I ..... to Australia ..... month. The nature in Australia is so .....!"
+          "..... you ever been to Australia? I travel a lot at work! For example, I ..... to Australia ..... month. The nature in Australia is so .....!", "Выберите правильное описание текста: ....."
         ],
         "selects": [
           {
             "id": "0",
             "options": [
-              { "id": "0", "option": "Have", "wight": 1 },
+              { "id": "0", "option": "Have", "wight": 2 },
               { "id": "1", "option": "Can", "wight": 0 },
               { "id": "2", "option": "Do", "wight": 0 }
             ]
@@ -774,14 +774,14 @@
             "id": "1",
             "options": [
               { "id": "0", "option": "goed", "wight": 0 },
-              { "id": "1", "option": "went", "wight": 1 },
+              { "id": "1", "option": "went", "wight": 2 },
               { "id": "2", "option": "trip", "wight": 0 }
             ]
           },
           {
             "id": "2",
             "options": [
-              { "id": "0", "option": "last", "wight": 1 },
+              { "id": "0", "option": "last", "wight": 2 },
               { "id": "1", "option": "ago", "wight": 0 },
               { "id": "2", "option": "next", "wight": 0 }
             ]
@@ -791,13 +791,13 @@
             "options": [
               { "id": "0", "option": "excited", "wight": 0 },
               { "id": "1", "option": "relaxed", "wight": 0 },
-              { "id": "2", "option": "exciting", "wight": 1 }
+              { "id": "2", "option": "exciting", "wight": 2 }
             ]
           },
           {
             "id": "4",
             "options": [
-              { "id": "0", "option": "Stewart enjoyed Australia.", "wight": 1 },
+              { "id": "0", "option": "Stewart enjoyed Australia.", "wight": 2 },
               { "id": "1", "option": "Stewart is in Australia.", "wight": 0 },
               { "id": "2", "option": "Stewart doesn't like nature.", "wight": 0 }
             ]

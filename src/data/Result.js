@@ -9,13 +9,13 @@ export const result = {
 }
 
 export const dispointment = {
-    "A-John": { "min": "5.4", "threshold-difficult": 5.4, "threshold-max": "24.3", l1: "A1", l2: "A1", l3: "A2", l4: "B1" }, /* all "difficult": 9 "max": "27"*/
-    "B-John": { "min": "6.6", "threshold-difficult": 12, "threshold-max": "30.6", l1: "A2", l2: "B1", l3: "B2", l4: "C1" }, /* all "difficult": 20 "max": "34"*/
-    "C-John": { "min": "5.6", "threshold-difficult": 14.4, "threshold-max": "25.2", l1: "B2", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 16 "max": "28 "*/
-    "A-Lisa": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "A1", l2: "A1", l3: "A2", l4: "B1" }, /* all "difficult": 20 "max": "30"*/
-    "B-Lisa": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "A2", l2: "B1", l3: "B2", l4: "C1" }, /* all "difficult": 20 "max": "32"*/
-    "C-Lisa": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "B2", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 20 "max": "21"*/
-    "A-Stewart": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "A1", l2: "A1", l3: "A2", l4: "B1" }, /* all "difficult": 20 "max": "28"*/
-    "B-Stewart": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "A2", l2: "B1", l3: "B2", l4: "C1" }, /* all "difficult": 20 "max": "33"*/
-    "C-Stewart": { "min": "", "threshold-difficult": 9, "threshold-max": "", l1: "B2", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 20 "max": "22"*/
+    "A-John": { "min": "5.6", "threshold-difficult": 5.4, "threshold-max": "25.2", l1: "A1", l2: "A1", l3: "A2", l4: "B1" }, /* all "difficult": 9 "max": "28"*/
+    "B-John": { "min": "6.8", "threshold-difficult": 12, "threshold-max": "30.6", l1: "A2", l2: "B1", l3: "B2", l4: "C1" }, /* all "difficult": 20 "max": "34"*/
+    "C-John": { "min": "5.6", "threshold-difficult": 9.6, "threshold-max": "25.2", l1: "B2", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 16 "max": "28 "*/
+    "A-Lisa": { "min": "6", "threshold-difficult": 7.8, "threshold-max": "27", l1: "A1", l2: "A1", l3: "A2", l4: "B1" }, /* all "difficult": 13 "max": "30"*/
+    "B-Lisa": { "min": "6.4", "threshold-difficult": 10.8, "threshold-max": "28.8", l1: "A2", l2: "B1", l3: "B2", l4: "C1" }, /* all "difficult": 18 "max": "32"*/
+    "C-Lisa": { "min": "4.4", "threshold-difficult": 10.2, "threshold-max": "19.8", l1: "B2", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 17 "max": "22"*/
+    "A-Stewart": { "min": "5.6", "threshold-difficult": 6.6, "threshold-max": "25.2", l1: "A1", l2: "A1", l3: "A2", l4: "B1" }, /* all "difficult": 11 "max": "28"*/
+    "B-Stewart": { "min": "6.6", "threshold-difficult": 8.4, "threshold-max": "29.7", l1: "A2", l2: "B1", l3: "B2", l4: "C1" }, /* all "difficult": 14 "max": "33"*/
+    "C-Stewart": { "min": "4.4", "threshold-difficult": 10.2, "threshold-max": "19.8", l1: "B2", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 17 "max": "22"*/
 }
