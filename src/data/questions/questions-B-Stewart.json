@@ -239,7 +239,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/arethereanyplacestoskiinyourcountry.mp3"
+        "audio": "/resources/audio/stewart/B1-B2/Are there any places to ski in your country.mp3"
       },
       "next": "eighthPhrase"
     },
@@ -259,7 +259,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/arethereanyplacestoskiinyourcountry.mp3"
+        "audio": "/resources/audio/stewart/B1-B2/Are there any places to ski in your country.mp3"
       },
       "next": "eighthPhrase"
     },
@@ -279,7 +279,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/arethereanyplacestoskiinyourcountry.mp3"
+        "audio": "/resources/audio/stewart/B1-B2/Are there any places to ski in your country.mp3"
       },
       "next": "eighthPhrase"
     }
@@ -290,7 +290,7 @@
       "phrase": "In the mountains.",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-stewart.png",
         "message": [
           "I ..... you to meet my dog. My ..... name is Buddy."
         ],
@@ -320,7 +320,7 @@
       "phrase": "Yup, a lot of them)",
       "wight": 2,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-stewart.png",
         "message": [
           "I ..... you to meet my dog. My ..... name is Buddy."
         ],
@@ -350,7 +350,7 @@
       "phrase": "Sure, in winter)",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-stewart.png",
         "message": [
           "I ..... you to meet my dog. My ..... name is Buddy."
         ],
@@ -409,7 +409,7 @@
             ]
           }
         ],
-        "audio":"/resources/audio/john/haveyoueverbeentoaustralia.mp3"
+        "audio":"/resources/audio/stewart/B1-B2/Have you ever been to Australia.mp3"
       },
       "next": "tenthPhrase"
     },
@@ -445,7 +445,7 @@
             ]
           }
         ],
-        "audio":"/resources/audio/john/haveyoueverbeentoaustralia.mp3"
+        "audio":"/resources/audio/stewart/B1-B2/Have you ever been to Australia.mp3"
       },
       "next": "tenthPhrase"
     },
@@ -481,7 +481,7 @@
             ]
           }
         ],
-        "audio":"/resources/audio/john/haveyoueverbeentoaustralia.mp3"
+        "audio":"/resources/audio/stewart/B1-B2/Have you ever been to Australia.mp3"
       },
       "next": "tenthPhrase"
     }
@@ -825,7 +825,7 @@
       "wight": null,
       "phrase": "Oh, awesome! It's always amazing to travel!",
       "answer":{
-        "audio":"/resources/audio/john/imalsotryingtosketchsomethingatthemoment.mp3"
+        "audio":"/resources/audio/stewart/B1-B2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
       },
       "next": "fourteenthPhrase"
     }
@@ -836,7 +836,7 @@
       "phrase": "Oh, could I see it?",
       "wight": 2,
       "answer": {
-        "img": "/resources/sad-smiley.jpg",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "fifteenthPhrase"
@@ -846,7 +846,7 @@
       "phrase": "Where?",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.jpg",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "fifteenthPhrase"
@@ -856,7 +856,7 @@
       "phrase": "I don't think it's a nice idea.",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.jpg",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "fifteenthPhrase"
@@ -868,7 +868,7 @@
       "phrase": "Stewart's going to complete it in a short time.",
       "wight": 2,
       "answer": {
-        "audio": "/resources/audio/john/ithinkillhavecompleteditbynextwednesday.mp3",
+        "audio": "/resources/audio/stewart/B1-B2/I think I'll have completed it by next Wednesday. I'm gonna send it to an art competition. Kinda nervous.mp3",
         "message":["Выберите правильное описание: ....."],
         "selects": [
           {
@@ -900,7 +900,7 @@
       "phrase": "Stewart doesn't know what else to draw.",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/ithinkillhavecompleteditbynextwednesday.mp3",
+        "audio": "/resources/audio/stewart/B1-B2/I think I'll have completed it by next Wednesday. I'm gonna send it to an art competition. Kinda nervous.mp3",
         "message":["Выберите правильное описание: ....."],
         "selects": [
           {
@@ -932,7 +932,7 @@
       "phrase": "Stewart has given up drawing it.",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/ithinkillhavecompleteditbynextwednesday.mp3",
+        "audio": "/resources/audio/stewart/B1-B2/I think I'll have completed it by next Wednesday. I'm gonna send it to an art competition. Kinda nervous.mp3",
         "message":["Выберите правильное описание: ....."],
         "selects": [
           {

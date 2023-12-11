@@ -209,14 +209,14 @@ class Chat extends React.Component {
                 case "img":
                     newScriptImg = document.createElement("img");
                     newScriptImg.className = "script-phrase-img";
-                    newScriptImg.src = this.dataPhrases[this.currentUserPhrase][id].answer[key];
+                    newScriptImg.src = process.env.PUBLIC_URL + this.dataPhrases[this.currentUserPhrase][id].answer[key];
                     newScriptImg.alt = "image for you";
                     newScriptDivParent.appendChild(newScriptImg);
                     break;
                 case "audio":
                     newScriptAudio = document.createElement("audio");
                     newScriptAudio.className = "script-phrase-audio";
-                    newScriptAudio.src = this.dataPhrases[this.currentUserPhrase][id].answer[key];
+                    newScriptAudio.src = process.env.PUBLIC_URL + this.dataPhrases[this.currentUserPhrase][id].answer[key];
                     newScriptAudio.setAttribute('controls', 'controls');
                     newScriptDivParent.appendChild(newScriptAudio);
                     break;

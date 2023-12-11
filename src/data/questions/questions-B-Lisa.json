@@ -297,7 +297,7 @@
       "phrase": "In the mountains.",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-lisa.png",
         "message": [
           "..... My son's name is Tom and my husband's name is Richard. We ..... 3 years ..... and we ..... a baby ..... a year."
         ],
@@ -363,7 +363,7 @@
       "phrase": "Yup, a lot of them)",
       "wight": 1,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-lisa.png",
         "message": [
           "..... My son's name is Tom and my husband's name is Richard. We ..... 3 years ..... and we ..... a baby ..... a year."
         ],
@@ -429,7 +429,7 @@
       "phrase": "Sure, in winter)",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-lisa.png",
         "message": [
           "..... My son's name is Tom and my husband's name is Richard. We ..... 3 years ..... and we ..... a baby ..... a year."
         ],
@@ -865,7 +865,7 @@
       "phrase": "Oh, could I see it?",
       "wight": 2,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "thirteenthPhrase"
@@ -875,7 +875,7 @@
       "phrase": "Where?",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "thirteenthPhrase"
@@ -885,7 +885,7 @@
       "phrase": "I don't think it's a nice idea.",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "thirteenthPhrase"

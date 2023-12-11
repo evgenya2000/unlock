@@ -345,7 +345,7 @@
       "phrase": "No, I do",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-lisa.png",
         "message": [
           "..... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?", "Выберите описание: ....."
         ],
@@ -399,7 +399,7 @@
       "phrase": "Who?",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-lisa.png",
         "message": [
           "..... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?", "Выберите описание: ....."
         ],
@@ -453,7 +453,7 @@
       "phrase": "Sometimes",
       "wight": 2,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-lisa.png",
         "message": [
           "..... is ..... family. My ..... name is Tom. And my husband's name is Richard. What ..... you studying at your school?", "Выберите описание: ....."
         ],

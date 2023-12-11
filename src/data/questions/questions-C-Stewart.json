@@ -82,7 +82,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/Imajournalistfro.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I'm from Manchester, the UK. Been working quite a while and still got a lot to learn. But the sheer excitement I get is worth it.mp3"
       },
       "next": "thirdPhrase"
     },
@@ -102,7 +102,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/Imajournalistfro.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I'm from Manchester, the UK. Been working quite a while and still got a lot to learn. But the sheer excitement I get is worth it.mp3"
       },
       "next": "thirdPhrase"
     },
@@ -122,7 +122,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/Imajournalistfro.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I'm from Manchester, the UK. Been working quite a while and still got a lot to learn. But the sheer excitement I get is worth it.mp3"
       },
       "next": "thirdPhrase"
     }
@@ -133,7 +133,7 @@
       "wight": 0,
       "phrase": "His work doesn't match his expectations he had at university.",
       "answer": {
-        "audio": "/resources/audio/john/Imreallyintomyj.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I'm really into my job, but I still tryna find time for the fun stuff, you know.mp3"
       },
       "next": "fourthPhrase"
     },
@@ -142,7 +142,7 @@
       "phrase": "Despite he's still not at the top of his profession, he is really happy to work in it.",
       "wight": 2,
       "answer": {
-        "audio": "/resources/audio/john/Imreallyintomyj.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I'm really into my job, but I still tryna find time for the fun stuff, you know.mp3"
       },
       "next": "fourthPhrase"
     },
@@ -151,7 +151,7 @@
       "phrase": "He can't match professional criteria but tries hard.",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/Imreallyintomyj.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I'm really into my job, but I still tryna find time for the fun stuff, you know.mp3"
       },
       "next": "fourthPhrase"
     }
@@ -162,7 +162,7 @@
       "phrase": "Oh, and who is your staff?",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/Ivebeenlearningt.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I've been learning to ski in the mountains. It helps to get fit and gives a lot of adrenaline.mp3"
       },
       "next": "fifthPhrase"
     },
@@ -171,7 +171,7 @@
       "phrase": "Oh, and what have you been up to?",
       "wight": 2,
       "answer": {
-        "audio": "/resources/audio/john/Ivebeenlearningt.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I've been learning to ski in the mountains. It helps to get fit and gives a lot of adrenaline.mp3"
       },
       "next": "fifthPhrase"
     },
@@ -180,7 +180,7 @@
       "phrase": "I see, and how can you fix that?",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/Ivebeenlearningt.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I've been learning to ski in the mountains. It helps to get fit and gives a lot of adrenaline.mp3"
       },
       "next": "fifthPhrase"
     }
@@ -212,7 +212,7 @@
             ]
           }
         ],
-        "img": "/resources/img-tasks/family-stewart.jpg"
+        "img": "/resources/img-tasks/family-stewart.png"
       },
       "next": "sixthPhrase"
     },
@@ -242,7 +242,7 @@
             ]
           }
         ],
-        "img": "/resources/img-tasks/family-stewart.jpg"
+        "img": "/resources/img-tasks/family-stewart.png"
       },
       "next": "sixthPhrase"
     },
@@ -272,7 +272,7 @@
             ]
           }
         ],
-        "img": "/resources/img-tasks/family-stewart.jpg"
+        "img": "/resources/img-tasks/family-stewart.png"
       },
       "next": "sixthPhrase"
     }
@@ -467,7 +467,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/Actuallytheplaneticketsherecostanarmandaleg.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/Actually, the plane tickets to Canada cost an arm and a leg.mp3"
       },
       "next": "eighthPhrase"
     }
@@ -478,7 +478,7 @@
       "phrase": "He can't travel by plane.",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/imalsotryingtosketchsomethingatthemoment.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
       },
       "next": "ninthPhrase"
     },
@@ -487,7 +487,7 @@
       "phrase": "The plane tickets are really expensive.",
       "wight": 2,
       "answer": {
-        "audio": "/resources/audio/john/imalsotryingtosketchsomethingatthemoment.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
       },
       "next": "ninthPhrase"
     },
@@ -496,7 +496,7 @@
       "phrase": "The plane tickets are quite cheap.",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/imalsotryingtosketchsomethingatthemoment.mp3"
+        "audio": "/resources/audio/stewart/C1-C2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
       },
       "next": "ninthPhrase"
     }
@@ -507,7 +507,7 @@
       "phrase": "Oh, could I see it?",
       "wight": 2,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "tenthPhrase"
@@ -517,7 +517,7 @@
       "phrase": "Where?",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "tenthPhrase"
@@ -527,7 +527,7 @@
       "phrase": "I don't think it's a nice idea.",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "tenthPhrase"
@@ -539,7 +539,7 @@
       "phrase": "Stewart's going to complete it in a short time.",
       "wight": 2,
       "answer": {
-        "audio": "/resources/audio/john/ithinkillhavecompleteditbynextwednesday.mp3",
+        "audio": "/resources/audio/stewart/C1-C2/I think I'll have completed it by next Wednesday. I'm gonna send it to an art competition. Kinda nervous.mp3",
         "message":["Выберите правильное описание: ....."],
         "selects": [
           {
@@ -571,7 +571,7 @@
       "phrase": "Stewart doesn't know what else to draw.",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/ithinkillhavecompleteditbynextwednesday.mp3",
+        "audio": "/resources/audio/stewart/C1-C2/I think I'll have completed it by next Wednesday. I'm gonna send it to an art competition. Kinda nervous.mp3",
         "message":["Выберите правильное описание: ....."],
         "selects": [
           {
@@ -603,7 +603,7 @@
       "phrase": "Stewart has given up drawing it.",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/ithinkillhavecompleteditbynextwednesday.mp3",
+        "audio": "/resources/audio/stewart/C1-C2/I think I'll have completed it by next Wednesday. I'm gonna send it to an art competition. Kinda nervous.mp3",
         "message":["Выберите правильное описание: ....."],
         "selects": [
           {

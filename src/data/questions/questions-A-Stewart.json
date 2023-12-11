@@ -278,7 +278,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/doyouskiinwinter.mp3"
+        "audio": "/resources/audio/stewart/A1-A2/Do you ski in winter.mp3"
       },
       "next": "seventhPhrase"
     },
@@ -306,7 +306,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/doyouskiinwinter.mp3"
+        "audio": "/resources/audio/stewart/A1-A2/Do you ski in winter.mp3"
       },
       "next": "seventhPhrase"
     },
@@ -334,7 +334,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/john/doyouskiinwinter.mp3"
+        "audio": "/resources/audio/stewart/A1-A2/Do you ski in winter.mp3"
       },
       "next": "seventhPhrase"
     }
@@ -345,7 +345,7 @@
       "phrase": "No, I do",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-stewart.png",
         "message": [
           "..... is me and ..... dog. My ..... name is Buddy."
         ],
@@ -383,7 +383,7 @@
       "phrase": "Who?",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-stewart.png",
         "message": [
           "..... is me and ..... dog. My ..... name is Buddy."
         ],
@@ -421,7 +421,7 @@
       "phrase": "Sometimes",
       "wight": 2,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/family-stewart.png",
         "message": [
           "..... is me and ..... dog. My ..... name is Buddy."
         ],
@@ -695,7 +695,7 @@
             ]
           }
         ],
-        "audio":"/resources/audio/john/whatsthenameofyourcity.mp3"
+        "audio":"/resources/audio/stewart/A1-A2/What's the name of your city.mp3"
       },
       "next": "twelfthPhrase"
     },
@@ -749,7 +749,7 @@
             ]
           }
         ],
-        "audio":"/resources/audio/john/whatsthenameofyourcity.mp3"
+        "audio":"/resources/audio/stewart/A1-A2/What's the name of your city.mp3"
       },
       "next": "twelfthPhrase"
     },
@@ -803,7 +803,7 @@
             ]
           }
         ],
-        "audio":"/resources/audio/john/whatsthenameofyourcity.mp3"
+        "audio":"/resources/audio/stewart/A1-A2/What's the name of your city.mp3"
       },
       "next": "twelfthPhrase"
     }

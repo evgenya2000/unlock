@@ -217,8 +217,7 @@
               { "id": "2", "option": "having helped", "wight": 1 }
             ]
           }
-        ],
-        "img": "/resources/img-tasks/family-john.jpg"
+        ]
       },
       "next": "sixthPhrase"
     },
@@ -247,8 +246,7 @@
               { "id": "2", "option": "having helped", "wight": 1 }
             ]
           }
-        ],
-        "img": "/resources/img-tasks/family-john.jpg"
+        ]
       },
       "next": "sixthPhrase"
     },
@@ -277,8 +275,7 @@
               { "id": "2", "option": "having helped", "wight": 1 }
             ]
           }
-        ],
-        "img": "/resources/img-tasks/family-john.jpg"
+        ]
       },
       "next": "sixthPhrase"
     }
@@ -289,7 +286,7 @@
       "phrase": "Cool! Do you live with your parents?",
       "wight": null,
       "answer": {
-        "img": "/resources/img-tasks/family-lisa.jpg",
+        "img": "/resources/img-tasks/family-lisa.png",
         "message": [
           "Выберите правильное описание фотографии: .....",
           "No, I live with my husband, Richard, and my little sweetie Tom. Look at this cutie!",
@@ -418,7 +415,7 @@
       "phrase": "Oh, could I see it?",
       "wight": 2,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "tenthPhrase"
@@ -428,7 +425,7 @@
       "phrase": "Where?",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "tenthPhrase"
@@ -438,7 +435,7 @@
       "phrase": "I don't think it's a nice idea.",
       "wight": 0,
       "answer": {
-        "img": "/resources/sad-smiley.png",
+        "img": "/resources/img-tasks/cat.jpg",
         "message": ["It's not finished… But it will be finished soon!"]
       },
       "next": "tenthPhrase"
