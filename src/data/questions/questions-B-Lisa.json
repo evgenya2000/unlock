@@ -866,7 +866,27 @@
       "wight": 2,
       "answer": {
         "img": "/resources/img-tasks/cat.jpg",
-        "message": ["It's not finished… But it will be finished soon!"]
+        "message": ["It's not finished… But it will be finished soon!", "Выберите правильное описание: ....."],
+        "selects":[
+          {"id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": "Lisa is going to complete it in a short time.",
+                "wight": 2
+              },
+              {
+                "id": "1",
+                "option": "Lisa doesn't know what else to draw.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "Lisa has given up drawing it.",
+                "wight": 0
+              }
+            ]}
+        ]
       },
       "next": "thirteenthPhrase"
     },
@@ -876,7 +896,27 @@
       "wight": 0,
       "answer": {
         "img": "/resources/img-tasks/cat.jpg",
-        "message": ["It's not finished… But it will be finished soon!"]
+        "message": ["It's not finished… But it will be finished soon!", "Выберите правильное описание: ....."],
+        "selects":[
+          {"id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": "Lisa is going to complete it in a short time.",
+                "wight": 2
+              },
+              {
+                "id": "1",
+                "option": "Lisa doesn't know what else to draw.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "Lisa has given up drawing it.",
+                "wight": 0
+              }
+            ]}
+        ]
       },
       "next": "thirteenthPhrase"
     },
@@ -886,7 +926,27 @@
       "wight": 0,
       "answer": {
         "img": "/resources/img-tasks/cat.jpg",
-        "message": ["It's not finished… But it will be finished soon!"]
+        "message": ["It's not finished… But it will be finished soon!", "Выберите правильное описание: ....."],
+        "selects":[
+          {"id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": "Lisa is going to complete it in a short time.",
+                "wight": 2
+              },
+              {
+                "id": "1",
+                "option": "Lisa doesn't know what else to draw.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "Lisa has given up drawing it.",
+                "wight": 0
+              }
+            ]}
+        ]
       },
       "next": "thirteenthPhrase"
     }
@@ -894,72 +954,8 @@
   "thirteenthPhrase": [
     {
       "id": "0",
-      "phrase": "Lisa is going to complete it in a short time.",
-      "wight": 2,
-      "answer": {
-        "audio": "/resources/audio/lisa/B1-B2/I think I'll have completed it by next Wednesday.mp3",
-        "message":["Выберите правильное описание: ....."],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              {
-                "id": "0",
-                "option": "The drawing will be finished on Wednesday",
-                "wight": 0
-              },
-              {
-                "id": "1",
-                "option": "The drawing will be finished before Wednesday",
-                "wight": 2
-              },
-              {
-                "id": "2",
-                "option": "The drawing will be finished after Wednesday",
-                "wight": 0
-              }
-            ]
-          }
-        ]
-      },
-      "next": "fourteenthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "Lisa doesn't know what else to draw.",
-      "wight": 0,
-      "answer": {
-        "audio": "/resources/audio/lisa/B1-B2/I think I'll have completed it by next Wednesday.mp3",
-        "message":["Выберите правильное описание: ....."],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              {
-                "id": "0",
-                "option": "The drawing will be finished on Wednesday",
-                "wight": 0
-              },
-              {
-                "id": "1",
-                "option": "The drawing will be finished before Wednesday",
-                "wight": 2
-              },
-              {
-                "id": "2",
-                "option": "The drawing will be finished after Wednesday",
-                "wight": 0
-              }
-            ]
-          }
-        ]
-      },
-      "next": "fourteenthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "Lisa has given up drawing it.",
-      "wight": 0,
+      "phrase": "Wow!",
+      "wight": null,
       "answer": {
         "audio": "/resources/audio/lisa/B1-B2/I think I'll have completed it by next Wednesday.mp3",
         "message":["Выберите правильное описание: ....."],

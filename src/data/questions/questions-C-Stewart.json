@@ -508,7 +508,27 @@
       "wight": 2,
       "answer": {
         "img": "/resources/img-tasks/cat.jpg",
-        "message": ["It's not finished… But it will be finished soon!"]
+        "message": ["It's not finished… But it will be finished soon!", "Выберите правильное описание: ....."],
+        "selects":[
+          {"id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": "Stewart is going to complete it in a short time.",
+                "wight": 2
+              },
+              {
+                "id": "1",
+                "option": "Stewart doesn't know what else to draw.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "Stewart has given up drawing it.",
+                "wight": 0
+              }
+            ]}
+        ]
       },
       "next": "tenthPhrase"
     },
@@ -518,7 +538,27 @@
       "wight": 0,
       "answer": {
         "img": "/resources/img-tasks/cat.jpg",
-        "message": ["It's not finished… But it will be finished soon!"]
+        "message": ["It's not finished… But it will be finished soon!", "Выберите правильное описание: ....."],
+        "selects":[
+          {"id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": "Stewart is going to complete it in a short time.",
+                "wight": 2
+              },
+              {
+                "id": "1",
+                "option": "Stewart doesn't know what else to draw.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "Stewart has given up drawing it.",
+                "wight": 0
+              }
+            ]}
+        ]
       },
       "next": "tenthPhrase"
     },
@@ -528,7 +568,27 @@
       "wight": 0,
       "answer": {
         "img": "/resources/img-tasks/cat.jpg",
-        "message": ["It's not finished… But it will be finished soon!"]
+        "message": ["It's not finished… But it will be finished soon!", "Выберите правильное описание: ....."],
+        "selects":[
+          {"id": "0",
+            "options": [
+              {
+                "id": "0",
+                "option": "Stewart is going to complete it in a short time.",
+                "wight": 2
+              },
+              {
+                "id": "1",
+                "option": "Stewart doesn't know what else to draw.",
+                "wight": 0
+              },
+              {
+                "id": "2",
+                "option": "Stewart has given up drawing it.",
+                "wight": 0
+              }
+            ]}
+        ]
       },
       "next": "tenthPhrase"
     }
@@ -536,72 +596,8 @@
   "tenthPhrase": [
     {
       "id": "0",
-      "phrase": "Stewart's going to complete it in a short time.",
-      "wight": 2,
-      "answer": {
-        "audio": "/resources/audio/stewart/C1-C2/I think I'll have completed it by next Wednesday. I'm gonna send it to an art competition. Kinda nervous.mp3",
-        "message":["Выберите правильное описание: ....."],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              {
-                "id": "0",
-                "option": " The drawing will be finished on Wednesday",
-                "wight": 0
-              },
-              {
-                "id": "1",
-                "option": "The drawing will be finished before Wednesday",
-                "wight": 2
-              },
-              {
-                "id": "2",
-                "option": "The drawing will be finished after Wednesday",
-                "wight": 0
-              }
-            ]
-          }
-        ]
-      },
-      "next": "eleventhPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "Stewart doesn't know what else to draw.",
-      "wight": 0,
-      "answer": {
-        "audio": "/resources/audio/stewart/C1-C2/I think I'll have completed it by next Wednesday. I'm gonna send it to an art competition. Kinda nervous.mp3",
-        "message":["Выберите правильное описание: ....."],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              {
-                "id": "0",
-                "option": " The drawing will be finished on Wednesday",
-                "wight": 0
-              },
-              {
-                "id": "1",
-                "option": "The drawing will be finished before Wednesday",
-                "wight": 2
-              },
-              {
-                "id": "2",
-                "option": "The drawing will be finished after Wednesday",
-                "wight": 0
-              }
-            ]
-          }
-        ]
-      },
-      "next": "eleventhPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "Stewart has given up drawing it.",
-      "wight": 0,
+      "phrase": "Wow!",
+      "wight": null,
       "answer": {
         "audio": "/resources/audio/stewart/C1-C2/I think I'll have completed it by next Wednesday. I'm gonna send it to an art competition. Kinda nervous.mp3",
         "message":["Выберите правильное описание: ....."],

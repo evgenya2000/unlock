@@ -63,7 +63,7 @@ class Chat extends React.Component {
             message.id = "option-checked-false";
             let trueId = null;
             for (trueId in this.dataPhrases[this.currentUserPhrase]) {
-                if (this.dataPhrases[this.currentUserPhrase][trueId].wight === 1) {
+                if (this.dataPhrases[this.currentUserPhrase][trueId].wight === 1 || this.dataPhrases[this.currentUserPhrase][trueId].wight === 2) {
                     message = document.getElementById(`phrase-${this.currentUserPhrase}-${trueId}`);
                     message.id = "option-checked-true-border";
                     break;
