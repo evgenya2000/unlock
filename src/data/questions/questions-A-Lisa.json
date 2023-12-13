@@ -278,7 +278,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/lisa/Doyouskiinwinter.mp3"
+        "audio": "/resources/audio/lisa/A1-A2/Do you ski in winter_.mp3"
       },
       "next": "seventhPhrase"
     },
@@ -306,7 +306,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/lisa/Doyouskiinwinter.mp3"
+        "audio": "/resources/audio/lisa/A1-A2/Do you ski in winter_.mp3"
       },
       "next": "seventhPhrase"
     },
@@ -334,7 +334,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/lisa/Doyouskiinwinter.mp3"
+        "audio": "/resources/audio/lisa/A1-A2/Do you ski in winter_.mp3"
       },
       "next": "seventhPhrase"
     }
@@ -633,7 +633,7 @@
       "phrase": "Mine, of course.",
       "wight": 2,
       "answer": {
-        "audio":"/resources/audio/lisa/HaveyoueverbeentoCanada.mp3"
+        "audio":"/resources/audio/lisa/A1-A2/Have you ever been to Canada_.mp3"
       },
       "next": "eleventhPhrase"
     },
@@ -642,7 +642,7 @@
       "phrase": "My, of course.",
       "wight": 0,
       "answer": {
-        "audio":"/resources/audio/lisa/HaveyoueverbeentoCanada.mp3"
+        "audio":"/resources/audio/lisa/A1-A2/Have you ever been to Canada_.mp3"
       },
       "next": "eleventhPhrase"
     },
@@ -651,7 +651,7 @@
       "phrase": "Our, for sure.",
       "wight": 0,
       "answer": {
-        "audio":"/resources/audio/lisa/HaveyoueverbeentoCanada.mp3"
+        "audio":"/resources/audio/lisa/A1-A2/Have you ever been to Canada_.mp3v"
       },
       "next": "eleventhPhrase"
     }
@@ -715,7 +715,7 @@
             ]
           }
         ],
-        "audio":"/resources/audio/lisa/Whatsthenameofy.mp3"
+        "audio":"/resources/audio/lisa/A1-A2/What's the name of your city_.mp3"
       },
       "next": "twelfthPhrase"
     },
@@ -777,7 +777,7 @@
             ]
           }
         ],
-        "audio":"/resources/audio/lisa/Whatsthenameofy.mp3"
+        "audio":"/resources/audio/lisa/A1-A2/What's the name of your city_.mp3"
       },
       "next": "twelfthPhrase"
     },
@@ -839,7 +839,7 @@
             ]
           }
         ],
-        "audio":"/resources/audio/lisa/Whatsthenameofy.mp3"
+        "audio":"/resources/audio/lisa/A1-A2/What's the name of your city_.mp3"
       },
       "next": "twelfthPhrase"
     }

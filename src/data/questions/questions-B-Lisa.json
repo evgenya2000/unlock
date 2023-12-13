@@ -246,7 +246,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/lisa/Arethereanyplaces.mp3"
+        "audio": "/resources/audio/lisa/B1-B2/Are there any places to ski in your country_.mp3"
       },
       "next": "seventhPhrase"
     },
@@ -266,7 +266,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/lisa/Arethereanyplaces.mp3"
+        "audio": "/resources/audio/lisa/B1-B2/Are there any places to ski in your country_.mp3"
       },
       "next": "seventhPhrase"
     },
@@ -286,7 +286,7 @@
             ]
           }
         ],
-        "audio": "/resources/audio/lisa/Arethereanyplaces.mp3"
+        "audio": "/resources/audio/lisa/B1-B2/Are there any places to ski in your country_.mp3"
       },
       "next": "seventhPhrase"
     }
@@ -854,7 +854,7 @@
       "wight": null,
       "phrase": "Oh, awesome! It's always amazing to travel!",
       "answer": {
-        "audio": "/resources/audio/lisa/Imalsotryingtos.mp3"
+        "audio": "/resources/audio/lisa/B1-B2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
       },
       "next": "twelfthPhrase"
     }
@@ -897,7 +897,7 @@
       "phrase": "Lisa is going to complete it in a short time.",
       "wight": 2,
       "answer": {
-        "audio": "/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "audio": "/resources/audio/lisa/B1-B2/I think I'll have completed it by next Wednesday.mp3",
         "message":["Выберите правильное описание: ....."],
         "selects": [
           {
@@ -929,7 +929,7 @@
       "phrase": "Lisa doesn't know what else to draw.",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "audio": "/resources/audio/lisa/B1-B2/I think I'll have completed it by next Wednesday.mp3",
         "message":["Выберите правильное описание: ....."],
         "selects": [
           {
@@ -961,7 +961,7 @@
       "phrase": "Lisa has given up drawing it.",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/lisa/IthinkIllhaveco.mp3",
+        "audio": "/resources/audio/lisa/B1-B2/I think I'll have completed it by next Wednesday.mp3",
         "message":["Выберите правильное описание: ....."],
         "selects": [
           {

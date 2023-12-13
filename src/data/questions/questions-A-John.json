@@ -404,7 +404,7 @@
       "id": "0",
       "phrase": "No, I do.",
       "answer": {
-        "img": "/resources/img-tasks/family-john.jpg",
+        "img": "/resources/img-tasks/family-john.png",
         "message": [
           "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often.",
           "Выберите описание картинки: ....."
@@ -471,7 +471,7 @@
       "id": "1",
       "phrase": "Who?",
       "answer": {
-        "img": "/resources/img-tasks/family-john.jpg",
+        "img": "/resources/img-tasks/family-john.png",
         "message": [
           "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often.",
           "Выберите описание картинки: ....."
@@ -538,7 +538,7 @@
       "id": "2",
       "phrase": "Sometimes",
       "answer": {
-        "img": "/resources/img-tasks/family-john.jpg",
+        "img": "/resources/img-tasks/family-john.png",
         "message": [
           "..... is ..... family. My ..... name is Tom. And my mum's name is Helen. And my sister's name is Jenny. And this is ..... dog, Buddy. I'm in another city, and I don't see my family very often.",
           "Выберите описание картинки: ....."
