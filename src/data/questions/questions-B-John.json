@@ -98,7 +98,7 @@
     {
       "id": "0",
       "wight": null,
-      "phrase": "I'am a citizen of the world.",
+      "phrase": "I'm a citizen of the world.",
       "answer": {
         "message": ["Cool! I'm from Australia)", "What do you do?"]
       },
@@ -111,16 +111,54 @@
       "phrase": "I'm a student at an English school.",
       "wight": 1,
       "answer": {
-        "message": ["Great! I'm a student at university of Sydney)"]
+        "message": ["Great! I'm a student at university of Sydney)", "Выберите правильное описание: .....", "How do you like ..... your free time?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "John is unemployed", "wight": 0 },
+              { "id": "1", "option": "John doesn't like working", "wight": 0 },
+              { "id": "2", "option": "John has finished school", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "spend", "wight": 0 },
+              { "id": "1", "option": "spending", "wight": 1 },
+              { "id": "2", "option": "saving", "wight": 0 }
+            ]
+          }
+        ]
+
       },
       "next": "fifthPhrase"
     },
     {
       "id": "1",
-      "phrase": "I am at the computer.",
+      "phrase": "I m at the computer.",
       "wight": 0,
       "answer": {
-        "message": ["Great! I'm a student at university of Sydney)"]
+        "message": ["Great! I'm a student at university of Sydney)", "Выберите правильное описание: .....", "How do you like ..... your free time?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "John is unemployed", "wight": 0 },
+              { "id": "1", "option": "John doesn't like working", "wight": 0 },
+              { "id": "2", "option": "John has finished school", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "spend", "wight": 0 },
+              { "id": "1", "option": "spending", "wight": 1 },
+              { "id": "2", "option": "saving", "wight": 0 }
+            ]
+          }
+        ]
+
       },
       "next": "fifthPhrase"
     },
@@ -129,71 +167,31 @@
       "phrase": "I'm having a pizza.",
       "wight": 0,
       "answer": {
-        "message": ["Great! I'm a student at university of Sydney)"]
+        "message": ["Great! I'm a student at university of Sydney)", "Выберите правильное описание: .....", "How do you like ..... your free time?"],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "John is unemployed", "wight": 0 },
+              { "id": "1", "option": "John doesn't like working", "wight": 0 },
+              { "id": "2", "option": "John has finished school", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "spend", "wight": 0 },
+              { "id": "1", "option": "spending", "wight": 1 },
+              { "id": "2", "option": "saving", "wight": 0 }
+            ]
+          }
+        ]
+
       },
       "next": "fifthPhrase"
     }
   ],
   "fifthPhrase": [
-    {
-      "id": "0",
-      "phrase": "John is unemployed.",
-      "wight": 0,
-      "answer": {
-        "message": ["How do you like ..... your free time?"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "spend", "wight": 0 },
-              { "id": "1", "option": "spending", "wight": 1 },
-              { "id": "2", "option": "saving", "wight": 0 }
-            ]
-          }
-        ]
-      },
-      "next": "sixthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "John doesn't like working.",
-      "wight": 0,
-      "answer": {
-        "message": ["How do you like ..... your free time?"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "spend", "wight": 0 },
-              { "id": "1", "option": "spending", "wight": 1 },
-              { "id": "2", "option": "saving", "wight": 0 }
-            ]
-          }
-        ]
-      },
-      "next": "sixthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "John has finished school.",
-      "wight": 1,
-      "answer": {
-        "message": ["How do you like ..... your free time?"],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "spend", "wight": 0 },
-              { "id": "1", "option": "spending", "wight": 1 },
-              { "id": "2", "option": "saving", "wight": 0 }
-            ]
-          }
-        ]
-      },
-      "next": "sixthPhrase"
-    }
-  ],
-  "sixthPhrase": [
     {
       "id": "0",
       "phrase": "I'm a fun of music.",
@@ -202,7 +200,7 @@
         "message": ["Really?? Look at my photo, haha"],
         "img": "/resources/img-tasks/guitar-player.jpg"
       },
-      "next": "seventhPhrase"
+      "next": "sixthPhrase"
     },
     {
       "id": "1",
@@ -212,7 +210,7 @@
         "message": ["Really?? Look at my photo, haha"],
         "img": "/resources/img-tasks/guitar-player.jpg"
       },
-      "next": "seventhPhrase"
+      "next": "sixthPhrase"
     },
     {
       "id": "2",
@@ -222,10 +220,10 @@
         "message": ["Really?? Look at my photo, haha"],
         "img": "/resources/img-tasks/guitar-player.jpg"
       },
-      "next": "seventhPhrase"
+      "next": "sixthPhrase"
     }
   ],
-  "seventhPhrase": [
+  "sixthPhrase": [
     {
       "id": "0",
       "phrase": "Oh, you are a guitarist, aren't you?",
@@ -253,7 +251,7 @@
           }
         ]
       },
-      "next": "eighthPhrase"
+      "next": "seventhPhrase"
     },
     {
       "id": "1",
@@ -282,7 +280,7 @@
           }
         ]
       },
-      "next": "eighthPhrase"
+      "next": "seventhPhrase"
     },
     {
       "id": "2",
@@ -311,10 +309,10 @@
           }
         ]
       },
-      "next": "eighthPhrase"
+      "next": "seventhPhrase"
     }
   ],
-  "eighthPhrase": [
+  "seventhPhrase": [
     {
       "id": "0",
       "phrase": "Me neither!",
@@ -333,7 +331,7 @@
         ],
         "audio": "/resources/audio/john/B1-B2/Are there any places to ski in your country.mp3"
       },
-      "next": "ninthPhrase"
+      "next": "eighthPhrase"
     },
     {
       "id": "1",
@@ -353,7 +351,7 @@
         ],
         "audio": "/resources/audio/john/B1-B2/Are there any places to ski in your country.mp3"
       },
-      "next": "ninthPhrase"
+      "next": "eighthPhrase"
     },
     {
       "id": "2",
@@ -373,10 +371,10 @@
         ],
         "audio": "/resources/audio/john/B1-B2/Are there any places to ski in your country.mp3"
       },
-      "next": "ninthPhrase"
+      "next": "eighthPhrase"
     }
   ],
-  "ninthPhrase": [
+  "eighthPhrase": [
     {
       "id": "0",
       "phrase": "In the mountains.",
@@ -466,7 +464,7 @@
           }
         ]
       },
-      "next": "tenthPhrase"
+      "next": "ninthPhrase"
     },
     {
       "id": "1",
@@ -557,7 +555,7 @@
           }
         ]
       },
-      "next": "tenthPhrase"
+      "next": "ninthPhrase"
     },
     {
       "id": "2",
@@ -648,33 +646,33 @@
           }
         ]
       },
-      "next": "tenthPhrase"
+      "next": "ninthPhrase"
     }
   ],
-  "tenthPhrase": [
+  "ninthPhrase": [
     {
       "id": "0",
       "phrase": "It's great that you look on the bright side.",
       "wight": 2,
       "answer": {},
-      "next": "eleventhPhrase"
+      "next": "tenthPhrase"
     },
     {
       "id": "1",
       "phrase": "It's great that you look at the good side.",
       "wight": 0,
       "answer": {},
-      "next": "eleventhPhrase"
+      "next": "tenthPhrase"
     },
     {
       "id": "2",
       "phrase": "It's great that you take advantage of it.",
       "wight": 0,
       "answer": {},
-      "next": "eleventhPhrase"
+      "next": "tenthPhrase"
     }
   ],
-  "eleventhPhrase": [
+  "tenthPhrase": [
     {
       "id": "0",
       "wight": 0,
@@ -695,7 +693,7 @@
           }
         ]
       },
-      "next": "twelfthPhrase"
+      "next": "eleventhPhrase"
     },
     {
       "id": "1",
@@ -717,7 +715,7 @@
           }
         ]
       },
-      "next": "twelfthPhrase"
+      "next": "eleventhPhrase"
     },
     {
       "id": "2",
@@ -739,10 +737,10 @@
           }
         ]
       },
-      "next": "twelfthPhrase"
+      "next": "eleventhPhrase"
     }
   ],
-  "twelfthPhrase": [
+  "eleventhPhrase": [
     {
       "id": "0",
       "phrase": "Nah, it's a piece of cake)",
@@ -778,7 +776,7 @@
           }
         ]
       },
-      "next": "thirteenthPhrase"
+      "next": "twelfthPhrase"
     },
     {
       "id": "1",
@@ -815,7 +813,7 @@
           }
         ]
       },
-      "next": "thirteenthPhrase"
+      "next": "twelfthPhrase"
     },
     {
       "id": "2",
@@ -852,10 +850,10 @@
           }
         ]
       },
-      "next": "thirteenthPhrase"
+      "next": "twelfthPhrase"
     }
   ],
-  "thirteenthPhrase": [
+  "twelfthPhrase": [
     {
       "id": "0",
       "phrase": "If I was you, I have try anyway.",
@@ -864,7 +862,7 @@
         "message": ["Probz)"],
         "audio": "/resources/audio/john/B1-B2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
       },
-      "next": "fourteenthPhrase"
+      "next": "thirteenthPhrase"
     },
     {
       "id": "1",
@@ -874,7 +872,7 @@
         "message": ["Probz)"],
         "audio": "/resources/audio/john/B1-B2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
       },
-      "next": "fourteenthPhrase"
+      "next": "thirteenthPhrase"
     },
     {
       "id": "2",
@@ -884,10 +882,10 @@
         "message": ["Probz)"],
         "audio": "/resources/audio/john/B1-B2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
       },
-      "next": "fourteenthPhrase"
+      "next": "thirteenthPhrase"
     }
   ],
-  "fourteenthPhrase": [
+  "thirteenthPhrase": [
     {
       "id": "0",
       "phrase": "Oh, could I see it?",
@@ -916,7 +914,7 @@
             ]}
         ]
       },
-      "next": "fifteenthPhrase"
+      "next": "fourteenthPhrase"
     },
     {
       "id": "1",
@@ -946,7 +944,7 @@
             ]}
         ]
       },
-      "next": "fifteenthPhrase"
+      "next": "fourteenthPhrase"
     },
     {
       "id": "2",
@@ -976,10 +974,10 @@
             ]}
         ]
       },
-      "next": "fifteenthPhrase"
+      "next": "fourteenthPhrase"
     }
   ],
-  "fifteenthPhrase": [
+  "fourteenthPhrase": [
     {
       "id": "0",
       "phrase": "Wow!",
@@ -1010,10 +1008,10 @@
           }
         ]
       },
-      "next": "sixteenthPhrase"
+      "next": "fifteenthPhrase"
     }
   ],
-  "sixteenthPhrase": [
+  "fifteenthPhrase": [
     {
       "id": "0",
       "phrase": "That looks lit! Step on your toe!",
@@ -1024,7 +1022,7 @@
           "Oh, my apologies. I have to head out now(("
         ]
       },
-      "next": "seventeenthPhrase"
+      "next": "sixteenthPhrase"
     },
     {
       "id": "1",
@@ -1036,7 +1034,7 @@
           "Oh, my apologies. I have to head out now(("
         ]
       },
-      "next": "seventeenthPhrase"
+      "next": "sixteenthPhrase"
     },
     {
       "id": "2",
@@ -1048,10 +1046,10 @@
           "Oh, my apologies. I have to head out now(("
         ]
       },
-      "next": "seventeenthPhrase"
+      "next": "sixteenthPhrase"
     }
   ],
-  "seventeenthPhrase": [
+  "sixteenthPhrase": [
     {
       "id": "0",
       "phrase": "See you soon!",

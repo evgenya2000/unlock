@@ -128,7 +128,7 @@
     {
       "id": "0",
       "wight": null,
-      "phrase": "I'am a citizen of the world.",
+      "phrase": "I'm a citizen of the world.",
       "answer": {
         "message": ["Cool! I'm from USA", "What do you do?"]
       },
@@ -847,7 +847,7 @@
   "twelfthPhrase": [
     {
       "id": "0",
-      "phrase": "I'am a citizen of the world.",
+      "phrase": "I'm a citizen of the world.",
       "wight": null,
       "answer": {
         "message": [

@@ -205,8 +205,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "start", "wight": 0 },
-              { "id": "1", "option": "had started", "wight": 0 },
-              { "id": "2", "option": "started", "wight": 1 }
+              { "id": "1", "option": "had started", "wight": 1 },
+              { "id": "2", "option": "started", "wight": 0 }
             ]
           },
           {
@@ -234,8 +234,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "start", "wight": 0 },
-              { "id": "1", "option": "had started", "wight": 0 },
-              { "id": "2", "option": "started", "wight": 1 }
+              { "id": "1", "option": "had started", "wight": 1 },
+              { "id": "2", "option": "started", "wight": 0 }
             ]
           },
           {
@@ -263,8 +263,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "start", "wight": 0 },
-              { "id": "1", "option": "had started", "wight": 0 },
-              { "id": "2", "option": "started", "wight": 1 }
+              { "id": "1", "option": "had started", "wight": 1 },
+              { "id": "2", "option": "started", "wight": 0 }
             ]
           },
           {
@@ -389,116 +389,111 @@
       "id": "0",
       "phrase": "It's great that you look on the bright side.",
       "wight": 2,
-      "answer": {},
+      "answer": {
+        "message":["Выберите правильное описание: .....", "As soon as I ..... the midterm exam, I will go and see them again."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "If he had warned his parents, he wouldn't have waited for them", "wight": 2 },
+              { "id": "1", "option": "If he warned his parents, he wouldn't wait for them", "wight": 0 },
+              { "id": "2", "option": "If he would warn his parents, he won't have to wait", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "passed", "wight": 0 },
+              { "id": "1", "option": "have passed", "wight": 1 },
+              { "id": "2", "option": "go through", "wight": 0 }
+            ]
+          }
+        ],
+        "audio": "/resources/audio/john/C1-C2/Actually, the plane tickets here cost an arm and a leg.mp3"
+      },
       "next": "eighthPhrase"
     },
     {
       "id": "1",
       "phrase": "It's great that you look at the good side.",
       "wight": 0,
-      "answer": {},
+      "answer": {
+        "message":["Выберите правильное описание: .....", "As soon as I ..... the midterm exam, I will go and see them again."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "If he had warned his parents, he wouldn't have waited for them", "wight": 2 },
+              { "id": "1", "option": "If he warned his parents, he wouldn't wait for them", "wight": 0 },
+              { "id": "2", "option": "If he would warn his parents, he won't have to wait", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "passed", "wight": 0 },
+              { "id": "1", "option": "have passed", "wight": 1 },
+              { "id": "2", "option": "go through", "wight": 0 }
+            ]
+          }
+        ],
+        "audio": "/resources/audio/john/C1-C2/Actually, the plane tickets here cost an arm and a leg.mp3"
+      },
       "next": "eighthPhrase"
     },
     {
       "id": "2",
       "phrase": "It's great that you take advantage of it.",
       "wight": 0,
-      "answer": {},
+      "answer": {
+        "message":["Выберите правильное описание: .....", "As soon as I ..... the midterm exam, I will go and see them again."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "If he had warned his parents, he wouldn't have waited for them", "wight": 2 },
+              { "id": "1", "option": "If he warned his parents, he wouldn't wait for them", "wight": 0 },
+              { "id": "2", "option": "If he would warn his parents, he won't have to wait", "wight": 0 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "passed", "wight": 0 },
+              { "id": "1", "option": "have passed", "wight": 1 },
+              { "id": "2", "option": "go through", "wight": 0 }
+            ]
+          }
+        ],
+        "audio": "/resources/audio/john/C1-C2/Actually, the plane tickets here cost an arm and a leg.mp3"
+      },      
       "next": "eighthPhrase"
     }
   ],
   "eighthPhrase": [
     {
       "id": "0",
-      "phrase": "If he had warned his parents, he wouldn't have waited for them",
-      "wight": 2,
-      "answer": {
-        "message": [
-          "As soon as I ..... the midterm exam, I will go and see them again."
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "passed", "wight": 0 },
-              { "id": "1", "option": "have passed", "wight": 1 },
-              { "id": "2", "option": "go through", "wight": 0 }
-            ]
-          }
-        ],
-        "audio": "/resources/audio/john/C1-C2/Actually, the plane tickets here cost an arm and a leg.mp3"
-      },
-      "next": "ninthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "If he warned his parents, he wouldn't wait for them.",
-      "wight": 0,
-      "answer": {
-        "message": [
-          "As soon as I ..... the midterm exam, I will go and see them again."
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "passed", "wight": 0 },
-              { "id": "1", "option": "have passed", "wight": 1 },
-              { "id": "2", "option": "go through", "wight": 0 }
-            ]
-          }
-        ],
-        "audio": "/resources/audio/john/C1-C2/Actually, the plane tickets here cost an arm and a leg.mp3"
-      },
-      "next": "ninthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "If he would warn his parents, he won't have to wait.",
-      "wight": 0,
-      "answer": {
-        "message": [
-          "As soon as I ..... the midterm exam, I will go and see them again."
-        ],
-        "selects": [
-          {
-            "id": "0",
-            "options": [
-              { "id": "0", "option": "passed", "wight": 0 },
-              { "id": "1", "option": "have passed", "wight": 1 },
-              { "id": "2", "option": "go through", "wight": 0 }
-            ]
-          }
-        ],
-        "audio": "/resources/audio/john/C1-C2/Actually, the plane tickets here cost an arm and a leg.mp3"
-      },
-      "next": "ninthPhrase"
-    }
-  ],
-  "ninthPhrase": [
-    {
-      "id": "0",
       "phrase": "He can't travel by plane.",
       "wight": 0,
       "answer": {},
-      "next": "tenthPhrase"
+      "next": "ninthPhrase"
     },
     {
       "id": "1",
       "phrase": "The plane tickets are really expensive.",
       "wight": 2,
       "answer": {},
-      "next": "tenthPhrase"
+      "next": "ninthPhrase"
     },
     {
       "id": "2",
       "phrase": "The plane tickets are quite cheap.",
       "wight": 0,
       "answer": {},
-      "next": "tenthPhrase"
+      "next": "ninthPhrase"
     }
   ],
-  "tenthPhrase": [
+  "ninthPhrase": [
     {
       "id": "0",
       "phrase": "Can anyone give you a lift home?",
@@ -506,7 +501,7 @@
       "answer": {
         "audio": "/resources/audio/john/C1-C2/Oh, I don't know yet, but I should've asked my friend who drives.mp3"
       },
-      "next": "eleventhPhrase"
+      "next": "tenthPhrase"
     },
     {
       "id": "1",
@@ -515,48 +510,41 @@
       "answer": {
         "audio": "/resources/audio/john/C1-C2/Oh, I don't know yet, but I should've asked my friend who drives.mp3"
       },
-      "next": "eleventhPhrase"
+      "next": "tenthPhrase"
     },
     {
       "id": "2",
       "phrase": "Can anyone pull you back home?",
       "wight": 0,
       "answer": {
-        "audio": "/resources/audio/john/C1-C2/Oh, I don't know yet, but I should've asked my friend who drives.mp3"
+        "audio": "/resources/audio/john/C1-C2/Oh, I don't know yet, but I should've asked my friend who drives.mp3",
+        "message":["Выберите правильное описание: ....."],
+        "selects": [
+          {
+            "id": "0",
+            "options": [
+              { "id": "0", "option": "It's a bad idea to ask for help", "wight": 0 },
+              { "id": "1", "option": "He has already asked his friend for help", "wight": 0 },
+              { "id": "2", "option": "He doesn't understand why he didn't ask his friend for help", "wight": 2 }
+            ]
+          }
+        ]
+      },
+      "next": "tenthPhrase"
+    }
+  ],
+  "tenthPhrase": [
+    {
+      "id": "0",
+      "wight": null,
+      "phrase": "OK.",
+      "answer": {
+        "audio": "/resources/audio/john/C1-C2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
       },
       "next": "eleventhPhrase"
     }
   ],
   "eleventhPhrase": [
-    {
-      "id": "0",
-      "wight": 0,
-      "phrase": "It's a bad idea to ask for help.",
-      "answer": {
-        "audio": "/resources/audio/john/C1-C2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
-      },
-      "next": "twelfthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "He has already asked his friend for help.",
-      "wight": 0,
-      "answer": {
-        "audio": "/resources/audio/john/C1-C2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
-      },
-      "next": "twelfthPhrase"
-    },
-    {
-      "id": "2",
-      "wight": 2,
-      "phrase": "He doesn't understand why he didn't ask his friend for help.",
-      "answer": {
-        "audio": "/resources/audio/john/C1-C2/I'm also trying to sketch something at the moment. It makes me calm and puts all the stress away.mp3"
-      },
-      "next": "twelfthPhrase"
-    }
-  ],
-  "twelfthPhrase": [
     {
       "id": "0",
       "phrase": "Oh, could I see it?",
@@ -585,7 +573,7 @@
             ]}
         ]
       },
-      "next": "thirteenthPhrase"
+      "next": "twelfthPhrase"
     },
     {
       "id": "1",
@@ -615,7 +603,7 @@
             ]}
         ]
       },
-      "next": "thirteenthPhrase"
+      "next": "twelfthPhrase"
     },
     {
       "id": "2",
@@ -645,10 +633,10 @@
             ]}
         ]
       },
-      "next": "thirteenthPhrase"
+      "next": "twelfthPhrase"
     }
   ],
-  "thirteenthPhrase": [
+  "twelfthPhrase": [
     {
       "id": "0",
       "phrase": "Wow!",
@@ -679,10 +667,10 @@
           }
         ]
       },
-      "next": "fourteenth"
+      "next": "thirteenthPhrase"
     }
   ],
-  "fourteenth": [
+  "thirteenthPhrase": [
     {
       "id": "0",
       "phrase": "That looks lit! Step on your toe!",
@@ -693,7 +681,7 @@
           "Oh, my apologizes, I have to head out now(( Got some things that I absolutely must do."
         ]
       },
-      "next": "fifteenth"
+      "next": "fourteenth"
     },
     {
       "id": "1",
@@ -705,7 +693,7 @@
           "Oh, my apologizes, I have to head out now(( Got some things that I absolutely must do."
         ]
       },
-      "next": "fifteenth"
+      "next": "fourteenth"
     },
     {
       "id": "2",
@@ -717,10 +705,10 @@
           "Oh, my apologizes, I have to head out now(( Got some things that I absolutely must do."
         ]
       },
-      "next": "fifteenth"
+      "next": "fourteenth"
     }
   ],
-  "fifteenth": [
+  "fourteenth": [
     {
       "id": "0",
       "phrase": "Show your best!",

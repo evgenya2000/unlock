@@ -71,7 +71,7 @@
       "phrase": "I'm a Jack of all trades.",
       "wight": 2,
       "answer": {
-        "message": ["Oh, I see. Would you ..... if I send voice messages?"],
+        "message": ["Oh, I see. Would you ..... if I send voice messages?", "Выберите правильное описание аудиосообщения: ....."],
         "selects": [
           {
             "id": "0",
@@ -79,6 +79,14 @@
               { "id": "0", "option": "like", "wight": 0 },
               { "id": "1", "option": "agree", "wight": 0 },
               { "id": "2", "option": "mind", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "His work doesn't match his expectations he had at university", "wight": 0 },
+              { "id": "1", "option": "Despite he's still not at the top of his profession, he is really happy to work in it", "wight": 2 },
+              { "id": "2", "option": "He can't match professional criteria but tries hard", "wight": 0 }
             ]
           }
         ],
@@ -91,7 +99,7 @@
       "phrase": "I'm a bread-maker.",
       "wight": 0,
       "answer": {
-        "message": ["Oh, I see. Would you ..... if I send voice messages?"],
+        "message": ["Oh, I see. Would you ..... if I send voice messages?", "Выберите правильное описание аудиосообщения: ....."],
         "selects": [
           {
             "id": "0",
@@ -99,6 +107,14 @@
               { "id": "0", "option": "like", "wight": 0 },
               { "id": "1", "option": "agree", "wight": 0 },
               { "id": "2", "option": "mind", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "His work doesn't match his expectations he had at university", "wight": 0 },
+              { "id": "1", "option": "Despite he's still not at the top of his profession, he is really happy to work in it", "wight": 2 },
+              { "id": "2", "option": "He can't match professional criteria but tries hard", "wight": 0 }
             ]
           }
         ],
@@ -111,7 +127,7 @@
       "phrase": "I'm a die hard.",
       "wight": 0,
       "answer": {
-        "message": ["Oh, I see. Would you ..... if I send voice messages?"],
+        "message": ["Oh, I see. Would you ..... if I send voice messages?", "Выберите правильное описание аудиосообщения: ....."],
         "selects": [
           {
             "id": "0",
@@ -119,6 +135,14 @@
               { "id": "0", "option": "like", "wight": 0 },
               { "id": "1", "option": "agree", "wight": 0 },
               { "id": "2", "option": "mind", "wight": 1 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "His work doesn't match his expectations he had at university", "wight": 0 },
+              { "id": "1", "option": "Despite he's still not at the top of his profession, he is really happy to work in it", "wight": 2 },
+              { "id": "2", "option": "He can't match professional criteria but tries hard", "wight": 0 }
             ]
           }
         ],
@@ -130,26 +154,8 @@
   "thirdPhrase": [
     {
       "id": "0",
-      "wight": 0,
-      "phrase": "His work doesn't match his expectations he had at university.",
-      "answer": {
-        "audio": "/resources/audio/stewart/C1-C2/I'm really into my job, but I still tryna find time for the fun stuff, you know.mp3"
-      },
-      "next": "fourthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "Despite he's still not at the top of his profession, he is really happy to work in it.",
-      "wight": 2,
-      "answer": {
-        "audio": "/resources/audio/stewart/C1-C2/I'm really into my job, but I still tryna find time for the fun stuff, you know.mp3"
-      },
-      "next": "fourthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "He can't match professional criteria but tries hard.",
-      "wight": 0,
+      "wight": null,
+      "phrase": "I don't mind audio messages.",
       "answer": {
         "audio": "/resources/audio/stewart/C1-C2/I'm really into my job, but I still tryna find time for the fun stuff, you know.mp3"
       },
@@ -199,8 +205,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "start", "wight": 0 },
-              { "id": "1", "option": "had started", "wight": 0 },
-              { "id": "2", "option": "started", "wight": 1 }
+              { "id": "1", "option": "had started", "wight": 1 },
+              { "id": "2", "option": "started", "wight": 0 }
             ]
           },
           {
@@ -229,8 +235,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "start", "wight": 0 },
-              { "id": "1", "option": "had started", "wight": 0 },
-              { "id": "2", "option": "started", "wight": 1 }
+              { "id": "1", "option": "had started", "wight": 1 },
+              { "id": "2", "option": "started", "wight": 0 }
             ]
           },
           {
@@ -259,8 +265,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "start", "wight": 0 },
-              { "id": "1", "option": "had started", "wight": 0 },
-              { "id": "2", "option": "started", "wight": 1 }
+              { "id": "1", "option": "had started", "wight": 1 },
+              { "id": "2", "option": "started", "wight": 0 }
             ]
           },
           {

@@ -228,6 +228,7 @@
     color: var(--red-light-color);
 }
 
+/* Styles for modal window*/
 .modal {
     font-family: 'CocoGothicAlternate-Bold';
     font-size: var(--base-font-size);

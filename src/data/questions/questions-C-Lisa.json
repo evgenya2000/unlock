@@ -72,7 +72,7 @@
       "wight": 2,
       "answer": {
         "message": [
-          "Alright then, keep your secrets) Would you ..... if I send voice messages?"
+          "Alright then, keep your secrets) Would you ..... if I send voice messages?", "Выберите правильное описание аудиосообщения: ....."
         ],
         "selects": [
           {
@@ -81,6 +81,14 @@
               { "id": "0", "option": "like", "wight": 0 },
               { "id": "1", "option": "agree", "wight": 0 },
               { "id": "2", "option": "mind", "wight": 2 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "Her work doesn't match her expectations she had at university", "wight": 0 },
+              { "id": "1", "option": "Despite little experience, she shows her best at work", "wight": 2 },
+              { "id": "2", "option": "She can't match professional criteria but tries hard", "wight": 0 }
             ]
           }
         ],
@@ -94,7 +102,7 @@
       "wight": 0,
       "answer": {
         "message": [
-          "Alright then, keep your secrets) Would you ..... if I send voice messages?"
+          "Alright then, keep your secrets) Would you ..... if I send voice messages?", "Выберите правильное описание аудиосообщения: ....."
         ],
         "selects": [
           {
@@ -103,6 +111,14 @@
               { "id": "0", "option": "like", "wight": 0 },
               { "id": "1", "option": "agree", "wight": 0 },
               { "id": "2", "option": "mind", "wight": 2 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "Her work doesn't match her expectations she had at university", "wight": 0 },
+              { "id": "1", "option": "Despite little experience, she shows her best at work", "wight": 2 },
+              { "id": "2", "option": "She can't match professional criteria but tries hard", "wight": 0 }
             ]
           }
         ],
@@ -116,7 +132,7 @@
       "wight": 0,
       "answer": {
         "message": [
-          "Alright then, keep your secrets) Would you ..... if I send voice messages?"
+          "Alright then, keep your secrets) Would you ..... if I send voice messages?", "Выберите правильное описание аудиосообщения: ....."
         ],
         "selects": [
           {
@@ -125,6 +141,14 @@
               { "id": "0", "option": "like", "wight": 0 },
               { "id": "1", "option": "agree", "wight": 0 },
               { "id": "2", "option": "mind", "wight": 2 }
+            ]
+          },
+          {
+            "id": "1",
+            "options": [
+              { "id": "0", "option": "Her work doesn't match her expectations she had at university", "wight": 0 },
+              { "id": "1", "option": "Despite little experience, she shows her best at work", "wight": 2 },
+              { "id": "2", "option": "She can't match professional criteria but tries hard", "wight": 0 }
             ]
           }
         ],
@@ -136,26 +160,8 @@
   "thirdPhrase": [
     {
       "id": "0",
-      "wight": 0,
-      "phrase": "Her work doesn't match her expectations she had at university.",
-      "answer": {
-        "audio": "/resources/audio/lisa/C1-C2/I'm really into my job, but I still tryna find time for the fun stuff.mp3"
-      },
-      "next": "fourthPhrase"
-    },
-    {
-      "id": "1",
-      "phrase": "Despite little experience, she shows her best at work.",
-      "wight": 2,
-      "answer": {
-        "audio": "/resources/audio/lisa/C1-C2/I'm really into my job, but I still tryna find time for the fun stuff.mp3"
-      },
-      "next": "fourthPhrase"
-    },
-    {
-      "id": "2",
-      "phrase": "She can't match professional criteria but tries hard",
-      "wight": 0,
+      "wight": null,
+      "phrase": "I don't mind audio messages.",
       "answer": {
         "audio": "/resources/audio/lisa/C1-C2/I'm really into my job, but I still tryna find time for the fun stuff.mp3"
       },
@@ -205,8 +211,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "start", "wight": 0 },
-              { "id": "1", "option": "had started", "wight": 0 },
-              { "id": "2", "option": "started", "wight": 1 }
+              { "id": "1", "option": "had started", "wight": 1 },
+              { "id": "2", "option": "started", "wight": 0 }
             ]
           },
           {
@@ -234,8 +240,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "start", "wight": 0 },
-              { "id": "1", "option": "had started", "wight": 0 },
-              { "id": "2", "option": "started", "wight": 1 }
+              { "id": "1", "option": "had started", "wight": 1 },
+              { "id": "2", "option": "started", "wight": 0 }
             ]
           },
           {
@@ -263,8 +269,8 @@
             "id": "0",
             "options": [
               { "id": "0", "option": "start", "wight": 0 },
-              { "id": "1", "option": "had started", "wight": 0 },
-              { "id": "2", "option": "started", "wight": 1 }
+              { "id": "1", "option": "had started", "wight": 1 },
+              { "id": "2", "option": "started", "wight": 0 }
             ]
           },
           {

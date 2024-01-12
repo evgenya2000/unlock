@@ -98,7 +98,7 @@
     {
       "id": "0",
       "wight": null,
-      "phrase": "I'am a citizen of the world.",
+      "phrase": "I'm a citizen of the world.",
       "answer": {
         "message": ["Cool! I'm from UК", "What do you do?"]
       },
@@ -493,7 +493,7 @@
       "wight": 0,
       "answer": {
         "message": [
-          "Tell me about your language. It ..... be hard to learn, right?)"
+          "Exactly! Tell me about your language. It ..... be hard to learn, right?)"
         ],
         "selects": [
           {
@@ -514,7 +514,7 @@
       "wight": 1,
       "answer": {
         "message": [
-          "Tell me about your language. It ..... be hard to learn, right?)"
+          "Exactly! Tell me about your language. It ..... be hard to learn, right?)"
         ],
         "selects": [
           {
@@ -535,7 +535,7 @@
       "wight": 0,
       "answer": {
         "message": [
-          "Tell me about your language. It ..... be hard to learn, right?)"
+          "Exactly! Tell me about your language. It ..... be hard to learn, right?)"
         ],
         "selects": [
           {

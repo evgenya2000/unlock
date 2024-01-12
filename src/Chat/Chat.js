@@ -17,6 +17,7 @@ class Chat extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleResult = this.handleResult.bind(this);
         this.handleWebsite = this.handleWebsite.bind(this);
+        this.handleResult = this.handleResult.bind(this);
     }
 
     scoreRecord(id) {
@@ -299,7 +300,11 @@ class Chat extends React.Component {
     }
 
     handleWebsite() {
-        window.open("https://vk.com/club219990486", "_blank");
+        window.open("https://vk.com/club219990486", "_blank");            
+    }
+
+    handleRestart() {
+        window.location.reload();
     }
 
     handleResult() {
@@ -333,6 +338,12 @@ class Chat extends React.Component {
         button.className = "transition";
         button.addEventListener('click', this.handleWebsite);
         button.textContent = "Записаться на вводный урок";
+        newModal.appendChild(button);
+
+        button = document.createElement("button");
+        button.className = "restart";
+        button.addEventListener('click', this.handleRestart);
+        button.textContent = "Пройти тест заново";
         newModal.appendChild(button);
 
         let parentDiv = document.getElementById("root");
