@@ -847,8 +847,30 @@
   "twelfthPhrase": [
     {
       "id": "0",
-      "phrase": "I'm a citizen of the world.",
-      "wight": null,
+      "phrase": "It doesn't matter.",
+      "wight": 1,
+      "answer": {
+        "message": [
+          "Oh, I'm sorry, I need to go now."
+        ]
+      },
+      "next": "thirteenthPhrase"
+    },
+    {
+      "id": "1",
+      "phrase": "It can't matter.",
+      "wight": 0,
+      "answer": {
+        "message": [
+          "Oh, I'm sorry, I need to go now."
+        ]
+      },
+      "next": "thirteenthPhrase"
+    },
+    {
+      "id": "2",
+      "phrase": "It can't stand.",
+      "wight": 0,
       "answer": {
         "message": [
           "Oh, I'm sorry, I need to go now."

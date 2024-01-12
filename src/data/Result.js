@@ -13,7 +13,7 @@ export const result = {
 }
 
 export const dispointment = {
-    "A-John": { "min": "5.6", "threshold-difficult": 5.4, "threshold-max": "25.2", l1: "A1", l2: "A1", l3: "A2", l4: "B1_good" }, /* all "difficult": 9 "max": "28"*/
+    "A-John": { "min": "5.8", "threshold-difficult": 5.4, "threshold-max": "25.2", l1: "A1", l2: "A1", l3: "A2", l4: "B1_good" }, /* all "difficult": 9 "max": "29"*/
     "B-John": { "min": "6.8", "threshold-difficult": 12, "threshold-max": "30.6", l1: "A2_bad", l2: "B1", l3: "B2", l4: "C1_good" }, /* all "difficult": 20 "max": "34"*/
     "C-John": { "min": "5.6", "threshold-difficult": 9.6, "threshold-max": "25.2", l1: "B2_bad", l2: "C1", l3: "C1", l4: "C2" }, /* all "difficult": 16 "max": "28 "*/
     "A-Lisa": { "min": "6", "threshold-difficult": 7.8, "threshold-max": "27", l1: "A1", l2: "A1", l3: "A2", l4: "B1_good" }, /* all "difficult": 13 "max": "30"*/

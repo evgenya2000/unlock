@@ -392,6 +392,8 @@ class Chat extends React.Component {
                     self.renderResultButton();
                 }
             }, 1000);
+        } else {
+            alert("Выберите один из вариантов ответа, перед отправкой");
         }
     }
 

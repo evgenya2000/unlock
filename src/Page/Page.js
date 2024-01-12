@@ -26,6 +26,8 @@ class Page extends React.Component {
                     this.setState({
                         step: "q2"
                     });
+                } else {
+                    alert("Выберите один из вариантов, перед отправкой");
                 }
                 break;
             case "q2":
@@ -35,6 +37,8 @@ class Page extends React.Component {
                     this.setState({
                         step: "chat"
                     });
+                } else {
+                    alert("Выберите один из вариантов, перед отправкой");
                 }
                 break;
             default:
@@ -80,7 +84,7 @@ class Page extends React.Component {
                             <div className="label-column">
                                 <label className="name-age" htmlFor={personality.id}>{personality.name_age}</label>
                                 <label className="profession" htmlFor={personality.id}>{personality.profession}</label>
-                                <label className="description" htmlFor={personality.id}>{personality.description}</label>
+                                {/* <label className="description" htmlFor={personality.id}>{personality.description}</label> */}
                             </div>
                         </div>
                     ))}
